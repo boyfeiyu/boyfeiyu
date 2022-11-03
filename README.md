@@ -17,7 +17,7 @@
 
 <br>
 <a href="#" style="">
-  <img align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=boyfeiyu">
+  <img align="left" src="https://github-readme-stats.vercel.app/api/top-langs/?username=boyfeiyu">
 </a>
 
 <br>
