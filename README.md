@@ -6,9 +6,8 @@
 
 I'm **沙雕的小飞鱼儿**
 
-- ✏ I’m currently learning:JavaScript, Vue, React
-- 💬 Links : [My Blog](https://www.yuque.com/boyfeiyu), [trip](https://trip.boyfeiyu.com).
-- 🎮 I'm currently playing **寻找前端实习** ~~
+- 💬 我的语雀博客 : [飞鱼·语雀](https://www.yuque.com/boyfeiyu)
+- 🎮 最近正在 **寻找前端实习** ~~
 - 🌱 Learning Computer Science at Northwest A&F University
 - <img align="left" src="https://cdn.jsdelivr.net/gh/yzyyz1387/WangYeQianger/nwafu.png" height="75px">   
   
