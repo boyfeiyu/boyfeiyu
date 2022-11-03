@@ -1,7 +1,7 @@
 ## Hi there <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px" height="35px">
 
 <a href="#">
-  <img align="right" src="https://github-readme-stats.vercel.app/api?username=boyfeiyu&show_icons=true">
+  <img  src="https://github-readme-stats.vercel.app/api?username=boyfeiyu&show_icons=true">
 </a>
 
 我是**沙雕的小飞鱼儿**, 一名热爱技术，热爱开源的前端开发者。
@@ -13,11 +13,11 @@
 
 <br>
 
-<img align="left" src="https://cdn.jsdelivr.net/gh/yzyyz1387/WangYeQianger/nwafu.png" height="75px">
+<img  src="https://cdn.jsdelivr.net/gh/yzyyz1387/WangYeQianger/nwafu.png" height="75px">
 
 <br>
 <a href="#" style="">
-  <img align="left" src="https://github-readme-stats.vercel.app/api/top-langs/?username=boyfeiyu">
+  <img  src="https://github-readme-stats.vercel.app/api/top-langs/?username=boyfeiyu">
 </a>
 
 <br>
