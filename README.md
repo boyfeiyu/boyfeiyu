@@ -37,8 +37,7 @@ No activity tracked
 
 <!--END_SECTION:waka-->  
 
-![](https://raw.githubusercontent.com/yzyyz1387/yzyyz1387/main/assets/github-contribution-grid-snake.svg)
-
+![](https://github.com/boyfeiyu/boyfeiyu/blob/output/github-contribution-grid-snake.svg)
 
 
 **boyfeiyu/boyfeiyu** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
