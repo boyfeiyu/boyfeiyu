@@ -1,8 +1,6 @@
 ## Hi there <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px" height="35px">
 
-<a href="#">
-  <img  src="https://github-readme-stats.vercel.app/api?username=boyfeiyu&show_icons=true">
-</a>
+
 
 我是**沙雕的小飞鱼儿**, 一名热爱技术，热爱开源的前端开发者。
 
@@ -10,6 +8,10 @@
 - 💬 这是我的语雀博客 : [飞鱼·语雀](https://www.yuque.com/boyfeiyu)
 - 🎮 最近正在 **寻找前端实习** ~~
 - 🌱 西北农林科技大学，计算机本科在读(2020-2024)
+- 
+<a href="#">
+  <img align="right" src="https://github-readme-stats.vercel.app/api?username=boyfeiyu&show_icons=true">
+</a>
 
 <br>
 
