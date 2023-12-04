@@ -1,13 +1,12 @@
 ## Hi there <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px" height="35px">
 
 
-
 我是**沙雕的小飞鱼儿**, 一名热爱技术，热爱开源的前端开发者。
 
 - 🔭 学习前端的时间：2022.8.1 - 至今
-- 🎮 最近正在 **美团(北京)前端实习** ~~
+- 🎮 正在 **美团(北京)前端** 工作~~
 - 🌱 西北农林科技大学，计算机本科(2020-2024)
-- 💬 联系我 i@boyfeiyu.com
+- 💬 联系我请邮件至 i@boyfeiyu.com
 
 <a href="#">
   <img align="right" src="https://github-readme-stats.vercel.app/api?username=boyfeiyu&show_icons=true">
