@@ -20,30 +20,30 @@
 
 [![公开外部 PR 概览：已合并与开放状态分别统计](assets/contributions.svg)](docs/contributions.md)
 
-**4 条已合并 · 24 条开放（含草稿） · 12 个项目**
+**4 条已合并 · 26 条开放（含草稿） · 12 个项目**
 
-数据核验于 **2026-11-02 08:49:51 UTC**，每天自动刷新。
+数据核验于 **2026-11-02 09:55:53 UTC**，每天自动刷新。
 仅统计本人发起的公开外部 PR；开放状态表示尚未合并。数字是当前快照，不代表完整历史贡献量。
 
 #### [multica-ai/multica](https://github.com/multica-ai/multica)
 
-3 条已合并 / 9 条开放。以下为各状态最近更新的 PR，标题来自 GitHub。
+3 条已合并 / 10 条开放。以下为各状态最近更新的 PR，标题来自 GitHub。
 
 | 状态 | 具体贡献 / PR 原始标题 |
 | :-- | :-- |
 | 已合并 | [#9778 · MUL-8453: fix\(daemon\): retry tasks interrupted by shutdown](https://github.com/multica-ai/multica/pull/9778) |
 | 已合并 | [#9776 · MUL-8457: test\(lark\): isolate legacy receipt backfill databases](https://github.com/multica-ai/multica/pull/9776) |
+| 开放 | [#9811 · fix\(cli\): acknowledge label attachment without returned labels \(BOYF-256\)](https://github.com/multica-ai/multica/pull/9811) |
 | 开放 | [#9781 · feat\(autopilot\): support finite schedule execution counts](https://github.com/multica-ai/multica/pull/9781) |
-| 开放 | [#9774 · fix\(workflows\): explain handoff enqueue decisions \(BOYF-166\)](https://github.com/multica-ai/multica/pull/9774) |
 
 #### [mahmoud/boltons](https://github.com/mahmoud/boltons)
 
-0 条已合并 / 3 条开放。以下为各状态最近更新的 PR，标题来自 GitHub。
+0 条已合并 / 4 条开放。以下为各状态最近更新的 PR，标题来自 GitHub。
 
 | 状态 | 具体贡献 / PR 原始标题 |
 | :-- | :-- |
+| 开放 | [#713 · Fix semicolon escaping in query parameters \(BOYF-258\)](https://github.com/mahmoud/boltons/pull/713) |
 | 开放 | [#709 · Fix JSONL reverse iteration splitting valid Unicode strings \(BOYF-246\)](https://github.com/mahmoud/boltons/pull/709) |
-| 开放 | [#706 · Keep evicted cache values alive until insertion completes](https://github.com/mahmoud/boltons/pull/706) |
 
 #### [thombashi/pytablewriter](https://github.com/thombashi/pytablewriter)
 

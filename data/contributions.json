@@ -1,10 +1,32 @@
 {
   "schemaVersion": 1,
   "username": "boyfeiyu",
-  "fetchedAt": "2026-11-02T08:49:51Z",
+  "fetchedAt": "2026-11-02T09:55:53Z",
   "scope": "Authored public PRs in repositories not owned by boyfeiyu; OPEN and MERGED only. Closed unmerged PRs are excluded.",
   "source": "https://api.github.com/graphql",
   "pullRequests": [
+    {
+      "repository": "mahmoud/boltons",
+      "number": 713,
+      "title": "Fix semicolon escaping in query parameters (BOYF-258)",
+      "url": "https://github.com/mahmoud/boltons/pull/713",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-02T09:19:15Z",
+      "updatedAt": "2026-11-02T09:19:15Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 9811,
+      "title": "fix(cli): acknowledge label attachment without returned labels (BOYF-256)",
+      "url": "https://github.com/multica-ai/multica/pull/9811",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-02T09:17:20Z",
+      "updatedAt": "2026-11-02T09:17:29Z",
+      "mergedAt": null
+    },
     {
       "repository": "multica-ai/multica",
       "number": 9778,

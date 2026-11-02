@@ -1,6 +1,6 @@
 # 公开开源贡献 / Public contributions
 
-数据核验时间：**2026-11-02T08:49:51Z**。
+数据核验时间：**2026-11-02T09:55:53Z**。
 
 来源：GitHub GraphQL `user(login: "boyfeiyu").pullRequests`，逐页读取至末页。
 口径：本人发起、公开、仓库所有者不是 boyfeiyu、状态为已合并或开放（含草稿）的 PR。
@@ -12,6 +12,7 @@
 
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
 | :-- | :-- | :-- | :-- |
+| 开放 | [#9811 · fix\(cli\): acknowledge label attachment without returned labels \(BOYF-256\)](https://github.com/multica-ai/multica/pull/9811) | 2026-11-02 | — |
 | 已合并 | [#9778 · MUL-8453: fix\(daemon\): retry tasks interrupted by shutdown](https://github.com/multica-ai/multica/pull/9778) | 2026-11-02 | 2026-11-02 |
 | 已合并 | [#9776 · MUL-8457: test\(lark\): isolate legacy receipt backfill databases](https://github.com/multica-ai/multica/pull/9776) | 2026-11-02 | 2026-11-02 |
 | 已合并 | [#9787 · MUL-8462: fix\(cli\): preserve literal issue attachment paths](https://github.com/multica-ai/multica/pull/9787) | 2026-11-02 | 2026-11-02 |
@@ -29,6 +30,7 @@
 
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
 | :-- | :-- | :-- | :-- |
+| 开放 | [#713 · Fix semicolon escaping in query parameters \(BOYF-258\)](https://github.com/mahmoud/boltons/pull/713) | 2026-11-02 | — |
 | 开放 | [#709 · Fix JSONL reverse iteration splitting valid Unicode strings \(BOYF-246\)](https://github.com/mahmoud/boltons/pull/709) | 2026-11-01 | — |
 | 开放 | [#706 · Keep evicted cache values alive until insertion completes](https://github.com/mahmoud/boltons/pull/706) | 2026-11-01 | — |
 | 开放 | [#704 · Preserve integer precision in variance calculations](https://github.com/mahmoud/boltons/pull/704) | 2026-11-01 | — |
