@@ -195,24 +195,11 @@ def summary_svg(snapshot):
 
 
 def readme_section(snapshot):
-    prs = snapshot["pullRequests"]
-    merged = sum(pr["state"] == "MERGED" for pr in prs)
-    rows = [
+    return '\n'.join([
         '[![公开外部 PR 概览：已合并与开放状态分别统计](assets/contributions.svg)](docs/contributions.md)',
         '',
-        f'**{merged} 条已合并 · {len(prs)-merged} 条开放（含草稿） · {len(groups(snapshot))} 个项目**',
-        '',
-        f'数据核验于 **{snapshot["fetchedAt"].replace("T", " ").replace("Z", " UTC")}**，每天自动刷新。',
-        '仅统计本人发起的公开外部 PR；开放状态表示尚未合并。数字是当前快照，不代表完整历史贡献量。',
-        '',
-    ]
-    if not prs:
-        rows.append('当前没有符合口径的 PR。')
-    rows.extend([
-        '[查看全部项目与 PR →](docs/contributions.md) · [原始数据 JSON](data/contributions.json) · '
-        '[GitHub 实时记录](https://github.com/pulls?q=is%3Apr+author%3Aboyfeiyu+is%3Apublic)',
+        '[我提过的 PR →](docs/contributions.md)',
     ])
-    return '\n'.join(rows)
 
 
 def archive(snapshot):

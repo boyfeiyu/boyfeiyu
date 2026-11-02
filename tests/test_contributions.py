@@ -51,8 +51,7 @@ class ContributionTests(unittest.TestCase):
         self.assertEqual(calls, [None, 'next'])
         self.assertEqual({p['number'] for p in snapshot['pullRequests']}, {1, 4})
         self.assertNotIn('isPrivate', json.dumps(snapshot))
-        section = profile.readme_section(snapshot)
-        self.assertIn('1 条已合并 · 1 条开放', section)
+        self.assertIn('1 merged PRs, 1 open PRs', profile.summary_svg(snapshot))
 
     def test_incomplete_and_duplicate_pages_fail(self):
         for response in (page([node()], total=2), page([node(), node()])):
@@ -139,8 +138,8 @@ class ContributionTests(unittest.TestCase):
 
     def test_empty_snapshot_renders_explicit_empty_state(self):
         snapshot = profile.fetch_snapshot(lambda _: page([]), now=NOW)
-        self.assertIn('当前没有符合口径的 PR', profile.readme_section(snapshot))
-        self.assertIn('0 条已合并 · 0 条开放', profile.readme_section(snapshot))
+        self.assertIn('当前没有符合口径的 PR', profile.archive(snapshot))
+        self.assertIn('0 merged PRs, 0 open PRs', profile.summary_svg(snapshot))
         ET.fromstring(profile.summary_svg(snapshot))
 
     def test_readme_keeps_summary_image_and_archive_keeps_every_pr(self):
