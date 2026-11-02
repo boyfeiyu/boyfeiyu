@@ -1,10 +1,65 @@
 {
   "schemaVersion": 1,
   "username": "boyfeiyu",
-  "fetchedAt": "2026-11-02T09:55:53Z",
+  "fetchedAt": "2026-11-02T17:58:23Z",
   "scope": "Authored public PRs in repositories not owned by boyfeiyu; OPEN and MERGED only. Closed unmerged PRs are excluded.",
   "source": "https://api.github.com/graphql",
   "pullRequests": [
+    {
+      "repository": "floating-ui/floating-ui",
+      "number": 3541,
+      "title": "fix(vue): ignore stale async positioning results (BOYF-294)",
+      "url": "https://github.com/floating-ui/floating-ui/pull/3541",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-02T17:07:46Z",
+      "updatedAt": "2026-11-02T17:50:53Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "vuejs/pinia",
+      "number": 3205,
+      "title": "fix(subscribe): honor once across patch notifications (BOYF-273)",
+      "url": "https://github.com/vuejs/pinia/pull/3205",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-02T15:45:50Z",
+      "updatedAt": "2026-11-02T17:43:03Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 9831,
+      "title": "fix(views): preserve scalar property drafts during live updates (BOYF-301)",
+      "url": "https://github.com/multica-ai/multica/pull/9831",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-02T17:37:46Z",
+      "updatedAt": "2026-11-02T17:37:52Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 9829,
+      "title": "fix(views): guard filter IME confirmation Enter (BOYF-278)",
+      "url": "https://github.com/multica-ai/multica/pull/9829",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-02T15:52:43Z",
+      "updatedAt": "2026-11-02T15:52:48Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 9827,
+      "title": "BOYF-268 fix(cli): preserve quotes and commas in metadata filters",
+      "url": "https://github.com/multica-ai/multica/pull/9827",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-02T14:42:23Z",
+      "updatedAt": "2026-11-02T14:42:29Z",
+      "mergedAt": null
+    },
     {
       "repository": "mahmoud/boltons",
       "number": 713,

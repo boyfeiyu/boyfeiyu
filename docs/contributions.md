@@ -1,6 +1,6 @@
 # 公开开源贡献 / Public contributions
 
-数据核验时间：**2026-11-02T09:55:53Z**。
+数据核验时间：**2026-11-02T17:58:23Z**。
 
 来源：GitHub GraphQL `user(login: "boyfeiyu").pullRequests`，逐页读取至末页。
 口径：本人发起、公开、仓库所有者不是 boyfeiyu、状态为已合并或开放（含草稿）的 PR。
@@ -12,6 +12,9 @@
 
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
 | :-- | :-- | :-- | :-- |
+| 开放 | [#9831 · fix\(views\): preserve scalar property drafts during live updates \(BOYF-301\)](https://github.com/multica-ai/multica/pull/9831) | 2026-11-02 | — |
+| 开放 | [#9829 · fix\(views\): guard filter IME confirmation Enter \(BOYF-278\)](https://github.com/multica-ai/multica/pull/9829) | 2026-11-02 | — |
+| 开放 | [#9827 · BOYF-268 fix\(cli\): preserve quotes and commas in metadata filters](https://github.com/multica-ai/multica/pull/9827) | 2026-11-02 | — |
 | 开放 | [#9811 · fix\(cli\): acknowledge label attachment without returned labels \(BOYF-256\)](https://github.com/multica-ai/multica/pull/9811) | 2026-11-02 | — |
 | 已合并 | [#9778 · MUL-8453: fix\(daemon\): retry tasks interrupted by shutdown](https://github.com/multica-ai/multica/pull/9778) | 2026-11-02 | 2026-11-02 |
 | 已合并 | [#9776 · MUL-8457: test\(lark\): isolate legacy receipt backfill databases](https://github.com/multica-ai/multica/pull/9776) | 2026-11-02 | 2026-11-02 |
@@ -56,6 +59,12 @@
 | :-- | :-- | :-- | :-- |
 | 开放 | [#123 · 修复同步域名关键词留空时 Local Storage 不同步的问题](https://github.com/easychen/CookieCloud/pull/123) | 2026-03-04 | — |
 
+## [floating-ui/floating-ui](https://github.com/floating-ui/floating-ui)
+
+| 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
+| :-- | :-- | :-- | :-- |
+| 开放 | [#3541 · fix\(vue\): ignore stale async positioning results \(BOYF-294\)](https://github.com/floating-ui/floating-ui/pull/3541) | 2026-11-02 | — |
+
 ## [fsspec/filesystem_spec](https://github.com/fsspec/filesystem_spec)
 
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
@@ -91,6 +100,12 @@
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
 | :-- | :-- | :-- | :-- |
 | 开放 | [#20 · Avoid deep copying immutable codec candidate names](https://github.com/thombashi/mbstrdecoder/pull/20) | 2026-11-01 | — |
+
+## [vuejs/pinia](https://github.com/vuejs/pinia)
+
+| 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
+| :-- | :-- | :-- | :-- |
+| 开放 | [#3205 · fix\(subscribe\): honor once across patch notifications \(BOYF-273\)](https://github.com/vuejs/pinia/pull/3205) | 2026-11-02 | — |
 
 ## [YunYouJun/air-conditioner](https://github.com/YunYouJun/air-conditioner)
 
