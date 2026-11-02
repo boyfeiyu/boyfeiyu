@@ -1,0 +1,97 @@
+# 公开开源贡献 / Public contributions
+
+数据核验时间：**2026-11-02T08:49:51Z**。
+
+来源：GitHub GraphQL `user(login: "boyfeiyu").pullRequests`，逐页读取至末页。
+口径：本人发起、公开、仓库所有者不是 boyfeiyu、状态为已合并或开放（含草稿）的 PR。
+关闭且未合并的 PR 不在本清单内；私有仓库与本人仓库不计入。合并状态不能由 PR 标题推断。
+
+[返回主页](../README.md) · [原始快照](../data/contributions.json) · [刷新说明](automation.md)
+
+## [multica-ai/multica](https://github.com/multica-ai/multica)
+
+| 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
+| :-- | :-- | :-- | :-- |
+| 已合并 | [#9778 · MUL-8453: fix\(daemon\): retry tasks interrupted by shutdown](https://github.com/multica-ai/multica/pull/9778) | 2026-11-02 | 2026-11-02 |
+| 已合并 | [#9776 · MUL-8457: test\(lark\): isolate legacy receipt backfill databases](https://github.com/multica-ai/multica/pull/9776) | 2026-11-02 | 2026-11-02 |
+| 已合并 | [#9787 · MUL-8462: fix\(cli\): preserve literal issue attachment paths](https://github.com/multica-ai/multica/pull/9787) | 2026-11-02 | 2026-11-02 |
+| 开放 | [#9781 · feat\(autopilot\): support finite schedule execution counts](https://github.com/multica-ai/multica/pull/9781) | 2026-11-01 | — |
+| 开放 | [#9774 · fix\(workflows\): explain handoff enqueue decisions \(BOYF-166\)](https://github.com/multica-ai/multica/pull/9774) | 2026-11-01 | — |
+| 开放 | [#9744 · feat\(chat\): add workspace default chat agent](https://github.com/multica-ai/multica/pull/9744) | 2026-11-01 | — |
+| 开放 | [#9743 · feat\(issues\): add project columns to swimlanes](https://github.com/multica-ai/multica/pull/9743) | 2026-11-01 | — |
+| 开放 | [#9742 · feat\(projects\): persist lifecycle browse views \(BOYF-85\)](https://github.com/multica-ai/multica/pull/9742) | 2026-11-01 | — |
+| 开放 | [#9782 · fix\(workflows\): clarify Default scope for issues without a project](https://github.com/multica-ai/multica/pull/9782) | 2026-11-01 | — |
+| 开放 | [#9768 · fix\(runtimes\): recover empty legacy Builder sessions](https://github.com/multica-ai/multica/pull/9768) | 2026-10-31 | — |
+| 开放 | [#9736 · feat: add persisted content width preference for issues and chat](https://github.com/multica-ai/multica/pull/9736) | 2026-10-31 | — |
+| 开放 | [#9740 · feat\(chat\): add project-linked chat discovery and filtering](https://github.com/multica-ai/multica/pull/9740) | 2026-10-30 | — |
+
+## [mahmoud/boltons](https://github.com/mahmoud/boltons)
+
+| 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
+| :-- | :-- | :-- | :-- |
+| 开放 | [#709 · Fix JSONL reverse iteration splitting valid Unicode strings \(BOYF-246\)](https://github.com/mahmoud/boltons/pull/709) | 2026-11-01 | — |
+| 开放 | [#706 · Keep evicted cache values alive until insertion completes](https://github.com/mahmoud/boltons/pull/706) | 2026-11-01 | — |
+| 开放 | [#704 · Preserve integer precision in variance calculations](https://github.com/mahmoud/boltons/pull/704) | 2026-11-01 | — |
+
+## [thombashi/pytablewriter](https://github.com/thombashi/pytablewriter)
+
+| 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
+| :-- | :-- | :-- | :-- |
+| 开放 | [#87 · Preserve multiline cells and headers in RST grid tables](https://github.com/thombashi/pytablewriter/pull/87) | 2026-11-01 | — |
+| 开放 | [#86 · Add optional tabular output to LatexTableWriter](https://github.com/thombashi/pytablewriter/pull/86) | 2026-11-01 | — |
+| 开放 | [#85 · Add Confluence Wiki table writer](https://github.com/thombashi/pytablewriter/pull/85) | 2026-11-01 | — |
+
+## [thombashi/pathvalidate](https://github.com/thombashi/pathvalidate)
+
+| 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
+| :-- | :-- | :-- | :-- |
+| 开放 | [#82 · Add opt-in length policies for filename and filepath sanitization](https://github.com/thombashi/pathvalidate/pull/82) | 2026-11-01 | — |
+| 开放 | [#81 · Recheck reserved filenames after trimming Windows edge spaces](https://github.com/thombashi/pathvalidate/pull/81) | 2026-11-01 | — |
+
+## [easychen/CookieCloud](https://github.com/easychen/CookieCloud)
+
+| 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
+| :-- | :-- | :-- | :-- |
+| 开放 | [#123 · 修复同步域名关键词留空时 Local Storage 不同步的问题](https://github.com/easychen/CookieCloud/pull/123) | 2026-03-04 | — |
+
+## [fsspec/filesystem_spec](https://github.com/fsspec/filesystem_spec)
+
+| 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
+| :-- | :-- | :-- | :-- |
+| 开放 | [#2412 · Speed up repeated MemoryFileSystem walk listings](https://github.com/fsspec/filesystem_spec/pull/2412) | 2026-11-01 | — |
+
+## [numman-ali/openskills](https://github.com/numman-ali/openskills)
+
+| 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
+| :-- | :-- | :-- | :-- |
+| 开放 | [#80 · feat: support installing skills from specific git branches and keep updates pinned](https://github.com/numman-ali/openskills/pull/80) | 2026-03-04 | — |
+
+## [pytest-dev/pytest](https://github.com/pytest-dev/pytest)
+
+| 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
+| :-- | :-- | :-- | :-- |
+| 开放 | [#15313 · Expose a public traceback filter for custom test nodes](https://github.com/pytest-dev/pytest/pull/15313) | 2026-11-01 | — |
+
+## [python-injector/injector](https://github.com/python-injector/injector)
+
+| 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
+| :-- | :-- | :-- | :-- |
+| 开放 | [#331 · Fix class-level noninjectable constructor exclusions](https://github.com/python-injector/injector/pull/331) | 2026-11-01 | — |
+
+## [thombashi/DateTimeRange](https://github.com/thombashi/DateTimeRange)
+
+| 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
+| :-- | :-- | :-- | :-- |
+| 开放 | [#66 · Fix validation of naive datetime boundaries](https://github.com/thombashi/DateTimeRange/pull/66) | 2026-11-01 | — |
+
+## [thombashi/mbstrdecoder](https://github.com/thombashi/mbstrdecoder)
+
+| 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
+| :-- | :-- | :-- | :-- |
+| 开放 | [#20 · Avoid deep copying immutable codec candidate names](https://github.com/thombashi/mbstrdecoder/pull/20) | 2026-11-01 | — |
+
+## [YunYouJun/air-conditioner](https://github.com/YunYouJun/air-conditioner)
+
+| 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
+| :-- | :-- | :-- | :-- |
+| 已合并 | [#161 · 升级到React 18](https://github.com/YunYouJun/air-conditioner/pull/161) | 2022-11-24 | 2022-11-24 |

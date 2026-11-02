@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="400" viewBox="0 0 1120 400" role="img" aria-labelledby="title desc">
+  <title id="title">Liu Feiyu — Build. Fix. Contribute.</title>
+  <desc id="desc">An open source workbench. AI tooling, developer experience, open source.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101e33"/><stop offset="1" stop-color="#080e1a"/></linearGradient>
+    <linearGradient id="accent"><stop stop-color="#58ead5"/><stop offset="1" stop-color="#7cafff"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#35d6b9" stop-opacity=".17"/><stop offset="1" stop-color="#35d6b9" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#8aa4c8" stroke-opacity=".055"/></pattern>
+  </defs>
+  <rect width="1120" height="400" rx="22" fill="url(#bg)"/>
+  <rect width="1120" height="400" rx="22" fill="url(#grid)"/>
+  <ellipse cx="920" cy="210" rx="300" ry="280" fill="url(#glow)"/>
+  <path d="M32 40H56M32 40V64M1088 336V360H1064" fill="none" stroke="#58ead5" stroke-width="2"/>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+    <text x="64" y="70" fill="#58ead5" font-size="15" letter-spacing="3">BOYFEIYU / OPEN SOURCE WORKBENCH</text>
+    <text x="64" y="161" fill="#edf5ff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="76" font-weight="750" letter-spacing="-3">Liu Feiyu<tspan fill="#58ead5">.</tspan></text>
+    <text x="67" y="213" fill="url(#accent)" font-size="26" font-weight="600" letter-spacing="2">BUILD. FIX. CONTRIBUTE.</text>
+    <text x="67" y="256" fill="#a1b2c8" font-size="17">Turning everyday friction into useful fixes.</text>
+    <g font-size="13" fill="#c5d4e7" text-anchor="middle">
+      <rect x="64" y="304" width="124" height="34" rx="17" fill="#172b3a" stroke="#294758"/><text x="126" y="326">AI TOOLING</text>
+      <rect x="200" y="304" width="220" height="34" rx="17" fill="#142237" stroke="#2a3c56"/><text x="310" y="326">DEVELOPER EXPERIENCE</text>
+      <rect x="432" y="304" width="140" height="34" rx="17" fill="#142237" stroke="#2a3c56"/><text x="502" y="326">OPEN SOURCE</text>
+    </g>
+    <g transform="translate(788 103)">
+      <rect width="248" height="190" rx="14" fill="#0b1523" stroke="#2c4054"/>
+      <path d="M0 38H248" stroke="#2c4054"/><circle cx="20" cy="19" r="4" fill="#ff8d82"/><circle cx="36" cy="19" r="4" fill="#efc76c"/><circle cx="52" cy="19" r="4" fill="#58ead5"/>
+      <text x="22" y="75" fill="#7391aa" font-size="13">~/open-source</text>
+      <text x="22" y="108" fill="#58ead5" font-size="18">$ ship --with-care</text>
+      <text x="22" y="144" fill="#b8cadd" font-size="14">[+] fix the edge case</text>
+      <text x="22" y="169" fill="#b8cadd" font-size="14">[+] leave a trace</text>
+    </g>
+  </g>
+  <rect x=".5" y=".5" width="1119" height="399" rx="22" fill="none" stroke="#283950"/>
+</svg>
