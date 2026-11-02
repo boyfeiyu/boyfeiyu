@@ -12,7 +12,7 @@
 
 🎓 西北农林科技大学 · 计算机本科（2020–2024）
 
-最近的公开贡献涉及 **AI 开发工具、CLI、Python 工具库与测试基础设施**。下面直接展示做了什么、提交到哪里，以及当前的合并状态。
+最近的公开贡献涉及 **AI 开发工具、CLI、Python 工具库与测试基础设施**。下面用图概览公开贡献，项目与 PR 明细可点击查看。
 
 ### 开源贡献 / Open source
 
@@ -24,44 +24,6 @@
 
 数据核验于 **2026-11-02 09:55:53 UTC**，每天自动刷新。
 仅统计本人发起的公开外部 PR；开放状态表示尚未合并。数字是当前快照，不代表完整历史贡献量。
-
-#### [multica-ai/multica](https://github.com/multica-ai/multica)
-
-3 条已合并 / 10 条开放。以下为各状态最近更新的 PR，标题来自 GitHub。
-
-| 状态 | 具体贡献 / PR 原始标题 |
-| :-- | :-- |
-| 已合并 | [#9778 · MUL-8453: fix\(daemon\): retry tasks interrupted by shutdown](https://github.com/multica-ai/multica/pull/9778) |
-| 已合并 | [#9776 · MUL-8457: test\(lark\): isolate legacy receipt backfill databases](https://github.com/multica-ai/multica/pull/9776) |
-| 开放 | [#9811 · fix\(cli\): acknowledge label attachment without returned labels \(BOYF-256\)](https://github.com/multica-ai/multica/pull/9811) |
-| 开放 | [#9781 · feat\(autopilot\): support finite schedule execution counts](https://github.com/multica-ai/multica/pull/9781) |
-
-#### [mahmoud/boltons](https://github.com/mahmoud/boltons)
-
-0 条已合并 / 4 条开放。以下为各状态最近更新的 PR，标题来自 GitHub。
-
-| 状态 | 具体贡献 / PR 原始标题 |
-| :-- | :-- |
-| 开放 | [#713 · Fix semicolon escaping in query parameters \(BOYF-258\)](https://github.com/mahmoud/boltons/pull/713) |
-| 开放 | [#709 · Fix JSONL reverse iteration splitting valid Unicode strings \(BOYF-246\)](https://github.com/mahmoud/boltons/pull/709) |
-
-#### [thombashi/pytablewriter](https://github.com/thombashi/pytablewriter)
-
-0 条已合并 / 3 条开放。以下为各状态最近更新的 PR，标题来自 GitHub。
-
-| 状态 | 具体贡献 / PR 原始标题 |
-| :-- | :-- |
-| 开放 | [#87 · Preserve multiline cells and headers in RST grid tables](https://github.com/thombashi/pytablewriter/pull/87) |
-| 开放 | [#86 · Add optional tabular output to LatexTableWriter](https://github.com/thombashi/pytablewriter/pull/86) |
-
-#### [thombashi/pathvalidate](https://github.com/thombashi/pathvalidate)
-
-0 条已合并 / 2 条开放。以下为各状态最近更新的 PR，标题来自 GitHub。
-
-| 状态 | 具体贡献 / PR 原始标题 |
-| :-- | :-- |
-| 开放 | [#82 · Add opt-in length policies for filename and filepath sanitization](https://github.com/thombashi/pathvalidate/pull/82) |
-| 开放 | [#81 · Recheck reserved filenames after trimming Windows edge spaces](https://github.com/thombashi/pathvalidate/pull/81) |
 
 [查看全部项目与 PR →](docs/contributions.md) · [原始数据 JSON](data/contributions.json) · [GitHub 实时记录](https://github.com/pulls?q=is%3Apr+author%3Aboyfeiyu+is%3Apublic)
 

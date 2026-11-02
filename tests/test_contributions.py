@@ -81,7 +81,7 @@ class ContributionTests(unittest.TestCase):
     def test_untrusted_titles_escape_markdown_html_and_newlines(self):
         pr = node()
         pr['title'] = 'Fix | [click](https://evil.test) <img src=x> ![image](url)\nnew row'
-        section = profile.readme_section(self.snapshot([pr]))
+        section = profile.archive(self.snapshot([pr]))
         self.assertIn(r'Fix \| \[click\]\(https://evil.test\)', section)
         self.assertIn('&lt;img src=x&gt;', section)
         self.assertNotIn('<img src=x>', section)
@@ -90,7 +90,7 @@ class ContributionTests(unittest.TestCase):
 
     def test_draft_is_open_and_merge_state_requires_timestamp(self):
         snapshot = self.snapshot([node(draft=True), node(2, state='MERGED')])
-        section = profile.readme_section(snapshot)
+        section = profile.archive(snapshot)
         self.assertIn('| 草稿 / 开放 |', section)
         self.assertIn('| 已合并 |', section)
         next(p for p in snapshot['pullRequests'] if p['state'] == 'OPEN')['mergedAt'] = NOW
@@ -143,11 +143,16 @@ class ContributionTests(unittest.TestCase):
         self.assertIn('0 条已合并 · 0 条开放', profile.readme_section(snapshot))
         ET.fromstring(profile.summary_svg(snapshot))
 
-    def test_readme_is_bounded_but_archive_keeps_every_pr(self):
+    def test_readme_keeps_summary_image_and_archive_keeps_every_pr(self):
         snapshot = self.snapshot([node(n, repo=f'org/project{n % 6}') for n in range(1, 31)])
-        self.assertEqual(profile.readme_section(snapshot).count('#### ['), 4)
+        section = profile.readme_section(snapshot)
+        self.assertIn('(assets/contributions.svg)', section)
+        self.assertIn('(docs/contributions.md)', section)
+        self.assertNotIn('#### [', section)
+        self.assertFalse(any(line.startswith('|') for line in section.splitlines()))
         archive = profile.archive(snapshot)
         for pr in snapshot['pullRequests']:
+            self.assertNotIn(pr['url'], section)
             self.assertIn(pr['url'], archive)
 
 

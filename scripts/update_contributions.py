@@ -208,20 +208,6 @@ def readme_section(snapshot):
     ]
     if not prs:
         rows.append('当前没有符合口径的 PR。')
-    for repo, items in groups(snapshot)[:4]:
-        merged_prs = [p for p in items if p['state'] == 'MERGED']
-        open_prs = [p for p in items if p['state'] == 'OPEN']
-        rows.extend([
-            f'#### [{repo}](https://github.com/{repo})',
-            '',
-            f'{len(merged_prs)} 条已合并 / {len(open_prs)} 条开放。以下为各状态最近更新的 PR，标题来自 GitHub。',
-            '',
-            '| 状态 | 具体贡献 / PR 原始标题 |',
-            '| :-- | :-- |',
-        ])
-        for pr in merged_prs[:2] + open_prs[:2]:
-            rows.append(f'| {status(pr)} | {pr_link(pr)} |')
-        rows.append('')
     rows.extend([
         '[查看全部项目与 PR →](docs/contributions.md) · [原始数据 JSON](data/contributions.json) · '
         '[GitHub 实时记录](https://github.com/pulls?q=is%3Apr+author%3Aboyfeiyu+is%3Apublic)',
