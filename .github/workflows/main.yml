@@ -1,38 +1,117 @@
-name: generate animation
+name: Refresh profile
 
 on:
-  # run automatically every 12 hours
   schedule:
-    - cron: '0 */12 * * *'
-
-  # allows to manually run the job at any time
+    # Daily at 10:17 Asia/Shanghai (02:17 UTC), away from the busy hour boundary.
+    - cron: '17 2 * * *'
   workflow_dispatch:
-
-  # run on every push on the master branch
   push:
-    branches:
-      - master
+    branches: [main]
+    paths:
+      - README.md
+      - 'assets/**'
+      - 'scripts/**'
+      - 'tests/**'
+      - '.github/workflows/main.yml'
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+# Serialize runs to avoid two refreshes racing to update the same branch.
+concurrency:
+  group: profile-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
-  generate:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          persist-credentials: false
+      - name: Test refresh logic and check committed snapshot
+        run: |
+          python3 -m unittest discover -s tests -v
+          python3 scripts/update_contributions.py --check
+
+  contributions:
+    needs: test
+    if: github.repository == 'boyfeiyu/boyfeiyu' && github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     timeout-minutes: 10
-
     steps:
-      # generates a snake game from a github user (<github_user_name>) contributions graph, output a svg animation at <svg_out_path>
-      - name: generate github-contribution-grid-snake.svg
-        uses: Platane/snk/svg-only@v2
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
         with:
-          github_user_name: ${{ github.repository_owner }}
+          ref: main
+      - name: Fetch public authored PRs and render profile
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/update_contributions.py
+      - name: Commit verified contribution snapshot
+        env:
+          GIT_AUTHOR_NAME: github-actions[bot]
+          GIT_AUTHOR_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+          GIT_COMMITTER_NAME: github-actions[bot]
+          GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+        run: |
+          python3 scripts/update_contributions.py --check
+          git add -- README.md assets/contributions.svg data/contributions.json docs/contributions.md
+          if git diff --cached --quiet; then
+            echo 'Contribution snapshot is unchanged.'
+          else
+            git commit -m "chore(profile): refresh public contribution snapshot"
+            git push origin HEAD:main
+          fi
+
+  snake:
+    # Independent of contributions: an API/README failure must not stop the snake.
+    if: github.repository == 'boyfeiyu/boyfeiyu' && github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Generate light and dark contribution snakes
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3.5.0, Node 24
+        with:
+          github_user_name: boyfeiyu
+          github_token: ${{ github.token }}
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-      # push the content of <build_dir> to a branch
-      # the content will be available at https://raw.githubusercontent.com/<github_user>/<repository>/<target_branch>/<file> , or as github page
-      - name: push github-contribution-grid-snake.svg to the output branch
-        uses: crazy-max/ghaction-github-pages@v2.6.0
+      - name: Validate both SVGs before publishing
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+          for name in ('github-contribution-grid-snake.svg', 'github-contribution-grid-snake-dark.svg'):
+              path = Path('dist') / name
+              assert path.stat().st_size > 1000, f'Empty or truncated SVG: {name}'
+              assert ET.parse(path).getroot().tag == '{http://www.w3.org/2000/svg}svg'
+          PY
+      - name: Check out existing output history
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
         with:
-          target_branch: output
-          build_dir: dist
+          ref: output
+          path: snake-output
+      - name: Publish snake assets without rewriting history
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GIT_AUTHOR_NAME: github-actions[bot]
+          GIT_AUTHOR_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+          GIT_COMMITTER_NAME: github-actions[bot]
+          GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+        run: |
+          cp dist/github-contribution-grid-snake.svg dist/github-contribution-grid-snake-dark.svg snake-output/
+          cd snake-output
+          git add -- github-contribution-grid-snake.svg github-contribution-grid-snake-dark.svg
+          if git diff --cached --quiet; then
+            echo 'Snake assets are unchanged.'
+          else
+            git commit -m "chore(profile): refresh contribution snakes"
+            git push origin HEAD:output
+          fi
