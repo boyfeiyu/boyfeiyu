@@ -1,10 +1,87 @@
 {
   "schemaVersion": 1,
   "username": "boyfeiyu",
-  "fetchedAt": "2026-11-02T18:19:13Z",
+  "fetchedAt": "2026-11-03T07:12:31Z",
   "scope": "Authored public PRs in repositories not owned by boyfeiyu; OPEN and MERGED only. Closed unmerged PRs are excluded.",
   "source": "https://api.github.com/graphql",
   "pullRequests": [
+    {
+      "repository": "multica-ai/multica",
+      "number": 9831,
+      "title": "MUL-8511: fix(views): preserve scalar property drafts during live updates (BOYF-301)",
+      "url": "https://github.com/multica-ai/multica/pull/9831",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-02T17:37:46Z",
+      "updatedAt": "2026-11-03T07:01:39Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 9829,
+      "title": "fix(views): preserve IME input in filters, title rename and find (MUL-8509)",
+      "url": "https://github.com/multica-ai/multica/pull/9829",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-02T15:52:43Z",
+      "updatedAt": "2026-11-03T06:55:20Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 9827,
+      "title": "MUL-8507 BOYF-268 fix(cli): preserve quotes and commas in metadata filters",
+      "url": "https://github.com/multica-ai/multica/pull/9827",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-02T14:42:23Z",
+      "updatedAt": "2026-11-03T06:51:23Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 9856,
+      "title": "fix(cli): include profile and server context in workspace 404 errors",
+      "url": "https://github.com/multica-ai/multica/pull/9856",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-03T03:54:49Z",
+      "updatedAt": "2026-11-03T03:54:55Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "vuejs/pinia",
+      "number": 3205,
+      "title": "fix(types): exclude once from subscription options (BOYF-273)",
+      "url": "https://github.com/vuejs/pinia/pull/3205",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-02T15:45:50Z",
+      "updatedAt": "2026-11-03T00:48:17Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "python-injector/injector",
+      "number": 331,
+      "title": "Fix class-level noninjectable constructor exclusions",
+      "url": "https://github.com/python-injector/injector/pull/331",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-10-30T16:45:23Z",
+      "updatedAt": "2026-11-02T20:41:02Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "floating-ui/floating-ui",
+      "number": 3542,
+      "title": "fix(vue): initialize populated element refs (BOYF-314)",
+      "url": "https://github.com/floating-ui/floating-ui/pull/3542",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-02T19:13:04Z",
+      "updatedAt": "2026-11-02T19:14:28Z",
+      "mergedAt": null
+    },
     {
       "repository": "floating-ui/floating-ui",
       "number": 3541,
@@ -14,50 +91,6 @@
       "isDraft": false,
       "createdAt": "2026-11-02T17:07:46Z",
       "updatedAt": "2026-11-02T17:50:53Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "vuejs/pinia",
-      "number": 3205,
-      "title": "fix(subscribe): honor once across patch notifications (BOYF-273)",
-      "url": "https://github.com/vuejs/pinia/pull/3205",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-02T15:45:50Z",
-      "updatedAt": "2026-11-02T17:43:03Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
-      "number": 9831,
-      "title": "fix(views): preserve scalar property drafts during live updates (BOYF-301)",
-      "url": "https://github.com/multica-ai/multica/pull/9831",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-02T17:37:46Z",
-      "updatedAt": "2026-11-02T17:37:52Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
-      "number": 9829,
-      "title": "fix(views): guard filter IME confirmation Enter (BOYF-278)",
-      "url": "https://github.com/multica-ai/multica/pull/9829",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-02T15:52:43Z",
-      "updatedAt": "2026-11-02T15:52:48Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
-      "number": 9827,
-      "title": "BOYF-268 fix(cli): preserve quotes and commas in metadata filters",
-      "url": "https://github.com/multica-ai/multica/pull/9827",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-02T14:42:23Z",
-      "updatedAt": "2026-11-02T14:42:29Z",
       "mergedAt": null
     },
     {
@@ -201,17 +234,6 @@
       "isDraft": false,
       "createdAt": "2026-10-31T03:28:40Z",
       "updatedAt": "2026-11-01T10:10:54Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "python-injector/injector",
-      "number": 331,
-      "title": "Fix class-level noninjectable constructor exclusions",
-      "url": "https://github.com/python-injector/injector/pull/331",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-10-30T16:45:23Z",
-      "updatedAt": "2026-11-01T10:10:44Z",
       "mergedAt": null
     },
     {
