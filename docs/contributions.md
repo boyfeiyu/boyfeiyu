@@ -1,6 +1,6 @@
 # 公开开源贡献 / Public contributions
 
-数据核验时间：**2026-11-04T06:49:47Z**。
+数据核验时间：**2026-11-04T09:20:05Z**。
 
 来源：GitHub GraphQL `user(login: "boyfeiyu").pullRequests`，逐页读取至末页。
 口径：本人发起、公开、仓库所有者不是 boyfeiyu、状态为已合并或开放（含草稿）的 PR。
@@ -120,7 +120,7 @@
 
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
 | :-- | :-- | :-- | :-- |
-| 开放 | [#3205 · fix\(types\): exclude once from subscription options \(BOYF-273\)](https://github.com/vuejs/pinia/pull/3205) | 2026-11-03 | — |
+| 已合并 | [#3205 · fix\(types\): exclude once from subscription options \(BOYF-273\)](https://github.com/vuejs/pinia/pull/3205) | 2026-11-04 | 2026-11-04 |
 
 ## [YunYouJun/air-conditioner](https://github.com/YunYouJun/air-conditioner)
 
