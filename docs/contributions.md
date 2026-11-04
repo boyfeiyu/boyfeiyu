@@ -1,6 +1,6 @@
 # 公开开源贡献 / Public contributions
 
-数据核验时间：**2026-11-04T02:27:43Z**。
+数据核验时间：**2026-11-04T06:20:58Z**。
 
 来源：GitHub GraphQL `user(login: "boyfeiyu").pullRequests`，逐页读取至末页。
 口径：本人发起、公开、仓库所有者不是 boyfeiyu、状态为已合并或开放（含草稿）的 PR。
@@ -12,11 +12,11 @@
 
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
 | :-- | :-- | :-- | :-- |
+| 已合并 | [#9811 · fix\(cli\): acknowledge label attachment without returned labels \(BOYF-256\) MUL-8494](https://github.com/multica-ai/multica/pull/9811) | 2026-11-04 | 2026-11-04 |
 | 开放 | [#9831 · MUL-8511: fix\(views\): preserve scalar property drafts during live updates \(BOYF-301\)](https://github.com/multica-ai/multica/pull/9831) | 2026-11-03 | — |
 | 开放 | [#9829 · fix\(views\): preserve IME input in filters, title rename and find \(MUL-8509\)](https://github.com/multica-ai/multica/pull/9829) | 2026-11-03 | — |
 | 开放 | [#9827 · MUL-8507 BOYF-268 fix\(cli\): preserve quotes and commas in metadata filters](https://github.com/multica-ai/multica/pull/9827) | 2026-11-03 | — |
 | 开放 | [#9856 · fix\(cli\): include profile and server context in workspace 404 errors](https://github.com/multica-ai/multica/pull/9856) | 2026-11-03 | — |
-| 开放 | [#9811 · fix\(cli\): acknowledge label attachment without returned labels \(BOYF-256\)](https://github.com/multica-ai/multica/pull/9811) | 2026-11-02 | — |
 | 已合并 | [#9778 · MUL-8453: fix\(daemon\): retry tasks interrupted by shutdown](https://github.com/multica-ai/multica/pull/9778) | 2026-11-02 | 2026-11-02 |
 | 已合并 | [#9776 · MUL-8457: test\(lark\): isolate legacy receipt backfill databases](https://github.com/multica-ai/multica/pull/9776) | 2026-11-02 | 2026-11-02 |
 | 已合并 | [#9787 · MUL-8462: fix\(cli\): preserve literal issue attachment paths](https://github.com/multica-ai/multica/pull/9787) | 2026-11-02 | 2026-11-02 |

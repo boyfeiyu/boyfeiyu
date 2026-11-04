@@ -1,10 +1,21 @@
 {
   "schemaVersion": 1,
   "username": "boyfeiyu",
-  "fetchedAt": "2026-11-04T02:27:43Z",
+  "fetchedAt": "2026-11-04T06:20:58Z",
   "scope": "Authored public PRs in repositories not owned by boyfeiyu; OPEN and MERGED only. Closed unmerged PRs are excluded.",
   "source": "https://api.github.com/graphql",
   "pullRequests": [
+    {
+      "repository": "multica-ai/multica",
+      "number": 9811,
+      "title": "fix(cli): acknowledge label attachment without returned labels (BOYF-256) MUL-8494",
+      "url": "https://github.com/multica-ai/multica/pull/9811",
+      "state": "MERGED",
+      "isDraft": false,
+      "createdAt": "2026-11-02T09:17:20Z",
+      "updatedAt": "2026-11-04T04:53:15Z",
+      "mergedAt": "2026-11-04T04:53:15Z"
+    },
     {
       "repository": "tox-dev/filelock",
       "number": 905,
@@ -135,17 +146,6 @@
       "isDraft": false,
       "createdAt": "2026-11-02T09:19:15Z",
       "updatedAt": "2026-11-02T09:19:15Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
-      "number": 9811,
-      "title": "fix(cli): acknowledge label attachment without returned labels (BOYF-256)",
-      "url": "https://github.com/multica-ai/multica/pull/9811",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-02T09:17:20Z",
-      "updatedAt": "2026-11-02T09:17:29Z",
       "mergedAt": null
     },
     {
