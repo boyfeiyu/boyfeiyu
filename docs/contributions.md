@@ -1,6 +1,6 @@
 # 公开开源贡献 / Public contributions
 
-数据核验时间：**2026-11-03T09:37:24Z**。
+数据核验时间：**2026-11-04T02:27:43Z**。
 
 来源：GitHub GraphQL `user(login: "boyfeiyu").pullRequests`，逐页读取至末页。
 口径：本人发起、公开、仓库所有者不是 boyfeiyu、状态为已合并或开放（含草稿）的 PR。
@@ -54,6 +54,13 @@
 | 开放 | [#3542 · fix\(vue\): initialize populated element refs \(BOYF-314\)](https://github.com/floating-ui/floating-ui/pull/3542) | 2026-11-02 | — |
 | 开放 | [#3541 · fix\(vue\): ignore stale async positioning results \(BOYF-294\)](https://github.com/floating-ui/floating-ui/pull/3541) | 2026-11-02 | — |
 
+## [fsspec/filesystem_spec](https://github.com/fsspec/filesystem_spec)
+
+| 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
+| :-- | :-- | :-- | :-- |
+| 开放 | [#2422 · Quote development install extras to prevent shell expansion](https://github.com/fsspec/filesystem_spec/pull/2422) | 2026-11-03 | — |
+| 开放 | [#2412 · Speed up repeated MemoryFileSystem walk listings](https://github.com/fsspec/filesystem_spec/pull/2412) | 2026-11-01 | — |
+
 ## [thombashi/pathvalidate](https://github.com/thombashi/pathvalidate)
 
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
@@ -66,12 +73,6 @@
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
 | :-- | :-- | :-- | :-- |
 | 开放 | [#123 · 修复同步域名关键词留空时 Local Storage 不同步的问题](https://github.com/easychen/CookieCloud/pull/123) | 2026-03-04 | — |
-
-## [fsspec/filesystem_spec](https://github.com/fsspec/filesystem_spec)
-
-| 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
-| :-- | :-- | :-- | :-- |
-| 开放 | [#2412 · Speed up repeated MemoryFileSystem walk listings](https://github.com/fsspec/filesystem_spec/pull/2412) | 2026-11-01 | — |
 
 ## [numman-ali/openskills](https://github.com/numman-ali/openskills)
 
@@ -91,6 +92,12 @@
 | :-- | :-- | :-- | :-- |
 | 开放 | [#331 · Fix class-level noninjectable constructor exclusions](https://github.com/python-injector/injector/pull/331) | 2026-11-02 | — |
 
+## [simonw/llm](https://github.com/simonw/llm)
+
+| 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
+| :-- | :-- | :-- | :-- |
+| 开放 | [#1847 · Fix integer enum option types in models --options](https://github.com/simonw/llm/pull/1847) | 2026-11-03 | — |
+
 ## [thombashi/DateTimeRange](https://github.com/thombashi/DateTimeRange)
 
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
@@ -102,6 +109,12 @@
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
 | :-- | :-- | :-- | :-- |
 | 开放 | [#20 · Avoid deep copying immutable codec candidate names](https://github.com/thombashi/mbstrdecoder/pull/20) | 2026-11-01 | — |
+
+## [tox-dev/filelock](https://github.com/tox-dev/filelock)
+
+| 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
+| :-- | :-- | :-- | :-- |
+| 已合并 | [#905 · 📝 docs\(descriptor\): clarify native lock protocol compatibility](https://github.com/tox-dev/filelock/pull/905) | 2026-11-03 | 2026-11-03 |
 
 ## [vuejs/pinia](https://github.com/vuejs/pinia)
 

@@ -1,10 +1,43 @@
 {
   "schemaVersion": 1,
   "username": "boyfeiyu",
-  "fetchedAt": "2026-11-03T09:37:24Z",
+  "fetchedAt": "2026-11-04T02:27:43Z",
   "scope": "Authored public PRs in repositories not owned by boyfeiyu; OPEN and MERGED only. Closed unmerged PRs are excluded.",
   "source": "https://api.github.com/graphql",
   "pullRequests": [
+    {
+      "repository": "tox-dev/filelock",
+      "number": 905,
+      "title": "📝 docs(descriptor): clarify native lock protocol compatibility",
+      "url": "https://github.com/tox-dev/filelock/pull/905",
+      "state": "MERGED",
+      "isDraft": false,
+      "createdAt": "2026-11-03T11:54:49Z",
+      "updatedAt": "2026-11-03T16:28:46Z",
+      "mergedAt": "2026-11-03T16:28:45Z"
+    },
+    {
+      "repository": "simonw/llm",
+      "number": 1847,
+      "title": "Fix integer enum option types in models --options",
+      "url": "https://github.com/simonw/llm/pull/1847",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-03T13:41:30Z",
+      "updatedAt": "2026-11-03T13:41:30Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "fsspec/filesystem_spec",
+      "number": 2422,
+      "title": "Quote development install extras to prevent shell expansion",
+      "url": "https://github.com/fsspec/filesystem_spec/pull/2422",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-03T11:44:19Z",
+      "updatedAt": "2026-11-03T11:44:19Z",
+      "mergedAt": null
+    },
     {
       "repository": "multica-ai/multica",
       "number": 9831,
