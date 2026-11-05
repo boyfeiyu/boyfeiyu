@@ -1,10 +1,76 @@
 {
   "schemaVersion": 1,
   "username": "boyfeiyu",
-  "fetchedAt": "2026-11-05T09:32:52Z",
+  "fetchedAt": "2026-11-05T17:18:37Z",
   "scope": "Authored public PRs in repositories not owned by boyfeiyu; OPEN and MERGED only. Closed unmerged PRs are excluded.",
   "source": "https://api.github.com/graphql",
   "pullRequests": [
+    {
+      "repository": "multica-ai/multica",
+      "number": 10010,
+      "title": "MUL-8666 fix(cli): classify interrupted attachment downloads as network errors",
+      "url": "https://github.com/multica-ai/multica/pull/10010",
+      "state": "MERGED",
+      "isDraft": false,
+      "createdAt": "2026-11-05T15:09:23Z",
+      "updatedAt": "2026-11-05T17:13:36Z",
+      "mergedAt": "2026-11-05T17:13:36Z"
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10011,
+      "title": "fix(ui): preserve modifier shortcuts in time inputs",
+      "url": "https://github.com/multica-ai/multica/pull/10011",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-05T15:11:04Z",
+      "updatedAt": "2026-11-05T15:11:10Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "python-injector/injector",
+      "number": 332,
+      "title": "Respect class-level singleton decorators in multibindings",
+      "url": "https://github.com/python-injector/injector/pull/332",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-05T13:41:15Z",
+      "updatedAt": "2026-11-05T13:41:15Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 9827,
+      "title": "MUL-8507 BOYF-268 fix(cli): preserve quotes and commas in metadata filters",
+      "url": "https://github.com/multica-ai/multica/pull/9827",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-02T14:42:23Z",
+      "updatedAt": "2026-11-05T12:47:08Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10003,
+      "title": "feat(layout): include Inbox in Work navigation",
+      "url": "https://github.com/multica-ai/multica/pull/10003",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-05T12:14:20Z",
+      "updatedAt": "2026-11-05T12:14:28Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10001,
+      "title": "fix(issues): show safe load errors and scoped retry",
+      "url": "https://github.com/multica-ai/multica/pull/10001",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-05T10:31:18Z",
+      "updatedAt": "2026-11-05T10:31:25Z",
+      "mergedAt": null
+    },
     {
       "repository": "multica-ai/multica",
       "number": 9989,
@@ -201,17 +267,6 @@
       "isDraft": false,
       "createdAt": "2026-11-03T11:44:19Z",
       "updatedAt": "2026-11-03T11:44:19Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
-      "number": 9827,
-      "title": "MUL-8507 BOYF-268 fix(cli): preserve quotes and commas in metadata filters",
-      "url": "https://github.com/multica-ai/multica/pull/9827",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-02T14:42:23Z",
-      "updatedAt": "2026-11-03T06:51:23Z",
       "mergedAt": null
     },
     {

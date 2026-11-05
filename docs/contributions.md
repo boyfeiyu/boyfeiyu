@@ -1,6 +1,6 @@
 # 公开开源贡献 / Public contributions
 
-数据核验时间：**2026-11-05T09:32:52Z**。
+数据核验时间：**2026-11-05T17:18:37Z**。
 
 来源：GitHub GraphQL `user(login: "boyfeiyu").pullRequests`，逐页读取至末页。
 口径：本人发起、公开、仓库所有者不是 boyfeiyu、状态为已合并或开放（含草稿）的 PR。
@@ -12,6 +12,11 @@
 
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
 | :-- | :-- | :-- | :-- |
+| 已合并 | [#10010 · MUL-8666 fix\(cli\): classify interrupted attachment downloads as network errors](https://github.com/multica-ai/multica/pull/10010) | 2026-11-05 | 2026-11-05 |
+| 开放 | [#10011 · fix\(ui\): preserve modifier shortcuts in time inputs](https://github.com/multica-ai/multica/pull/10011) | 2026-11-05 | — |
+| 开放 | [#9827 · MUL-8507 BOYF-268 fix\(cli\): preserve quotes and commas in metadata filters](https://github.com/multica-ai/multica/pull/9827) | 2026-11-05 | — |
+| 开放 | [#10003 · feat\(layout\): include Inbox in Work navigation](https://github.com/multica-ai/multica/pull/10003) | 2026-11-05 | — |
+| 开放 | [#10001 · fix\(issues\): show safe load errors and scoped retry](https://github.com/multica-ai/multica/pull/10001) | 2026-11-05 | — |
 | 开放 | [#9989 · feat\(issues\): suggest recent issues when choosing a parent](https://github.com/multica-ai/multica/pull/9989) | 2026-11-05 | — |
 | 开放 | [#9986 · feat\(wakeups\): add opt-in sub-issue report barrier](https://github.com/multica-ai/multica/pull/9986) | 2026-11-05 | — |
 | 已合并 | [#9981 · MUL-8642: fix\(search\): preserve delegation during IME Shift+Enter](https://github.com/multica-ai/multica/pull/9981) | 2026-11-05 | 2026-11-05 |
@@ -25,7 +30,6 @@
 | 已合并 | [#9829 · fix\(views\): preserve IME input in filters, title rename and find \(MUL-8509\)](https://github.com/multica-ai/multica/pull/9829) | 2026-11-04 | 2026-11-04 |
 | 已合并 | [#9831 · MUL-8511: fix\(views\): preserve scalar property drafts during live updates \(BOYF-301\)](https://github.com/multica-ai/multica/pull/9831) | 2026-11-04 | 2026-11-04 |
 | 已合并 | [#9811 · fix\(cli\): acknowledge label attachment without returned labels \(BOYF-256\) MUL-8494](https://github.com/multica-ai/multica/pull/9811) | 2026-11-04 | 2026-11-04 |
-| 开放 | [#9827 · MUL-8507 BOYF-268 fix\(cli\): preserve quotes and commas in metadata filters](https://github.com/multica-ai/multica/pull/9827) | 2026-11-03 | — |
 | 开放 | [#9856 · fix\(cli\): include profile and server context in workspace 404 errors](https://github.com/multica-ai/multica/pull/9856) | 2026-11-03 | — |
 | 已合并 | [#9778 · MUL-8453: fix\(daemon\): retry tasks interrupted by shutdown](https://github.com/multica-ai/multica/pull/9778) | 2026-11-02 | 2026-11-02 |
 | 已合并 | [#9776 · MUL-8457: test\(lark\): isolate legacy receipt backfill databases](https://github.com/multica-ai/multica/pull/9776) | 2026-11-02 | 2026-11-02 |
@@ -68,6 +72,13 @@
 | 开放 | [#3542 · fix\(vue\): initialize populated element refs \(BOYF-314\)](https://github.com/floating-ui/floating-ui/pull/3542) | 2026-11-02 | — |
 | 开放 | [#3541 · fix\(vue\): ignore stale async positioning results \(BOYF-294\)](https://github.com/floating-ui/floating-ui/pull/3541) | 2026-11-02 | — |
 
+## [python-injector/injector](https://github.com/python-injector/injector)
+
+| 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
+| :-- | :-- | :-- | :-- |
+| 开放 | [#332 · Respect class-level singleton decorators in multibindings](https://github.com/python-injector/injector/pull/332) | 2026-11-05 | — |
+| 开放 | [#331 · Fix class-level noninjectable constructor exclusions](https://github.com/python-injector/injector/pull/331) | 2026-11-02 | — |
+
 ## [thombashi/pathvalidate](https://github.com/thombashi/pathvalidate)
 
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
@@ -92,12 +103,6 @@
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
 | :-- | :-- | :-- | :-- |
 | 开放 | [#15313 · Expose a public traceback filter for custom test nodes](https://github.com/pytest-dev/pytest/pull/15313) | 2026-11-01 | — |
-
-## [python-injector/injector](https://github.com/python-injector/injector)
-
-| 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
-| :-- | :-- | :-- | :-- |
-| 开放 | [#331 · Fix class-level noninjectable constructor exclusions](https://github.com/python-injector/injector/pull/331) | 2026-11-02 | — |
 
 ## [simonw/llm](https://github.com/simonw/llm)
 
