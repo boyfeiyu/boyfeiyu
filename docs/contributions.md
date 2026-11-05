@@ -1,6 +1,6 @@
 # 公开开源贡献 / Public contributions
 
-数据核验时间：**2026-11-04T15:32:54Z**。
+数据核验时间：**2026-11-05T09:32:52Z**。
 
 来源：GitHub GraphQL `user(login: "boyfeiyu").pullRequests`，逐页读取至末页。
 口径：本人发起、公开、仓库所有者不是 boyfeiyu、状态为已合并或开放（含草稿）的 PR。
@@ -12,6 +12,16 @@
 
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
 | :-- | :-- | :-- | :-- |
+| 开放 | [#9989 · feat\(issues\): suggest recent issues when choosing a parent](https://github.com/multica-ai/multica/pull/9989) | 2026-11-05 | — |
+| 开放 | [#9986 · feat\(wakeups\): add opt-in sub-issue report barrier](https://github.com/multica-ai/multica/pull/9986) | 2026-11-05 | — |
+| 已合并 | [#9981 · MUL-8642: fix\(search\): preserve delegation during IME Shift+Enter](https://github.com/multica-ai/multica/pull/9981) | 2026-11-05 | 2026-11-05 |
+| 开放 | [#9975 · MUL-8634: feat\(slack\): expose source metadata in chat threads and task prompts](https://github.com/multica-ai/multica/pull/9975) | 2026-11-05 | — |
+| 开放 | [#9736 · feat: add persisted content width preference for issues and chat](https://github.com/multica-ai/multica/pull/9736) | 2026-11-04 | — |
+| 开放 | [#9781 · feat\(autopilot\): support finite schedule execution counts](https://github.com/multica-ai/multica/pull/9781) | 2026-11-04 | — |
+| 开放 | [#9740 · feat\(chat\): add project-linked chat discovery and filtering](https://github.com/multica-ai/multica/pull/9740) | 2026-11-04 | — |
+| 开放 | [#9972 · feat\(chat\): remember collapsed execution details preference](https://github.com/multica-ai/multica/pull/9972) | 2026-11-04 | — |
+| 开放 | [#9971 · feat\(agents\): add optional notes to environment variables](https://github.com/multica-ai/multica/pull/9971) | 2026-11-04 | — |
+| 开放 | [#9742 · feat\(projects\): persist lifecycle browse views \(BOYF-85\)](https://github.com/multica-ai/multica/pull/9742) | 2026-11-04 | — |
 | 已合并 | [#9829 · fix\(views\): preserve IME input in filters, title rename and find \(MUL-8509\)](https://github.com/multica-ai/multica/pull/9829) | 2026-11-04 | 2026-11-04 |
 | 已合并 | [#9831 · MUL-8511: fix\(views\): preserve scalar property drafts during live updates \(BOYF-301\)](https://github.com/multica-ai/multica/pull/9831) | 2026-11-04 | 2026-11-04 |
 | 已合并 | [#9811 · fix\(cli\): acknowledge label attachment without returned labels \(BOYF-256\) MUL-8494](https://github.com/multica-ai/multica/pull/9811) | 2026-11-04 | 2026-11-04 |
@@ -20,15 +30,11 @@
 | 已合并 | [#9778 · MUL-8453: fix\(daemon\): retry tasks interrupted by shutdown](https://github.com/multica-ai/multica/pull/9778) | 2026-11-02 | 2026-11-02 |
 | 已合并 | [#9776 · MUL-8457: test\(lark\): isolate legacy receipt backfill databases](https://github.com/multica-ai/multica/pull/9776) | 2026-11-02 | 2026-11-02 |
 | 已合并 | [#9787 · MUL-8462: fix\(cli\): preserve literal issue attachment paths](https://github.com/multica-ai/multica/pull/9787) | 2026-11-02 | 2026-11-02 |
-| 开放 | [#9781 · feat\(autopilot\): support finite schedule execution counts](https://github.com/multica-ai/multica/pull/9781) | 2026-11-01 | — |
 | 开放 | [#9774 · fix\(workflows\): explain handoff enqueue decisions \(BOYF-166\)](https://github.com/multica-ai/multica/pull/9774) | 2026-11-01 | — |
 | 开放 | [#9744 · feat\(chat\): add workspace default chat agent](https://github.com/multica-ai/multica/pull/9744) | 2026-11-01 | — |
 | 开放 | [#9743 · feat\(issues\): add project columns to swimlanes](https://github.com/multica-ai/multica/pull/9743) | 2026-11-01 | — |
-| 开放 | [#9742 · feat\(projects\): persist lifecycle browse views \(BOYF-85\)](https://github.com/multica-ai/multica/pull/9742) | 2026-11-01 | — |
 | 开放 | [#9782 · fix\(workflows\): clarify Default scope for issues without a project](https://github.com/multica-ai/multica/pull/9782) | 2026-11-01 | — |
 | 开放 | [#9768 · fix\(runtimes\): recover empty legacy Builder sessions](https://github.com/multica-ai/multica/pull/9768) | 2026-10-31 | — |
-| 开放 | [#9736 · feat: add persisted content width preference for issues and chat](https://github.com/multica-ai/multica/pull/9736) | 2026-10-31 | — |
-| 开放 | [#9740 · feat\(chat\): add project-linked chat discovery and filtering](https://github.com/multica-ai/multica/pull/9740) | 2026-10-30 | — |
 
 ## [mahmoud/boltons](https://github.com/mahmoud/boltons)
 
@@ -38,6 +44,14 @@
 | 开放 | [#709 · Fix JSONL reverse iteration splitting valid Unicode strings \(BOYF-246\)](https://github.com/mahmoud/boltons/pull/709) | 2026-11-01 | — |
 | 开放 | [#706 · Keep evicted cache values alive until insertion completes](https://github.com/mahmoud/boltons/pull/706) | 2026-11-01 | — |
 | 开放 | [#704 · Preserve integer precision in variance calculations](https://github.com/mahmoud/boltons/pull/704) | 2026-11-01 | — |
+
+## [fsspec/filesystem_spec](https://github.com/fsspec/filesystem_spec)
+
+| 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
+| :-- | :-- | :-- | :-- |
+| 开放 | [#2434 · Preserve cached prefixes when appending with multiple cache directories](https://github.com/fsspec/filesystem_spec/pull/2434) | 2026-11-05 | — |
+| 开放 | [#2422 · Quote development install extras to prevent shell expansion](https://github.com/fsspec/filesystem_spec/pull/2422) | 2026-11-03 | — |
+| 开放 | [#2412 · Speed up repeated MemoryFileSystem walk listings](https://github.com/fsspec/filesystem_spec/pull/2412) | 2026-11-01 | — |
 
 ## [thombashi/pytablewriter](https://github.com/thombashi/pytablewriter)
 
@@ -53,13 +67,6 @@
 | :-- | :-- | :-- | :-- |
 | 开放 | [#3542 · fix\(vue\): initialize populated element refs \(BOYF-314\)](https://github.com/floating-ui/floating-ui/pull/3542) | 2026-11-02 | — |
 | 开放 | [#3541 · fix\(vue\): ignore stale async positioning results \(BOYF-294\)](https://github.com/floating-ui/floating-ui/pull/3541) | 2026-11-02 | — |
-
-## [fsspec/filesystem_spec](https://github.com/fsspec/filesystem_spec)
-
-| 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
-| :-- | :-- | :-- | :-- |
-| 开放 | [#2422 · Quote development install extras to prevent shell expansion](https://github.com/fsspec/filesystem_spec/pull/2422) | 2026-11-03 | — |
-| 开放 | [#2412 · Speed up repeated MemoryFileSystem walk listings](https://github.com/fsspec/filesystem_spec/pull/2412) | 2026-11-01 | — |
 
 ## [thombashi/pathvalidate](https://github.com/thombashi/pathvalidate)
 

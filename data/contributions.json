@@ -1,10 +1,131 @@
 {
   "schemaVersion": 1,
   "username": "boyfeiyu",
-  "fetchedAt": "2026-11-04T15:32:54Z",
+  "fetchedAt": "2026-11-05T09:32:52Z",
   "scope": "Authored public PRs in repositories not owned by boyfeiyu; OPEN and MERGED only. Closed unmerged PRs are excluded.",
   "source": "https://api.github.com/graphql",
   "pullRequests": [
+    {
+      "repository": "multica-ai/multica",
+      "number": 9989,
+      "title": "feat(issues): suggest recent issues when choosing a parent",
+      "url": "https://github.com/multica-ai/multica/pull/9989",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-05T07:57:46Z",
+      "updatedAt": "2026-11-05T07:57:51Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 9986,
+      "title": "feat(wakeups): add opt-in sub-issue report barrier",
+      "url": "https://github.com/multica-ai/multica/pull/9986",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-05T06:28:30Z",
+      "updatedAt": "2026-11-05T06:28:36Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "fsspec/filesystem_spec",
+      "number": 2434,
+      "title": "Preserve cached prefixes when appending with multiple cache directories",
+      "url": "https://github.com/fsspec/filesystem_spec/pull/2434",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-05T04:33:32Z",
+      "updatedAt": "2026-11-05T04:33:32Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 9981,
+      "title": "MUL-8642: fix(search): preserve delegation during IME Shift+Enter",
+      "url": "https://github.com/multica-ai/multica/pull/9981",
+      "state": "MERGED",
+      "isDraft": false,
+      "createdAt": "2026-11-05T02:30:47Z",
+      "updatedAt": "2026-11-05T04:23:12Z",
+      "mergedAt": "2026-11-05T04:23:12Z"
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 9975,
+      "title": "MUL-8634: feat(slack): expose source metadata in chat threads and task prompts",
+      "url": "https://github.com/multica-ai/multica/pull/9975",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-04T23:08:18Z",
+      "updatedAt": "2026-11-05T02:39:06Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 9736,
+      "title": "feat: add persisted content width preference for issues and chat",
+      "url": "https://github.com/multica-ai/multica/pull/9736",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-10-30T18:54:48Z",
+      "updatedAt": "2026-11-04T21:23:45Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 9781,
+      "title": "feat(autopilot): support finite schedule execution counts",
+      "url": "https://github.com/multica-ai/multica/pull/9781",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-01T09:57:57Z",
+      "updatedAt": "2026-11-04T21:00:23Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 9740,
+      "title": "feat(chat): add project-linked chat discovery and filtering",
+      "url": "https://github.com/multica-ai/multica/pull/9740",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-10-30T21:57:02Z",
+      "updatedAt": "2026-11-04T19:40:03Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 9972,
+      "title": "feat(chat): remember collapsed execution details preference",
+      "url": "https://github.com/multica-ai/multica/pull/9972",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-04T18:29:18Z",
+      "updatedAt": "2026-11-04T18:29:25Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 9971,
+      "title": "feat(agents): add optional notes to environment variables",
+      "url": "https://github.com/multica-ai/multica/pull/9971",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-04T18:22:30Z",
+      "updatedAt": "2026-11-04T18:22:35Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 9742,
+      "title": "feat(projects): persist lifecycle browse views (BOYF-85)",
+      "url": "https://github.com/multica-ai/multica/pull/9742",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-10-30T23:07:17Z",
+      "updatedAt": "2026-11-04T17:35:36Z",
+      "mergedAt": null
+    },
     {
       "repository": "vuejs/pinia",
       "number": 3205,
@@ -204,17 +325,6 @@
       "mergedAt": null
     },
     {
-      "repository": "multica-ai/multica",
-      "number": 9781,
-      "title": "feat(autopilot): support finite schedule execution counts",
-      "url": "https://github.com/multica-ai/multica/pull/9781",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-01T09:57:57Z",
-      "updatedAt": "2026-11-01T12:54:59Z",
-      "mergedAt": null
-    },
-    {
       "repository": "thombashi/pytablewriter",
       "number": 87,
       "title": "Preserve multiline cells and headers in RST grid tables",
@@ -314,17 +424,6 @@
       "mergedAt": null
     },
     {
-      "repository": "multica-ai/multica",
-      "number": 9742,
-      "title": "feat(projects): persist lifecycle browse views (BOYF-85)",
-      "url": "https://github.com/multica-ai/multica/pull/9742",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-10-30T23:07:17Z",
-      "updatedAt": "2026-11-01T10:09:48Z",
-      "mergedAt": null
-    },
-    {
       "repository": "mahmoud/boltons",
       "number": 704,
       "title": "Preserve integer precision in variance calculations",
@@ -388,28 +487,6 @@
       "isDraft": false,
       "createdAt": "2026-10-31T17:03:53Z",
       "updatedAt": "2026-10-31T17:03:58Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
-      "number": 9736,
-      "title": "feat: add persisted content width preference for issues and chat",
-      "url": "https://github.com/multica-ai/multica/pull/9736",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-10-30T18:54:48Z",
-      "updatedAt": "2026-10-31T02:02:27Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
-      "number": 9740,
-      "title": "feat(chat): add project-linked chat discovery and filtering",
-      "url": "https://github.com/multica-ai/multica/pull/9740",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-10-30T21:57:02Z",
-      "updatedAt": "2026-10-30T21:57:08Z",
       "mergedAt": null
     },
     {
