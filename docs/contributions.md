@@ -1,6 +1,6 @@
 # 公开开源贡献 / Public contributions
 
-数据核验时间：**2026-11-06T06:31:35Z**。
+数据核验时间：**2026-11-06T09:28:26Z**。
 
 来源：GitHub GraphQL `user(login: "boyfeiyu").pullRequests`，逐页读取至末页。
 口径：本人发起、公开、仓库所有者不是 boyfeiyu、状态为已合并或开放（含草稿）的 PR。
@@ -12,6 +12,7 @@
 
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
 | :-- | :-- | :-- | :-- |
+| 开放 | [#10044 · fix\(issues\): offer retry for failed first list pages \(BOYF-568, MUL-8697\)](https://github.com/multica-ai/multica/pull/10044) | 2026-11-06 | — |
 | 已合并 | [#10011 · MUL-8667: fix\(ui\): preserve modifier shortcuts in time inputs](https://github.com/multica-ai/multica/pull/10011) | 2026-11-06 | 2026-11-06 |
 | 已合并 | [#10001 · MUL-8658: fix\(issues\): show safe load errors and scoped retry](https://github.com/multica-ai/multica/pull/10001) | 2026-11-06 | 2026-11-06 |
 | 已合并 | [#9975 · MUL-8634: feat\(slack\): expose source metadata in chat threads and task prompts](https://github.com/multica-ai/multica/pull/9975) | 2026-11-06 | 2026-11-06 |
