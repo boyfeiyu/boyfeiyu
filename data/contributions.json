@@ -1,10 +1,87 @@
 {
   "schemaVersion": 1,
   "username": "boyfeiyu",
-  "fetchedAt": "2026-11-06T02:40:27Z",
+  "fetchedAt": "2026-11-06T04:46:47Z",
   "scope": "Authored public PRs in repositories not owned by boyfeiyu; OPEN and MERGED only. Closed unmerged PRs are excluded.",
   "source": "https://api.github.com/graphql",
   "pullRequests": [
+    {
+      "repository": "multica-ai/multica",
+      "number": 9975,
+      "title": "MUL-8634: feat(slack): expose source metadata in chat threads and task prompts",
+      "url": "https://github.com/multica-ai/multica/pull/9975",
+      "state": "MERGED",
+      "isDraft": false,
+      "createdAt": "2026-11-04T23:08:18Z",
+      "updatedAt": "2026-11-06T04:34:48Z",
+      "mergedAt": "2026-11-06T04:34:48Z"
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10016,
+      "title": "fix(ui): preserve editable selection after clipboard fallback (MUL-8670, BOYF-519)",
+      "url": "https://github.com/multica-ai/multica/pull/10016",
+      "state": "MERGED",
+      "isDraft": false,
+      "createdAt": "2026-11-05T19:43:07Z",
+      "updatedAt": "2026-11-06T04:28:32Z",
+      "mergedAt": "2026-11-06T04:28:31Z"
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10014,
+      "title": "fix(ui): restore calendar keyboard selection focus (MUL-8668)",
+      "url": "https://github.com/multica-ai/multica/pull/10014",
+      "state": "MERGED",
+      "isDraft": false,
+      "createdAt": "2026-11-05T18:05:45Z",
+      "updatedAt": "2026-11-06T04:11:37Z",
+      "mergedAt": "2026-11-06T04:11:37Z"
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10018,
+      "title": "MUL-8672 fix(views): lock avatar crop through encoding and upload handoff (BOYF-524)",
+      "url": "https://github.com/multica-ai/multica/pull/10018",
+      "state": "MERGED",
+      "isDraft": false,
+      "createdAt": "2026-11-05T21:27:21Z",
+      "updatedAt": "2026-11-06T04:11:16Z",
+      "mergedAt": "2026-11-06T04:11:16Z"
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10035,
+      "title": "fix(workflows): show inherited task bindings in briefs (BOYF-558)",
+      "url": "https://github.com/multica-ai/multica/pull/10035",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-06T04:01:20Z",
+      "updatedAt": "2026-11-06T04:01:26Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 9736,
+      "title": "feat: add persisted content width preference for issues and chat",
+      "url": "https://github.com/multica-ai/multica/pull/9736",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-10-30T18:54:48Z",
+      "updatedAt": "2026-11-06T03:37:56Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10033,
+      "title": "feat(desktop): reopen closed tabs",
+      "url": "https://github.com/multica-ai/multica/pull/10033",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-06T03:21:57Z",
+      "updatedAt": "2026-11-06T03:22:03Z",
+      "mergedAt": null
+    },
     {
       "repository": "multica-ai/multica",
       "number": 10023,
@@ -14,39 +91,6 @@
       "isDraft": false,
       "createdAt": "2026-11-06T00:33:52Z",
       "updatedAt": "2026-11-06T01:15:21Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
-      "number": 10018,
-      "title": "fix(views): lock avatar crop through encoding and upload handoff (BOYF-524)",
-      "url": "https://github.com/multica-ai/multica/pull/10018",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-05T21:27:21Z",
-      "updatedAt": "2026-11-05T21:27:27Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
-      "number": 10016,
-      "title": "fix(ui): preserve editable selection after clipboard fallback (BOYF-519)",
-      "url": "https://github.com/multica-ai/multica/pull/10016",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-05T19:43:07Z",
-      "updatedAt": "2026-11-05T19:43:13Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
-      "number": 10014,
-      "title": "fix(ui): restore calendar keyboard selection focus",
-      "url": "https://github.com/multica-ai/multica/pull/10014",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-05T18:05:45Z",
-      "updatedAt": "2026-11-05T18:32:39Z",
       "mergedAt": null
     },
     {
@@ -158,28 +202,6 @@
       "createdAt": "2026-11-05T02:30:47Z",
       "updatedAt": "2026-11-05T04:23:12Z",
       "mergedAt": "2026-11-05T04:23:12Z"
-    },
-    {
-      "repository": "multica-ai/multica",
-      "number": 9975,
-      "title": "MUL-8634: feat(slack): expose source metadata in chat threads and task prompts",
-      "url": "https://github.com/multica-ai/multica/pull/9975",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-04T23:08:18Z",
-      "updatedAt": "2026-11-05T02:39:06Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
-      "number": 9736,
-      "title": "feat: add persisted content width preference for issues and chat",
-      "url": "https://github.com/multica-ai/multica/pull/9736",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-10-30T18:54:48Z",
-      "updatedAt": "2026-11-04T21:23:45Z",
-      "mergedAt": null
     },
     {
       "repository": "multica-ai/multica",

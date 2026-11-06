@@ -1,6 +1,6 @@
 # 公开开源贡献 / Public contributions
 
-数据核验时间：**2026-11-06T02:40:27Z**。
+数据核验时间：**2026-11-06T04:46:47Z**。
 
 来源：GitHub GraphQL `user(login: "boyfeiyu").pullRequests`，逐页读取至末页。
 口径：本人发起、公开、仓库所有者不是 boyfeiyu、状态为已合并或开放（含草稿）的 PR。
@@ -12,10 +12,14 @@
 
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
 | :-- | :-- | :-- | :-- |
+| 已合并 | [#9975 · MUL-8634: feat\(slack\): expose source metadata in chat threads and task prompts](https://github.com/multica-ai/multica/pull/9975) | 2026-11-06 | 2026-11-06 |
+| 已合并 | [#10016 · fix\(ui\): preserve editable selection after clipboard fallback \(MUL-8670, BOYF-519\)](https://github.com/multica-ai/multica/pull/10016) | 2026-11-06 | 2026-11-06 |
+| 已合并 | [#10014 · fix\(ui\): restore calendar keyboard selection focus \(MUL-8668\)](https://github.com/multica-ai/multica/pull/10014) | 2026-11-06 | 2026-11-06 |
+| 已合并 | [#10018 · MUL-8672 fix\(views\): lock avatar crop through encoding and upload handoff \(BOYF-524\)](https://github.com/multica-ai/multica/pull/10018) | 2026-11-06 | 2026-11-06 |
+| 开放 | [#10035 · fix\(workflows\): show inherited task bindings in briefs \(BOYF-558\)](https://github.com/multica-ai/multica/pull/10035) | 2026-11-06 | — |
+| 开放 | [#9736 · feat: add persisted content width preference for issues and chat](https://github.com/multica-ai/multica/pull/9736) | 2026-11-06 | — |
+| 开放 | [#10033 · feat\(desktop\): reopen closed tabs](https://github.com/multica-ai/multica/pull/10033) | 2026-11-06 | — |
 | 开放 | [#10023 · BOYF-531: feat\(autopilots\): share run-only execution log links](https://github.com/multica-ai/multica/pull/10023) | 2026-11-06 | — |
-| 开放 | [#10018 · fix\(views\): lock avatar crop through encoding and upload handoff \(BOYF-524\)](https://github.com/multica-ai/multica/pull/10018) | 2026-11-05 | — |
-| 开放 | [#10016 · fix\(ui\): preserve editable selection after clipboard fallback \(BOYF-519\)](https://github.com/multica-ai/multica/pull/10016) | 2026-11-05 | — |
-| 开放 | [#10014 · fix\(ui\): restore calendar keyboard selection focus](https://github.com/multica-ai/multica/pull/10014) | 2026-11-05 | — |
 | 开放 | [#10011 · fix\(ui\): preserve modifier shortcuts in time inputs](https://github.com/multica-ai/multica/pull/10011) | 2026-11-05 | — |
 | 已合并 | [#10010 · MUL-8666 fix\(cli\): classify interrupted attachment downloads as network errors](https://github.com/multica-ai/multica/pull/10010) | 2026-11-05 | 2026-11-05 |
 | 开放 | [#9827 · MUL-8507 BOYF-268 fix\(cli\): preserve quotes and commas in metadata filters](https://github.com/multica-ai/multica/pull/9827) | 2026-11-05 | — |
@@ -24,8 +28,6 @@
 | 开放 | [#9989 · feat\(issues\): suggest recent issues when choosing a parent](https://github.com/multica-ai/multica/pull/9989) | 2026-11-05 | — |
 | 开放 | [#9986 · feat\(wakeups\): add opt-in sub-issue report barrier](https://github.com/multica-ai/multica/pull/9986) | 2026-11-05 | — |
 | 已合并 | [#9981 · MUL-8642: fix\(search\): preserve delegation during IME Shift+Enter](https://github.com/multica-ai/multica/pull/9981) | 2026-11-05 | 2026-11-05 |
-| 开放 | [#9975 · MUL-8634: feat\(slack\): expose source metadata in chat threads and task prompts](https://github.com/multica-ai/multica/pull/9975) | 2026-11-05 | — |
-| 开放 | [#9736 · feat: add persisted content width preference for issues and chat](https://github.com/multica-ai/multica/pull/9736) | 2026-11-04 | — |
 | 开放 | [#9781 · feat\(autopilot\): support finite schedule execution counts](https://github.com/multica-ai/multica/pull/9781) | 2026-11-04 | — |
 | 开放 | [#9740 · feat\(chat\): add project-linked chat discovery and filtering](https://github.com/multica-ai/multica/pull/9740) | 2026-11-04 | — |
 | 开放 | [#9972 · feat\(chat\): remember collapsed execution details preference](https://github.com/multica-ai/multica/pull/9972) | 2026-11-04 | — |
