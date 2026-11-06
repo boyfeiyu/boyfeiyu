@@ -1,10 +1,32 @@
 {
   "schemaVersion": 1,
   "username": "boyfeiyu",
-  "fetchedAt": "2026-11-06T04:46:47Z",
+  "fetchedAt": "2026-11-06T06:31:35Z",
   "scope": "Authored public PRs in repositories not owned by boyfeiyu; OPEN and MERGED only. Closed unmerged PRs are excluded.",
   "source": "https://api.github.com/graphql",
   "pullRequests": [
+    {
+      "repository": "multica-ai/multica",
+      "number": 10011,
+      "title": "MUL-8667: fix(ui): preserve modifier shortcuts in time inputs",
+      "url": "https://github.com/multica-ai/multica/pull/10011",
+      "state": "MERGED",
+      "isDraft": false,
+      "createdAt": "2026-11-05T15:11:04Z",
+      "updatedAt": "2026-11-06T05:53:26Z",
+      "mergedAt": "2026-11-06T05:53:26Z"
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10001,
+      "title": "MUL-8658: fix(issues): show safe load errors and scoped retry",
+      "url": "https://github.com/multica-ai/multica/pull/10001",
+      "state": "MERGED",
+      "isDraft": false,
+      "createdAt": "2026-11-05T10:31:18Z",
+      "updatedAt": "2026-11-06T05:53:00Z",
+      "mergedAt": "2026-11-06T05:53:00Z"
+    },
     {
       "repository": "multica-ai/multica",
       "number": 9975,
@@ -95,17 +117,6 @@
     },
     {
       "repository": "multica-ai/multica",
-      "number": 10011,
-      "title": "fix(ui): preserve modifier shortcuts in time inputs",
-      "url": "https://github.com/multica-ai/multica/pull/10011",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-05T15:11:04Z",
-      "updatedAt": "2026-11-05T17:22:32Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
       "number": 10010,
       "title": "MUL-8666 fix(cli): classify interrupted attachment downloads as network errors",
       "url": "https://github.com/multica-ai/multica/pull/10010",
@@ -146,17 +157,6 @@
       "isDraft": false,
       "createdAt": "2026-11-05T12:14:20Z",
       "updatedAt": "2026-11-05T12:14:28Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
-      "number": 10001,
-      "title": "fix(issues): show safe load errors and scoped retry",
-      "url": "https://github.com/multica-ai/multica/pull/10001",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-05T10:31:18Z",
-      "updatedAt": "2026-11-05T10:31:25Z",
       "mergedAt": null
     },
     {
