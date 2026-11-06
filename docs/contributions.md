@@ -1,6 +1,6 @@
 # 公开开源贡献 / Public contributions
 
-数据核验时间：**2026-11-05T17:21:08Z**。
+数据核验时间：**2026-11-06T02:40:27Z**。
 
 来源：GitHub GraphQL `user(login: "boyfeiyu").pullRequests`，逐页读取至末页。
 口径：本人发起、公开、仓库所有者不是 boyfeiyu、状态为已合并或开放（含草稿）的 PR。
@@ -12,8 +12,12 @@
 
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
 | :-- | :-- | :-- | :-- |
-| 已合并 | [#10010 · MUL-8666 fix\(cli\): classify interrupted attachment downloads as network errors](https://github.com/multica-ai/multica/pull/10010) | 2026-11-05 | 2026-11-05 |
+| 开放 | [#10023 · BOYF-531: feat\(autopilots\): share run-only execution log links](https://github.com/multica-ai/multica/pull/10023) | 2026-11-06 | — |
+| 开放 | [#10018 · fix\(views\): lock avatar crop through encoding and upload handoff \(BOYF-524\)](https://github.com/multica-ai/multica/pull/10018) | 2026-11-05 | — |
+| 开放 | [#10016 · fix\(ui\): preserve editable selection after clipboard fallback \(BOYF-519\)](https://github.com/multica-ai/multica/pull/10016) | 2026-11-05 | — |
+| 开放 | [#10014 · fix\(ui\): restore calendar keyboard selection focus](https://github.com/multica-ai/multica/pull/10014) | 2026-11-05 | — |
 | 开放 | [#10011 · fix\(ui\): preserve modifier shortcuts in time inputs](https://github.com/multica-ai/multica/pull/10011) | 2026-11-05 | — |
+| 已合并 | [#10010 · MUL-8666 fix\(cli\): classify interrupted attachment downloads as network errors](https://github.com/multica-ai/multica/pull/10010) | 2026-11-05 | 2026-11-05 |
 | 开放 | [#9827 · MUL-8507 BOYF-268 fix\(cli\): preserve quotes and commas in metadata filters](https://github.com/multica-ai/multica/pull/9827) | 2026-11-05 | — |
 | 开放 | [#10003 · feat\(layout\): include Inbox in Work navigation](https://github.com/multica-ai/multica/pull/10003) | 2026-11-05 | — |
 | 开放 | [#10001 · fix\(issues\): show safe load errors and scoped retry](https://github.com/multica-ai/multica/pull/10001) | 2026-11-05 | — |

@@ -1,10 +1,65 @@
 {
   "schemaVersion": 1,
   "username": "boyfeiyu",
-  "fetchedAt": "2026-11-05T17:21:08Z",
+  "fetchedAt": "2026-11-06T02:40:27Z",
   "scope": "Authored public PRs in repositories not owned by boyfeiyu; OPEN and MERGED only. Closed unmerged PRs are excluded.",
   "source": "https://api.github.com/graphql",
   "pullRequests": [
+    {
+      "repository": "multica-ai/multica",
+      "number": 10023,
+      "title": "BOYF-531: feat(autopilots): share run-only execution log links",
+      "url": "https://github.com/multica-ai/multica/pull/10023",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-06T00:33:52Z",
+      "updatedAt": "2026-11-06T01:15:21Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10018,
+      "title": "fix(views): lock avatar crop through encoding and upload handoff (BOYF-524)",
+      "url": "https://github.com/multica-ai/multica/pull/10018",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-05T21:27:21Z",
+      "updatedAt": "2026-11-05T21:27:27Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10016,
+      "title": "fix(ui): preserve editable selection after clipboard fallback (BOYF-519)",
+      "url": "https://github.com/multica-ai/multica/pull/10016",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-05T19:43:07Z",
+      "updatedAt": "2026-11-05T19:43:13Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10014,
+      "title": "fix(ui): restore calendar keyboard selection focus",
+      "url": "https://github.com/multica-ai/multica/pull/10014",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-05T18:05:45Z",
+      "updatedAt": "2026-11-05T18:32:39Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10011,
+      "title": "fix(ui): preserve modifier shortcuts in time inputs",
+      "url": "https://github.com/multica-ai/multica/pull/10011",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-05T15:11:04Z",
+      "updatedAt": "2026-11-05T17:22:32Z",
+      "mergedAt": null
+    },
     {
       "repository": "multica-ai/multica",
       "number": 10010,
@@ -15,17 +70,6 @@
       "createdAt": "2026-11-05T15:09:23Z",
       "updatedAt": "2026-11-05T17:13:36Z",
       "mergedAt": "2026-11-05T17:13:36Z"
-    },
-    {
-      "repository": "multica-ai/multica",
-      "number": 10011,
-      "title": "fix(ui): preserve modifier shortcuts in time inputs",
-      "url": "https://github.com/multica-ai/multica/pull/10011",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-05T15:11:04Z",
-      "updatedAt": "2026-11-05T15:11:10Z",
-      "mergedAt": null
     },
     {
       "repository": "python-injector/injector",
