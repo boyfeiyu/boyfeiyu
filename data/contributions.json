@@ -1,20 +1,64 @@
 {
   "schemaVersion": 1,
   "username": "boyfeiyu",
-  "fetchedAt": "2026-11-06T09:28:26Z",
+  "fetchedAt": "2026-11-06T12:05:14Z",
   "scope": "Authored public PRs in repositories not owned by boyfeiyu; OPEN and MERGED only. Closed unmerged PRs are excluded.",
   "source": "https://api.github.com/graphql",
   "pullRequests": [
     {
       "repository": "multica-ai/multica",
+      "number": 9971,
+      "title": "feat(agents): add optional notes to environment variables",
+      "url": "https://github.com/multica-ai/multica/pull/9971",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-04T18:22:30Z",
+      "updatedAt": "2026-11-06T11:51:00Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 9736,
+      "title": "feat: add persisted content width preference for issues and chat",
+      "url": "https://github.com/multica-ai/multica/pull/9736",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-10-30T18:54:48Z",
+      "updatedAt": "2026-11-06T11:27:22Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "python-injector/injector",
+      "number": 333,
+      "title": "Fix implicit ProviderOf lookup in child injectors",
+      "url": "https://github.com/python-injector/injector/pull/333",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-06T11:20:59Z",
+      "updatedAt": "2026-11-06T11:20:59Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 9989,
+      "title": "feat(issues): suggest recent issues when choosing a parent",
+      "url": "https://github.com/multica-ai/multica/pull/9989",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-05T07:57:46Z",
+      "updatedAt": "2026-11-06T11:06:41Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
       "number": 10044,
       "title": "fix(issues): offer retry for failed first list pages (BOYF-568, MUL-8697)",
       "url": "https://github.com/multica-ai/multica/pull/10044",
-      "state": "OPEN",
+      "state": "MERGED",
       "isDraft": false,
       "createdAt": "2026-11-06T07:07:54Z",
-      "updatedAt": "2026-11-06T08:14:10Z",
-      "mergedAt": null
+      "updatedAt": "2026-11-06T10:41:41Z",
+      "mergedAt": "2026-11-06T10:41:41Z"
     },
     {
       "repository": "multica-ai/multica",
@@ -95,17 +139,6 @@
     },
     {
       "repository": "multica-ai/multica",
-      "number": 9736,
-      "title": "feat: add persisted content width preference for issues and chat",
-      "url": "https://github.com/multica-ai/multica/pull/9736",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-10-30T18:54:48Z",
-      "updatedAt": "2026-11-06T03:37:56Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
       "number": 10033,
       "title": "feat(desktop): reopen closed tabs",
       "url": "https://github.com/multica-ai/multica/pull/10033",
@@ -172,17 +205,6 @@
     },
     {
       "repository": "multica-ai/multica",
-      "number": 9989,
-      "title": "feat(issues): suggest recent issues when choosing a parent",
-      "url": "https://github.com/multica-ai/multica/pull/9989",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-05T07:57:46Z",
-      "updatedAt": "2026-11-05T07:57:51Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
       "number": 9986,
       "title": "feat(wakeups): add opt-in sub-issue report barrier",
       "url": "https://github.com/multica-ai/multica/pull/9986",
@@ -245,17 +267,6 @@
       "isDraft": false,
       "createdAt": "2026-11-04T18:29:18Z",
       "updatedAt": "2026-11-04T18:29:25Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
-      "number": 9971,
-      "title": "feat(agents): add optional notes to environment variables",
-      "url": "https://github.com/multica-ai/multica/pull/9971",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-04T18:22:30Z",
-      "updatedAt": "2026-11-04T18:22:35Z",
       "mergedAt": null
     },
     {
