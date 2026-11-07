@@ -1,10 +1,21 @@
 {
   "schemaVersion": 1,
   "username": "boyfeiyu",
-  "fetchedAt": "2026-11-06T12:05:14Z",
+  "fetchedAt": "2026-11-07T03:04:31Z",
   "scope": "Authored public PRs in repositories not owned by boyfeiyu; OPEN and MERGED only. Closed unmerged PRs are excluded.",
   "source": "https://api.github.com/graphql",
   "pullRequests": [
+    {
+      "repository": "multica-ai/multica",
+      "number": 9776,
+      "title": "MUL-8457: test(lark): isolate legacy receipt backfill databases",
+      "url": "https://github.com/multica-ai/multica/pull/9776",
+      "state": "MERGED",
+      "isDraft": false,
+      "createdAt": "2026-11-01T02:43:07Z",
+      "updatedAt": "2026-11-06T17:33:04Z",
+      "mergedAt": "2026-11-02T04:43:59Z"
+    },
     {
       "repository": "multica-ai/multica",
       "number": 9971,
@@ -422,17 +433,6 @@
       "createdAt": "2026-11-01T05:34:09Z",
       "updatedAt": "2026-11-02T04:54:16Z",
       "mergedAt": "2026-11-02T04:54:16Z"
-    },
-    {
-      "repository": "multica-ai/multica",
-      "number": 9776,
-      "title": "MUL-8457: test(lark): isolate legacy receipt backfill databases",
-      "url": "https://github.com/multica-ai/multica/pull/9776",
-      "state": "MERGED",
-      "isDraft": false,
-      "createdAt": "2026-11-01T02:43:07Z",
-      "updatedAt": "2026-11-02T04:44:00Z",
-      "mergedAt": "2026-11-02T04:43:59Z"
     },
     {
       "repository": "multica-ai/multica",
