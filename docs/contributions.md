@@ -1,6 +1,6 @@
 # 公开开源贡献 / Public contributions
 
-数据核验时间：**2026-11-07T09:58:50Z**。
+数据核验时间：**2026-11-08T09:03:00Z**。
 
 来源：GitHub GraphQL `user(login: "boyfeiyu").pullRequests`，逐页读取至末页。
 口径：本人发起、公开、仓库所有者不是 boyfeiyu、状态为已合并或开放（含草稿）的 PR。
@@ -12,11 +12,15 @@
 
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
 | :-- | :-- | :-- | :-- |
+| 开放 | [#10023 · BOYF-531: feat\(autopilots\): share run-only execution log links](https://github.com/multica-ai/multica/pull/10023) | 2026-11-08 | — |
+| 开放 | [#10104 · fix\(issues\): recover unread empty state after date filtering](https://github.com/multica-ai/multica/pull/10104) | 2026-11-08 | — |
 | 开放 | [#10087 · fix\(issues\): track the title actually adopted by the editor](https://github.com/multica-ai/multica/pull/10087) | 2026-11-07 | — |
+| 开放 | [#9989 · feat\(issues\): suggest recent issues when choosing a parent](https://github.com/multica-ai/multica/pull/9989) | 2026-11-07 | — |
+| 开放 | [#10093 · fix\(issues\): retain queued description saves after closing peek](https://github.com/multica-ai/multica/pull/10093) | 2026-11-07 | — |
+| 开放 | [#10089 · fix\(issues\): preserve draft label edits during inline creation](https://github.com/multica-ai/multica/pull/10089) | 2026-11-07 | — |
+| 开放 | [#9736 · feat: add persisted content width preference for issues and chat](https://github.com/multica-ai/multica/pull/9736) | 2026-11-07 | — |
 | 已合并 | [#9776 · MUL-8457: test\(lark\): isolate legacy receipt backfill databases](https://github.com/multica-ai/multica/pull/9776) | 2026-11-06 | 2026-11-02 |
 | 开放 | [#9971 · feat\(agents\): add optional notes to environment variables](https://github.com/multica-ai/multica/pull/9971) | 2026-11-06 | — |
-| 开放 | [#9736 · feat: add persisted content width preference for issues and chat](https://github.com/multica-ai/multica/pull/9736) | 2026-11-06 | — |
-| 开放 | [#9989 · feat\(issues\): suggest recent issues when choosing a parent](https://github.com/multica-ai/multica/pull/9989) | 2026-11-06 | — |
 | 已合并 | [#10044 · fix\(issues\): offer retry for failed first list pages \(BOYF-568, MUL-8697\)](https://github.com/multica-ai/multica/pull/10044) | 2026-11-06 | 2026-11-06 |
 | 已合并 | [#10011 · MUL-8667: fix\(ui\): preserve modifier shortcuts in time inputs](https://github.com/multica-ai/multica/pull/10011) | 2026-11-06 | 2026-11-06 |
 | 已合并 | [#10001 · MUL-8658: fix\(issues\): show safe load errors and scoped retry](https://github.com/multica-ai/multica/pull/10001) | 2026-11-06 | 2026-11-06 |
@@ -26,7 +30,6 @@
 | 已合并 | [#10018 · MUL-8672 fix\(views\): lock avatar crop through encoding and upload handoff \(BOYF-524\)](https://github.com/multica-ai/multica/pull/10018) | 2026-11-06 | 2026-11-06 |
 | 开放 | [#10035 · fix\(workflows\): show inherited task bindings in briefs \(BOYF-558\)](https://github.com/multica-ai/multica/pull/10035) | 2026-11-06 | — |
 | 开放 | [#10033 · feat\(desktop\): reopen closed tabs](https://github.com/multica-ai/multica/pull/10033) | 2026-11-06 | — |
-| 开放 | [#10023 · BOYF-531: feat\(autopilots\): share run-only execution log links](https://github.com/multica-ai/multica/pull/10023) | 2026-11-06 | — |
 | 已合并 | [#10010 · MUL-8666 fix\(cli\): classify interrupted attachment downloads as network errors](https://github.com/multica-ai/multica/pull/10010) | 2026-11-05 | 2026-11-05 |
 | 开放 | [#9827 · MUL-8507 BOYF-268 fix\(cli\): preserve quotes and commas in metadata filters](https://github.com/multica-ai/multica/pull/9827) | 2026-11-05 | — |
 | 开放 | [#10003 · feat\(layout\): include Inbox in Work navigation](https://github.com/multica-ai/multica/pull/10003) | 2026-11-05 | — |

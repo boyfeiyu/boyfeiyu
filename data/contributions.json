@@ -1,10 +1,32 @@
 {
   "schemaVersion": 1,
   "username": "boyfeiyu",
-  "fetchedAt": "2026-11-07T09:58:50Z",
+  "fetchedAt": "2026-11-08T09:03:00Z",
   "scope": "Authored public PRs in repositories not owned by boyfeiyu; OPEN and MERGED only. Closed unmerged PRs are excluded.",
   "source": "https://api.github.com/graphql",
   "pullRequests": [
+    {
+      "repository": "multica-ai/multica",
+      "number": 10023,
+      "title": "BOYF-531: feat(autopilots): share run-only execution log links",
+      "url": "https://github.com/multica-ai/multica/pull/10023",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-06T00:33:52Z",
+      "updatedAt": "2026-11-08T05:05:40Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10104,
+      "title": "fix(issues): recover unread empty state after date filtering",
+      "url": "https://github.com/multica-ai/multica/pull/10104",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-08T04:10:33Z",
+      "updatedAt": "2026-11-08T04:10:39Z",
+      "mergedAt": null
+    },
     {
       "repository": "multica-ai/multica",
       "number": 10087,
@@ -13,7 +35,51 @@
       "state": "OPEN",
       "isDraft": false,
       "createdAt": "2026-11-07T09:27:15Z",
-      "updatedAt": "2026-11-07T09:27:21Z",
+      "updatedAt": "2026-11-07T23:08:19Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 9989,
+      "title": "feat(issues): suggest recent issues when choosing a parent",
+      "url": "https://github.com/multica-ai/multica/pull/9989",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-05T07:57:46Z",
+      "updatedAt": "2026-11-07T23:07:56Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10093,
+      "title": "fix(issues): retain queued description saves after closing peek",
+      "url": "https://github.com/multica-ai/multica/pull/10093",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-07T15:11:16Z",
+      "updatedAt": "2026-11-07T23:07:39Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10089,
+      "title": "fix(issues): preserve draft label edits during inline creation",
+      "url": "https://github.com/multica-ai/multica/pull/10089",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-07T10:58:30Z",
+      "updatedAt": "2026-11-07T23:07:35Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 9736,
+      "title": "feat: add persisted content width preference for issues and chat",
+      "url": "https://github.com/multica-ai/multica/pull/9736",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-10-30T18:54:48Z",
+      "updatedAt": "2026-11-07T10:33:02Z",
       "mergedAt": null
     },
     {
@@ -39,17 +105,6 @@
       "mergedAt": null
     },
     {
-      "repository": "multica-ai/multica",
-      "number": 9736,
-      "title": "feat: add persisted content width preference for issues and chat",
-      "url": "https://github.com/multica-ai/multica/pull/9736",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-10-30T18:54:48Z",
-      "updatedAt": "2026-11-06T11:27:22Z",
-      "mergedAt": null
-    },
-    {
       "repository": "python-injector/injector",
       "number": 333,
       "title": "Fix implicit ProviderOf lookup in child injectors",
@@ -58,17 +113,6 @@
       "isDraft": false,
       "createdAt": "2026-11-06T11:20:59Z",
       "updatedAt": "2026-11-06T11:20:59Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
-      "number": 9989,
-      "title": "feat(issues): suggest recent issues when choosing a parent",
-      "url": "https://github.com/multica-ai/multica/pull/9989",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-05T07:57:46Z",
-      "updatedAt": "2026-11-06T11:06:41Z",
       "mergedAt": null
     },
     {
@@ -168,17 +212,6 @@
       "isDraft": false,
       "createdAt": "2026-11-06T03:21:57Z",
       "updatedAt": "2026-11-06T03:22:03Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
-      "number": 10023,
-      "title": "BOYF-531: feat(autopilots): share run-only execution log links",
-      "url": "https://github.com/multica-ai/multica/pull/10023",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-06T00:33:52Z",
-      "updatedAt": "2026-11-06T01:15:21Z",
       "mergedAt": null
     },
     {
