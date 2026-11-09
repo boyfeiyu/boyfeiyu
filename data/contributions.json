@@ -1,10 +1,65 @@
 {
   "schemaVersion": 1,
   "username": "boyfeiyu",
-  "fetchedAt": "2026-11-08T09:03:00Z",
+  "fetchedAt": "2026-11-09T09:51:40Z",
   "scope": "Authored public PRs in repositories not owned by boyfeiyu; OPEN and MERGED only. Closed unmerged PRs are excluded.",
   "source": "https://api.github.com/graphql",
   "pullRequests": [
+    {
+      "repository": "multica-ai/multica",
+      "number": 10115,
+      "title": "MUL-8758 BOYF-670 fix(core): recover pending invitations on focus and reconnect",
+      "url": "https://github.com/multica-ai/multica/pull/10115",
+      "state": "MERGED",
+      "isDraft": false,
+      "createdAt": "2026-11-08T13:51:45Z",
+      "updatedAt": "2026-11-09T08:59:37Z",
+      "mergedAt": "2026-11-09T08:59:37Z"
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10093,
+      "title": "MUL-8738: fix(issues): retain queued description saves after closing peek",
+      "url": "https://github.com/multica-ai/multica/pull/10093",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-07T15:11:16Z",
+      "updatedAt": "2026-11-09T08:21:52Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10114,
+      "title": "MUL-8757 BOYF-666 fix(issues): retain duplicate marking feedback after picker closes",
+      "url": "https://github.com/multica-ai/multica/pull/10114",
+      "state": "MERGED",
+      "isDraft": false,
+      "createdAt": "2026-11-08T12:22:01Z",
+      "updatedAt": "2026-11-09T02:42:58Z",
+      "mergedAt": "2026-11-09T02:42:57Z"
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10104,
+      "title": "fix(issues): recover unread empty state after date filtering (MUL-8747)",
+      "url": "https://github.com/multica-ai/multica/pull/10104",
+      "state": "MERGED",
+      "isDraft": false,
+      "createdAt": "2026-11-08T04:10:33Z",
+      "updatedAt": "2026-11-09T02:32:38Z",
+      "mergedAt": "2026-11-09T02:32:37Z"
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10122,
+      "title": "fix(invitation): settle legacy pending invites for existing members",
+      "url": "https://github.com/multica-ai/multica/pull/10122",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-08T16:04:46Z",
+      "updatedAt": "2026-11-08T16:04:51Z",
+      "mergedAt": null
+    },
     {
       "repository": "multica-ai/multica",
       "number": 10023,
@@ -14,17 +69,6 @@
       "isDraft": false,
       "createdAt": "2026-11-06T00:33:52Z",
       "updatedAt": "2026-11-08T05:05:40Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
-      "number": 10104,
-      "title": "fix(issues): recover unread empty state after date filtering",
-      "url": "https://github.com/multica-ai/multica/pull/10104",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-08T04:10:33Z",
-      "updatedAt": "2026-11-08T04:10:39Z",
       "mergedAt": null
     },
     {
@@ -51,17 +95,6 @@
     },
     {
       "repository": "multica-ai/multica",
-      "number": 10093,
-      "title": "fix(issues): retain queued description saves after closing peek",
-      "url": "https://github.com/multica-ai/multica/pull/10093",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-07T15:11:16Z",
-      "updatedAt": "2026-11-07T23:07:39Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
       "number": 10089,
       "title": "fix(issues): preserve draft label edits during inline creation",
       "url": "https://github.com/multica-ai/multica/pull/10089",
@@ -69,17 +102,6 @@
       "isDraft": false,
       "createdAt": "2026-11-07T10:58:30Z",
       "updatedAt": "2026-11-07T23:07:35Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
-      "number": 9736,
-      "title": "feat: add persisted content width preference for issues and chat",
-      "url": "https://github.com/multica-ai/multica/pull/9736",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-10-30T18:54:48Z",
-      "updatedAt": "2026-11-07T10:33:02Z",
       "mergedAt": null
     },
     {
