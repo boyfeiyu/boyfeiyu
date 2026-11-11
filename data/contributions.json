@@ -1,10 +1,109 @@
 {
   "schemaVersion": 1,
   "username": "boyfeiyu",
-  "fetchedAt": "2026-11-10T09:55:09Z",
+  "fetchedAt": "2026-11-11T09:29:23Z",
   "scope": "Authored public PRs in repositories not owned by boyfeiyu; OPEN and MERGED only. Closed unmerged PRs are excluded.",
   "source": "https://api.github.com/graphql",
   "pullRequests": [
+    {
+      "repository": "multica-ai/multica",
+      "number": 10033,
+      "title": "feat(desktop): reopen closed tabs",
+      "url": "https://github.com/multica-ai/multica/pull/10033",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-06T03:21:57Z",
+      "updatedAt": "2026-11-11T09:12:47Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10089,
+      "title": "fix(issues): preserve draft label edits during inline creation",
+      "url": "https://github.com/multica-ai/multica/pull/10089",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-07T10:58:30Z",
+      "updatedAt": "2026-11-11T07:11:12Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 9972,
+      "title": "feat(chat): remember collapsed execution details preference",
+      "url": "https://github.com/multica-ai/multica/pull/9972",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-04T18:29:18Z",
+      "updatedAt": "2026-11-11T05:29:48Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 9744,
+      "title": "feat(chat): add workspace default chat agent",
+      "url": "https://github.com/multica-ai/multica/pull/9744",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-10-31T03:03:02Z",
+      "updatedAt": "2026-11-11T04:02:20Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10324,
+      "title": "MUL-8993: fix(issues): respect the closed properties sidebar while loading",
+      "url": "https://github.com/multica-ai/multica/pull/10324",
+      "state": "MERGED",
+      "isDraft": false,
+      "createdAt": "2026-11-10T16:47:23Z",
+      "updatedAt": "2026-11-11T02:41:57Z",
+      "mergedAt": "2026-11-11T02:41:57Z"
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 9774,
+      "title": "fix(workflows): explain handoff enqueue decisions (BOYF-166)",
+      "url": "https://github.com/multica-ai/multica/pull/9774",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-10-31T19:22:33Z",
+      "updatedAt": "2026-11-10T16:57:12Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 9768,
+      "title": "fix(runtimes): recover empty legacy Builder sessions",
+      "url": "https://github.com/multica-ai/multica/pull/9768",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-10-31T17:03:53Z",
+      "updatedAt": "2026-11-10T16:57:10Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10023,
+      "title": "BOYF-531: feat(autopilots): share run-only execution log links",
+      "url": "https://github.com/multica-ai/multica/pull/10023",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-06T00:33:52Z",
+      "updatedAt": "2026-11-10T15:36:37Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 9742,
+      "title": "feat(projects): persist lifecycle browse views (BOYF-85)",
+      "url": "https://github.com/multica-ai/multica/pull/9742",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-10-30T23:07:17Z",
+      "updatedAt": "2026-11-10T13:24:00Z",
+      "mergedAt": null
+    },
     {
       "repository": "multica-ai/multica",
       "number": 10115,
@@ -62,17 +161,6 @@
     },
     {
       "repository": "multica-ai/multica",
-      "number": 10023,
-      "title": "BOYF-531: feat(autopilots): share run-only execution log links",
-      "url": "https://github.com/multica-ai/multica/pull/10023",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-06T00:33:52Z",
-      "updatedAt": "2026-11-08T05:05:40Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
       "number": 10087,
       "title": "fix(issues): track the title actually adopted by the editor",
       "url": "https://github.com/multica-ai/multica/pull/10087",
@@ -91,17 +179,6 @@
       "isDraft": false,
       "createdAt": "2026-11-05T07:57:46Z",
       "updatedAt": "2026-11-07T23:07:56Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
-      "number": 10089,
-      "title": "fix(issues): preserve draft label edits during inline creation",
-      "url": "https://github.com/multica-ai/multica/pull/10089",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-07T10:58:30Z",
-      "updatedAt": "2026-11-07T23:07:35Z",
       "mergedAt": null
     },
     {
@@ -227,17 +304,6 @@
     },
     {
       "repository": "multica-ai/multica",
-      "number": 10033,
-      "title": "feat(desktop): reopen closed tabs",
-      "url": "https://github.com/multica-ai/multica/pull/10033",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-06T03:21:57Z",
-      "updatedAt": "2026-11-06T03:22:03Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
       "number": 10010,
       "title": "MUL-8666 fix(cli): classify interrupted attachment downloads as network errors",
       "url": "https://github.com/multica-ai/multica/pull/10010",
@@ -333,28 +399,6 @@
       "isDraft": false,
       "createdAt": "2026-10-30T21:57:02Z",
       "updatedAt": "2026-11-04T19:40:03Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
-      "number": 9972,
-      "title": "feat(chat): remember collapsed execution details preference",
-      "url": "https://github.com/multica-ai/multica/pull/9972",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-04T18:29:18Z",
-      "updatedAt": "2026-11-04T18:29:25Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
-      "number": 9742,
-      "title": "feat(projects): persist lifecycle browse views (BOYF-85)",
-      "url": "https://github.com/multica-ai/multica/pull/9742",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-10-30T23:07:17Z",
-      "updatedAt": "2026-11-04T17:35:36Z",
       "mergedAt": null
     },
     {
@@ -601,28 +645,6 @@
     },
     {
       "repository": "multica-ai/multica",
-      "number": 9774,
-      "title": "fix(workflows): explain handoff enqueue decisions (BOYF-166)",
-      "url": "https://github.com/multica-ai/multica/pull/9774",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-10-31T19:22:33Z",
-      "updatedAt": "2026-11-01T10:10:17Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
-      "number": 9744,
-      "title": "feat(chat): add workspace default chat agent",
-      "url": "https://github.com/multica-ai/multica/pull/9744",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-10-31T03:03:02Z",
-      "updatedAt": "2026-11-01T10:10:08Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
       "number": 9743,
       "title": "feat(issues): add project columns to swimlanes",
       "url": "https://github.com/multica-ai/multica/pull/9743",
@@ -685,17 +707,6 @@
       "isDraft": false,
       "createdAt": "2026-10-30T18:07:28Z",
       "updatedAt": "2026-11-01T02:26:20Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
-      "number": 9768,
-      "title": "fix(runtimes): recover empty legacy Builder sessions",
-      "url": "https://github.com/multica-ai/multica/pull/9768",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-10-31T17:03:53Z",
-      "updatedAt": "2026-10-31T17:03:58Z",
       "mergedAt": null
     },
     {

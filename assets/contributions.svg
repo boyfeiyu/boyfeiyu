@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="390" viewBox="0 0 960 390" role="img" aria-labelledby="title desc">
-  <title id="title">Open source: 21 merged PRs, 45 open PRs, 16 projects</title>
-  <desc id="desc">Public external pull requests by boyfeiyu. Purple means merged; mint means open, including drafts. Snapshot: 2026-11-10 09:55:09 UTC.</desc>
+  <title id="title">Open source: 22 merged PRs, 45 open PRs, 16 projects</title>
+  <desc id="desc">Public external pull requests by boyfeiyu. Purple means merged; mint means open, including drafts. Snapshot: 2026-11-11 09:29:23 UTC.</desc>
   <rect x=".5" y=".5" width="959" height="389" rx="18" fill="#0d1726" stroke="#2a3c54"/>
   <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
     <text x="44" y="40" fill="#8fa7c2" font-size="12" letter-spacing="2">PUBLIC CONTRIBUTIONS / VERIFIED AT SOURCE</text>
-    <text x="44" y="111" fill="#b69cff" font-size="48" font-weight="700">21</text>
+    <text x="44" y="111" fill="#b69cff" font-size="48" font-weight="700">22</text>
     <text x="135" y="108" fill="#c9d6e7" font-size="15">MERGED</text>
     <text x="320" y="111" fill="#58ead5" font-size="48" font-weight="700">45</text>
     <text x="411" y="108" fill="#c9d6e7" font-size="15">OPEN</text>
@@ -14,7 +14,7 @@
     <text x="44" y="174" fill="#8fa7c2" font-size="11" letter-spacing="1">TOP PROJECTS BY PR COUNT</text>
     <text x="475" y="174" fill="#b69cff" font-size="11">MERGED</text>
     <text x="548" y="174" fill="#58ead5" font-size="11">OPEN</text>
-    <text x="44" y="205" fill="#b5c6dd" font-size="14">multica-ai/multica</text><rect x="475" y="194" width="270" height="9" rx="4" fill="#1e2d42"/><rect x="475" y="194" width="121.5" height="9" fill="#b69cff"/><rect x="596.5" y="194" width="148.5" height="9" fill="#58ead5"/><text x="770" y="205" fill="#edf5ff" font-size="14">40</text><text x="44" y="234" fill="#b5c6dd" font-size="14">mahmoud/boltons</text><rect x="475" y="223" width="270" height="9" rx="4" fill="#1e2d42"/><rect x="475.0" y="223" width="27.0" height="9" fill="#58ead5"/><text x="770" y="234" fill="#edf5ff" font-size="14">4</text><text x="44" y="263" fill="#b5c6dd" font-size="14">fsspec/filesystem_spec</text><rect x="475" y="252" width="270" height="9" rx="4" fill="#1e2d42"/><rect x="475.0" y="252" width="20.2" height="9" fill="#58ead5"/><text x="770" y="263" fill="#edf5ff" font-size="14">3</text><text x="44" y="292" fill="#b5c6dd" font-size="14">python-injector/injector</text><rect x="475" y="281" width="270" height="9" rx="4" fill="#1e2d42"/><rect x="475.0" y="281" width="20.2" height="9" fill="#58ead5"/><text x="770" y="292" fill="#edf5ff" font-size="14">3</text><text x="44" y="321" fill="#b5c6dd" font-size="14">thombashi/pytablewriter</text><rect x="475" y="310" width="270" height="9" rx="4" fill="#1e2d42"/><rect x="475.0" y="310" width="20.2" height="9" fill="#58ead5"/><text x="770" y="321" fill="#edf5ff" font-size="14">3</text>
-    <text x="44" y="366" fill="#8fa7c2" font-size="12">UPDATED 2026-11-10 09:55:09 UTC · github.com/boyfeiyu</text>
+    <text x="44" y="205" fill="#b5c6dd" font-size="14">multica-ai/multica</text><rect x="475" y="194" width="270" height="9" rx="4" fill="#1e2d42"/><rect x="475" y="194" width="125.1" height="9" fill="#b69cff"/><rect x="600.1" y="194" width="144.9" height="9" fill="#58ead5"/><text x="770" y="205" fill="#edf5ff" font-size="14">41</text><text x="44" y="234" fill="#b5c6dd" font-size="14">mahmoud/boltons</text><rect x="475" y="223" width="270" height="9" rx="4" fill="#1e2d42"/><rect x="475.0" y="223" width="26.3" height="9" fill="#58ead5"/><text x="770" y="234" fill="#edf5ff" font-size="14">4</text><text x="44" y="263" fill="#b5c6dd" font-size="14">fsspec/filesystem_spec</text><rect x="475" y="252" width="270" height="9" rx="4" fill="#1e2d42"/><rect x="475.0" y="252" width="19.8" height="9" fill="#58ead5"/><text x="770" y="263" fill="#edf5ff" font-size="14">3</text><text x="44" y="292" fill="#b5c6dd" font-size="14">python-injector/injector</text><rect x="475" y="281" width="270" height="9" rx="4" fill="#1e2d42"/><rect x="475.0" y="281" width="19.8" height="9" fill="#58ead5"/><text x="770" y="292" fill="#edf5ff" font-size="14">3</text><text x="44" y="321" fill="#b5c6dd" font-size="14">thombashi/pytablewriter</text><rect x="475" y="310" width="270" height="9" rx="4" fill="#1e2d42"/><rect x="475.0" y="310" width="19.8" height="9" fill="#58ead5"/><text x="770" y="321" fill="#edf5ff" font-size="14">3</text>
+    <text x="44" y="366" fill="#8fa7c2" font-size="12">UPDATED 2026-11-11 09:29:23 UTC · github.com/boyfeiyu</text>
   </g>
 </svg>
