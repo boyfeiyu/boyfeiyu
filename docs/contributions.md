@@ -1,6 +1,6 @@
 # 公开开源贡献 / Public contributions
 
-数据核验时间：**2026-11-11T09:29:23Z**。
+数据核验时间：**2026-11-12T09:53:14Z**。
 
 来源：GitHub GraphQL `user(login: "boyfeiyu").pullRequests`，逐页读取至末页。
 口径：本人发起、公开、仓库所有者不是 boyfeiyu、状态为已合并或开放（含草稿）的 PR。
@@ -12,15 +12,19 @@
 
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
 | :-- | :-- | :-- | :-- |
+| 已合并 | [#10469 · feat\(chat\): persist optional submission acceptance receipts](https://github.com/multica-ai/multica/pull/10469) | 2026-11-12 | 2026-11-12 |
+| 开放 | [#10435 · feat\(runs\): show managed MCP configuration sources at claim](https://github.com/multica-ai/multica/pull/10435) | 2026-11-11 | — |
+| 已合并 | [#10428 · MUL-9113 test\(handler\): fail on explicitly configured database errors](https://github.com/multica-ai/multica/pull/10428) | 2026-11-11 | 2026-11-11 |
+| 已合并 | [#10423 · MUL-9110 docs\(contributing\): document native screenshot uploads from forks](https://github.com/multica-ai/multica/pull/10423) | 2026-11-11 | 2026-11-11 |
+| 开放 | [#9742 · feat\(projects\): persist lifecycle browse views \(BOYF-85\)](https://github.com/multica-ai/multica/pull/9742) | 2026-11-11 | — |
 | 开放 | [#10033 · feat\(desktop\): reopen closed tabs](https://github.com/multica-ai/multica/pull/10033) | 2026-11-11 | — |
+| 开放 | [#9744 · feat\(chat\): add workspace default chat agent](https://github.com/multica-ai/multica/pull/9744) | 2026-11-11 | — |
 | 开放 | [#10089 · fix\(issues\): preserve draft label edits during inline creation](https://github.com/multica-ai/multica/pull/10089) | 2026-11-11 | — |
 | 开放 | [#9972 · feat\(chat\): remember collapsed execution details preference](https://github.com/multica-ai/multica/pull/9972) | 2026-11-11 | — |
-| 开放 | [#9744 · feat\(chat\): add workspace default chat agent](https://github.com/multica-ai/multica/pull/9744) | 2026-11-11 | — |
 | 已合并 | [#10324 · MUL-8993: fix\(issues\): respect the closed properties sidebar while loading](https://github.com/multica-ai/multica/pull/10324) | 2026-11-11 | 2026-11-11 |
 | 开放 | [#9774 · fix\(workflows\): explain handoff enqueue decisions \(BOYF-166\)](https://github.com/multica-ai/multica/pull/9774) | 2026-11-10 | — |
 | 开放 | [#9768 · fix\(runtimes\): recover empty legacy Builder sessions](https://github.com/multica-ai/multica/pull/9768) | 2026-11-10 | — |
 | 开放 | [#10023 · BOYF-531: feat\(autopilots\): share run-only execution log links](https://github.com/multica-ai/multica/pull/10023) | 2026-11-10 | — |
-| 开放 | [#9742 · feat\(projects\): persist lifecycle browse views \(BOYF-85\)](https://github.com/multica-ai/multica/pull/9742) | 2026-11-10 | — |
 | 已合并 | [#10115 · MUL-8758 BOYF-670 fix\(core\): recover pending invitations on focus and reconnect](https://github.com/multica-ai/multica/pull/10115) | 2026-11-09 | 2026-11-09 |
 | 开放 | [#10093 · MUL-8738: fix\(issues\): retain queued description saves after closing peek](https://github.com/multica-ai/multica/pull/10093) | 2026-11-09 | — |
 | 已合并 | [#10114 · MUL-8757 BOYF-666 fix\(issues\): retain duplicate marking feedback after picker closes](https://github.com/multica-ai/multica/pull/10114) | 2026-11-09 | 2026-11-09 |
@@ -75,9 +79,9 @@
 
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
 | :-- | :-- | :-- | :-- |
-| 开放 | [#333 · Fix implicit ProviderOf lookup in child injectors](https://github.com/python-injector/injector/pull/333) | 2026-11-06 | — |
-| 开放 | [#332 · Respect class-level singleton decorators in multibindings](https://github.com/python-injector/injector/pull/332) | 2026-11-05 | — |
-| 开放 | [#331 · Fix class-level noninjectable constructor exclusions](https://github.com/python-injector/injector/pull/331) | 2026-11-02 | — |
+| 开放 | [#331 · Fix class-level noninjectable constructor exclusions](https://github.com/python-injector/injector/pull/331) | 2026-11-11 | — |
+| 开放 | [#332 · Respect class-level singleton decorators in multibindings](https://github.com/python-injector/injector/pull/332) | 2026-11-11 | — |
+| 开放 | [#333 · Fix implicit ProviderOf lookup in child injectors](https://github.com/python-injector/injector/pull/333) | 2026-11-11 | — |
 
 ## [thombashi/pytablewriter](https://github.com/thombashi/pytablewriter)
 
@@ -142,6 +146,12 @@
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
 | :-- | :-- | :-- | :-- |
 | 已合并 | [#905 · 📝 docs\(descriptor\): clarify native lock protocol compatibility](https://github.com/tox-dev/filelock/pull/905) | 2026-11-03 | 2026-11-03 |
+
+## [vitejs/vite](https://github.com/vitejs/vite)
+
+| 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
+| :-- | :-- | :-- | :-- |
+| 开放 | [#24081 · fix\(ssr\): preserve in-flight module identity \(fix \#24046\)](https://github.com/vitejs/vite/pull/24081) | 2026-11-12 | — |
 
 ## [vuejs/pinia](https://github.com/vuejs/pinia)
 

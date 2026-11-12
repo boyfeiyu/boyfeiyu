@@ -1,10 +1,109 @@
 {
   "schemaVersion": 1,
   "username": "boyfeiyu",
-  "fetchedAt": "2026-11-11T09:29:23Z",
+  "fetchedAt": "2026-11-12T09:53:14Z",
   "scope": "Authored public PRs in repositories not owned by boyfeiyu; OPEN and MERGED only. Closed unmerged PRs are excluded.",
   "source": "https://api.github.com/graphql",
   "pullRequests": [
+    {
+      "repository": "vitejs/vite",
+      "number": 24081,
+      "title": "fix(ssr): preserve in-flight module identity (fix #24046)",
+      "url": "https://github.com/vitejs/vite/pull/24081",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-12T09:31:00Z",
+      "updatedAt": "2026-11-12T09:31:00Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10469,
+      "title": "feat(chat): persist optional submission acceptance receipts",
+      "url": "https://github.com/multica-ai/multica/pull/10469",
+      "state": "MERGED",
+      "isDraft": false,
+      "createdAt": "2026-11-12T04:35:38Z",
+      "updatedAt": "2026-11-12T07:58:34Z",
+      "mergedAt": "2026-11-12T07:58:33Z"
+    },
+    {
+      "repository": "python-injector/injector",
+      "number": 331,
+      "title": "Fix class-level noninjectable constructor exclusions",
+      "url": "https://github.com/python-injector/injector/pull/331",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-10-30T16:45:23Z",
+      "updatedAt": "2026-11-11T21:26:48Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "python-injector/injector",
+      "number": 332,
+      "title": "Respect class-level singleton decorators in multibindings",
+      "url": "https://github.com/python-injector/injector/pull/332",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-05T13:41:15Z",
+      "updatedAt": "2026-11-11T21:26:22Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "python-injector/injector",
+      "number": 333,
+      "title": "Fix implicit ProviderOf lookup in child injectors",
+      "url": "https://github.com/python-injector/injector/pull/333",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-06T11:20:59Z",
+      "updatedAt": "2026-11-11T21:26:10Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10435,
+      "title": "feat(runs): show managed MCP configuration sources at claim",
+      "url": "https://github.com/multica-ai/multica/pull/10435",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-11T17:44:02Z",
+      "updatedAt": "2026-11-11T17:44:07Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10428,
+      "title": "MUL-9113 test(handler): fail on explicitly configured database errors",
+      "url": "https://github.com/multica-ai/multica/pull/10428",
+      "state": "MERGED",
+      "isDraft": false,
+      "createdAt": "2026-11-11T15:06:47Z",
+      "updatedAt": "2026-11-11T17:40:29Z",
+      "mergedAt": "2026-11-11T17:40:28Z"
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10423,
+      "title": "MUL-9110 docs(contributing): document native screenshot uploads from forks",
+      "url": "https://github.com/multica-ai/multica/pull/10423",
+      "state": "MERGED",
+      "isDraft": false,
+      "createdAt": "2026-11-11T12:15:39Z",
+      "updatedAt": "2026-11-11T17:38:21Z",
+      "mergedAt": "2026-11-11T17:38:20Z"
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 9742,
+      "title": "feat(projects): persist lifecycle browse views (BOYF-85)",
+      "url": "https://github.com/multica-ai/multica/pull/9742",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-10-30T23:07:17Z",
+      "updatedAt": "2026-11-11T12:54:42Z",
+      "mergedAt": null
+    },
     {
       "repository": "multica-ai/multica",
       "number": 10033,
@@ -13,7 +112,18 @@
       "state": "OPEN",
       "isDraft": false,
       "createdAt": "2026-11-06T03:21:57Z",
-      "updatedAt": "2026-11-11T09:12:47Z",
+      "updatedAt": "2026-11-11T12:00:11Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 9744,
+      "title": "feat(chat): add workspace default chat agent",
+      "url": "https://github.com/multica-ai/multica/pull/9744",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-10-31T03:03:02Z",
+      "updatedAt": "2026-11-11T11:22:24Z",
       "mergedAt": null
     },
     {
@@ -24,7 +134,7 @@
       "state": "OPEN",
       "isDraft": false,
       "createdAt": "2026-11-07T10:58:30Z",
-      "updatedAt": "2026-11-11T07:11:12Z",
+      "updatedAt": "2026-11-11T10:21:46Z",
       "mergedAt": null
     },
     {
@@ -36,17 +146,6 @@
       "isDraft": false,
       "createdAt": "2026-11-04T18:29:18Z",
       "updatedAt": "2026-11-11T05:29:48Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
-      "number": 9744,
-      "title": "feat(chat): add workspace default chat agent",
-      "url": "https://github.com/multica-ai/multica/pull/9744",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-10-31T03:03:02Z",
-      "updatedAt": "2026-11-11T04:02:20Z",
       "mergedAt": null
     },
     {
@@ -91,17 +190,6 @@
       "isDraft": false,
       "createdAt": "2026-11-06T00:33:52Z",
       "updatedAt": "2026-11-10T15:36:37Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
-      "number": 9742,
-      "title": "feat(projects): persist lifecycle browse views (BOYF-85)",
-      "url": "https://github.com/multica-ai/multica/pull/9742",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-10-30T23:07:17Z",
-      "updatedAt": "2026-11-10T13:24:00Z",
       "mergedAt": null
     },
     {
@@ -204,17 +292,6 @@
       "mergedAt": null
     },
     {
-      "repository": "python-injector/injector",
-      "number": 333,
-      "title": "Fix implicit ProviderOf lookup in child injectors",
-      "url": "https://github.com/python-injector/injector/pull/333",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-06T11:20:59Z",
-      "updatedAt": "2026-11-06T11:20:59Z",
-      "mergedAt": null
-    },
-    {
       "repository": "multica-ai/multica",
       "number": 10044,
       "title": "fix(issues): offer retry for failed first list pages (BOYF-568, MUL-8697)",
@@ -312,17 +389,6 @@
       "createdAt": "2026-11-05T15:09:23Z",
       "updatedAt": "2026-11-05T17:13:36Z",
       "mergedAt": "2026-11-05T17:13:36Z"
-    },
-    {
-      "repository": "python-injector/injector",
-      "number": 332,
-      "title": "Respect class-level singleton decorators in multibindings",
-      "url": "https://github.com/python-injector/injector/pull/332",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-05T13:41:15Z",
-      "updatedAt": "2026-11-05T13:41:15Z",
-      "mergedAt": null
     },
     {
       "repository": "multica-ai/multica",
@@ -487,17 +553,6 @@
       "isDraft": false,
       "createdAt": "2026-11-03T03:54:49Z",
       "updatedAt": "2026-11-03T03:54:55Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "python-injector/injector",
-      "number": 331,
-      "title": "Fix class-level noninjectable constructor exclusions",
-      "url": "https://github.com/python-injector/injector/pull/331",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-10-30T16:45:23Z",
-      "updatedAt": "2026-11-02T20:41:02Z",
       "mergedAt": null
     },
     {
