@@ -1,10 +1,65 @@
 {
   "schemaVersion": 1,
   "username": "boyfeiyu",
-  "fetchedAt": "2026-11-12T09:53:14Z",
+  "fetchedAt": "2026-11-13T09:35:49Z",
   "scope": "Authored public PRs in repositories not owned by boyfeiyu; OPEN and MERGED only. Closed unmerged PRs are excluded.",
   "source": "https://api.github.com/graphql",
   "pullRequests": [
+    {
+      "repository": "multica-ai/multica",
+      "number": 10089,
+      "title": "fix(issues): preserve draft label edits during inline creation",
+      "url": "https://github.com/multica-ai/multica/pull/10089",
+      "state": "MERGED",
+      "isDraft": false,
+      "createdAt": "2026-11-07T10:58:30Z",
+      "updatedAt": "2026-11-13T08:01:49Z",
+      "mergedAt": "2026-11-13T08:01:49Z"
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10087,
+      "title": "fix(issues): track the title actually adopted by the editor",
+      "url": "https://github.com/multica-ai/multica/pull/10087",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-07T09:27:15Z",
+      "updatedAt": "2026-11-13T07:58:59Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10526,
+      "title": "fix(cli): preserve literal inline text",
+      "url": "https://github.com/multica-ai/multica/pull/10526",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-13T03:49:15Z",
+      "updatedAt": "2026-11-13T06:42:16Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "fsspec/filesystem_spec",
+      "number": 2434,
+      "title": "Preserve cached prefixes when appending with multiple cache directories",
+      "url": "https://github.com/fsspec/filesystem_spec/pull/2434",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-05T04:33:32Z",
+      "updatedAt": "2026-11-12T20:55:36Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10502,
+      "title": "feat(desktop): export bounded redacted diagnostics archives",
+      "url": "https://github.com/multica-ai/multica/pull/10502",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-12T15:09:02Z",
+      "updatedAt": "2026-11-12T19:03:01Z",
+      "mergedAt": null
+    },
     {
       "repository": "vitejs/vite",
       "number": 24081,
@@ -128,17 +183,6 @@
     },
     {
       "repository": "multica-ai/multica",
-      "number": 10089,
-      "title": "fix(issues): preserve draft label edits during inline creation",
-      "url": "https://github.com/multica-ai/multica/pull/10089",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-07T10:58:30Z",
-      "updatedAt": "2026-11-11T10:21:46Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
       "number": 9972,
       "title": "feat(chat): remember collapsed execution details preference",
       "url": "https://github.com/multica-ai/multica/pull/9972",
@@ -245,17 +289,6 @@
       "isDraft": false,
       "createdAt": "2026-11-08T16:04:46Z",
       "updatedAt": "2026-11-08T16:04:51Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
-      "number": 10087,
-      "title": "fix(issues): track the title actually adopted by the editor",
-      "url": "https://github.com/multica-ai/multica/pull/10087",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-07T09:27:15Z",
-      "updatedAt": "2026-11-07T23:08:19Z",
       "mergedAt": null
     },
     {
@@ -421,17 +454,6 @@
       "isDraft": false,
       "createdAt": "2026-11-05T06:28:30Z",
       "updatedAt": "2026-11-05T06:28:36Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "fsspec/filesystem_spec",
-      "number": 2434,
-      "title": "Preserve cached prefixes when appending with multiple cache directories",
-      "url": "https://github.com/fsspec/filesystem_spec/pull/2434",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-05T04:33:32Z",
-      "updatedAt": "2026-11-05T04:33:32Z",
       "mergedAt": null
     },
     {

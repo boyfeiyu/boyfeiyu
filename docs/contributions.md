@@ -1,6 +1,6 @@
 # 公开开源贡献 / Public contributions
 
-数据核验时间：**2026-11-12T09:53:14Z**。
+数据核验时间：**2026-11-13T09:35:49Z**。
 
 来源：GitHub GraphQL `user(login: "boyfeiyu").pullRequests`，逐页读取至末页。
 口径：本人发起、公开、仓库所有者不是 boyfeiyu、状态为已合并或开放（含草稿）的 PR。
@@ -12,6 +12,10 @@
 
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
 | :-- | :-- | :-- | :-- |
+| 已合并 | [#10089 · fix\(issues\): preserve draft label edits during inline creation](https://github.com/multica-ai/multica/pull/10089) | 2026-11-13 | 2026-11-13 |
+| 开放 | [#10087 · fix\(issues\): track the title actually adopted by the editor](https://github.com/multica-ai/multica/pull/10087) | 2026-11-13 | — |
+| 开放 | [#10526 · fix\(cli\): preserve literal inline text](https://github.com/multica-ai/multica/pull/10526) | 2026-11-13 | — |
+| 开放 | [#10502 · feat\(desktop\): export bounded redacted diagnostics archives](https://github.com/multica-ai/multica/pull/10502) | 2026-11-12 | — |
 | 已合并 | [#10469 · feat\(chat\): persist optional submission acceptance receipts](https://github.com/multica-ai/multica/pull/10469) | 2026-11-12 | 2026-11-12 |
 | 开放 | [#10435 · feat\(runs\): show managed MCP configuration sources at claim](https://github.com/multica-ai/multica/pull/10435) | 2026-11-11 | — |
 | 已合并 | [#10428 · MUL-9113 test\(handler\): fail on explicitly configured database errors](https://github.com/multica-ai/multica/pull/10428) | 2026-11-11 | 2026-11-11 |
@@ -19,7 +23,6 @@
 | 开放 | [#9742 · feat\(projects\): persist lifecycle browse views \(BOYF-85\)](https://github.com/multica-ai/multica/pull/9742) | 2026-11-11 | — |
 | 开放 | [#10033 · feat\(desktop\): reopen closed tabs](https://github.com/multica-ai/multica/pull/10033) | 2026-11-11 | — |
 | 开放 | [#9744 · feat\(chat\): add workspace default chat agent](https://github.com/multica-ai/multica/pull/9744) | 2026-11-11 | — |
-| 开放 | [#10089 · fix\(issues\): preserve draft label edits during inline creation](https://github.com/multica-ai/multica/pull/10089) | 2026-11-11 | — |
 | 开放 | [#9972 · feat\(chat\): remember collapsed execution details preference](https://github.com/multica-ai/multica/pull/9972) | 2026-11-11 | — |
 | 已合并 | [#10324 · MUL-8993: fix\(issues\): respect the closed properties sidebar while loading](https://github.com/multica-ai/multica/pull/10324) | 2026-11-11 | 2026-11-11 |
 | 开放 | [#9774 · fix\(workflows\): explain handoff enqueue decisions \(BOYF-166\)](https://github.com/multica-ai/multica/pull/9774) | 2026-11-10 | — |
@@ -30,7 +33,6 @@
 | 已合并 | [#10114 · MUL-8757 BOYF-666 fix\(issues\): retain duplicate marking feedback after picker closes](https://github.com/multica-ai/multica/pull/10114) | 2026-11-09 | 2026-11-09 |
 | 已合并 | [#10104 · fix\(issues\): recover unread empty state after date filtering \(MUL-8747\)](https://github.com/multica-ai/multica/pull/10104) | 2026-11-09 | 2026-11-09 |
 | 开放 | [#10122 · fix\(invitation\): settle legacy pending invites for existing members](https://github.com/multica-ai/multica/pull/10122) | 2026-11-08 | — |
-| 开放 | [#10087 · fix\(issues\): track the title actually adopted by the editor](https://github.com/multica-ai/multica/pull/10087) | 2026-11-07 | — |
 | 开放 | [#9989 · feat\(issues\): suggest recent issues when choosing a parent](https://github.com/multica-ai/multica/pull/9989) | 2026-11-07 | — |
 | 已合并 | [#9776 · MUL-8457: test\(lark\): isolate legacy receipt backfill databases](https://github.com/multica-ai/multica/pull/9776) | 2026-11-06 | 2026-11-02 |
 | 开放 | [#9971 · feat\(agents\): add optional notes to environment variables](https://github.com/multica-ai/multica/pull/9971) | 2026-11-06 | — |
@@ -71,7 +73,7 @@
 
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
 | :-- | :-- | :-- | :-- |
-| 开放 | [#2434 · Preserve cached prefixes when appending with multiple cache directories](https://github.com/fsspec/filesystem_spec/pull/2434) | 2026-11-05 | — |
+| 开放 | [#2434 · Preserve cached prefixes when appending with multiple cache directories](https://github.com/fsspec/filesystem_spec/pull/2434) | 2026-11-12 | — |
 | 开放 | [#2422 · Quote development install extras to prevent shell expansion](https://github.com/fsspec/filesystem_spec/pull/2422) | 2026-11-03 | — |
 | 开放 | [#2412 · Speed up repeated MemoryFileSystem walk listings](https://github.com/fsspec/filesystem_spec/pull/2412) | 2026-11-01 | — |
 
