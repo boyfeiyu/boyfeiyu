@@ -1,10 +1,54 @@
 {
   "schemaVersion": 1,
   "username": "boyfeiyu",
-  "fetchedAt": "2026-11-13T09:35:49Z",
+  "fetchedAt": "2026-11-14T09:00:55Z",
   "scope": "Authored public PRs in repositories not owned by boyfeiyu; OPEN and MERGED only. Closed unmerged PRs are excluded.",
   "source": "https://api.github.com/graphql",
   "pullRequests": [
+    {
+      "repository": "multica-ai/multica",
+      "number": 10033,
+      "title": "feat(desktop): reopen closed tabs",
+      "url": "https://github.com/multica-ai/multica/pull/10033",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-06T03:21:57Z",
+      "updatedAt": "2026-11-13T16:10:56Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 9740,
+      "title": "feat(chat): add project-linked chat discovery and filtering",
+      "url": "https://github.com/multica-ai/multica/pull/9740",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-10-30T21:57:02Z",
+      "updatedAt": "2026-11-13T14:39:09Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "vitejs/vite",
+      "number": 24081,
+      "title": "fix(ssr): preserve in-flight module identity (fix #24046)",
+      "url": "https://github.com/vitejs/vite/pull/24081",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-12T09:31:00Z",
+      "updatedAt": "2026-11-13T09:42:12Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10093,
+      "title": "MUL-8738: fix(issues): retain queued description saves after closing peek",
+      "url": "https://github.com/multica-ai/multica/pull/10093",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-07T15:11:16Z",
+      "updatedAt": "2026-11-13T09:40:28Z",
+      "mergedAt": null
+    },
     {
       "repository": "multica-ai/multica",
       "number": 10089,
@@ -58,17 +102,6 @@
       "isDraft": false,
       "createdAt": "2026-11-12T15:09:02Z",
       "updatedAt": "2026-11-12T19:03:01Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "vitejs/vite",
-      "number": 24081,
-      "title": "fix(ssr): preserve in-flight module identity (fix #24046)",
-      "url": "https://github.com/vitejs/vite/pull/24081",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-12T09:31:00Z",
-      "updatedAt": "2026-11-12T09:31:00Z",
       "mergedAt": null
     },
     {
@@ -161,17 +194,6 @@
     },
     {
       "repository": "multica-ai/multica",
-      "number": 10033,
-      "title": "feat(desktop): reopen closed tabs",
-      "url": "https://github.com/multica-ai/multica/pull/10033",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-06T03:21:57Z",
-      "updatedAt": "2026-11-11T12:00:11Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
       "number": 9744,
       "title": "feat(chat): add workspace default chat agent",
       "url": "https://github.com/multica-ai/multica/pull/9744",
@@ -246,17 +268,6 @@
       "createdAt": "2026-11-08T13:51:45Z",
       "updatedAt": "2026-11-09T08:59:37Z",
       "mergedAt": "2026-11-09T08:59:37Z"
-    },
-    {
-      "repository": "multica-ai/multica",
-      "number": 10093,
-      "title": "MUL-8738: fix(issues): retain queued description saves after closing peek",
-      "url": "https://github.com/multica-ai/multica/pull/10093",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-07T15:11:16Z",
-      "updatedAt": "2026-11-09T08:21:52Z",
-      "mergedAt": null
     },
     {
       "repository": "multica-ai/multica",
@@ -476,17 +487,6 @@
       "isDraft": false,
       "createdAt": "2026-11-01T09:57:57Z",
       "updatedAt": "2026-11-04T21:00:23Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
-      "number": 9740,
-      "title": "feat(chat): add project-linked chat discovery and filtering",
-      "url": "https://github.com/multica-ai/multica/pull/9740",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-10-30T21:57:02Z",
-      "updatedAt": "2026-11-04T19:40:03Z",
       "mergedAt": null
     },
     {

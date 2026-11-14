@@ -1,6 +1,6 @@
 # 公开开源贡献 / Public contributions
 
-数据核验时间：**2026-11-13T09:35:49Z**。
+数据核验时间：**2026-11-14T09:00:55Z**。
 
 来源：GitHub GraphQL `user(login: "boyfeiyu").pullRequests`，逐页读取至末页。
 口径：本人发起、公开、仓库所有者不是 boyfeiyu、状态为已合并或开放（含草稿）的 PR。
@@ -12,6 +12,9 @@
 
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
 | :-- | :-- | :-- | :-- |
+| 开放 | [#10033 · feat\(desktop\): reopen closed tabs](https://github.com/multica-ai/multica/pull/10033) | 2026-11-13 | — |
+| 开放 | [#9740 · feat\(chat\): add project-linked chat discovery and filtering](https://github.com/multica-ai/multica/pull/9740) | 2026-11-13 | — |
+| 开放 | [#10093 · MUL-8738: fix\(issues\): retain queued description saves after closing peek](https://github.com/multica-ai/multica/pull/10093) | 2026-11-13 | — |
 | 已合并 | [#10089 · fix\(issues\): preserve draft label edits during inline creation](https://github.com/multica-ai/multica/pull/10089) | 2026-11-13 | 2026-11-13 |
 | 开放 | [#10087 · fix\(issues\): track the title actually adopted by the editor](https://github.com/multica-ai/multica/pull/10087) | 2026-11-13 | — |
 | 开放 | [#10526 · fix\(cli\): preserve literal inline text](https://github.com/multica-ai/multica/pull/10526) | 2026-11-13 | — |
@@ -21,7 +24,6 @@
 | 已合并 | [#10428 · MUL-9113 test\(handler\): fail on explicitly configured database errors](https://github.com/multica-ai/multica/pull/10428) | 2026-11-11 | 2026-11-11 |
 | 已合并 | [#10423 · MUL-9110 docs\(contributing\): document native screenshot uploads from forks](https://github.com/multica-ai/multica/pull/10423) | 2026-11-11 | 2026-11-11 |
 | 开放 | [#9742 · feat\(projects\): persist lifecycle browse views \(BOYF-85\)](https://github.com/multica-ai/multica/pull/9742) | 2026-11-11 | — |
-| 开放 | [#10033 · feat\(desktop\): reopen closed tabs](https://github.com/multica-ai/multica/pull/10033) | 2026-11-11 | — |
 | 开放 | [#9744 · feat\(chat\): add workspace default chat agent](https://github.com/multica-ai/multica/pull/9744) | 2026-11-11 | — |
 | 开放 | [#9972 · feat\(chat\): remember collapsed execution details preference](https://github.com/multica-ai/multica/pull/9972) | 2026-11-11 | — |
 | 已合并 | [#10324 · MUL-8993: fix\(issues\): respect the closed properties sidebar while loading](https://github.com/multica-ai/multica/pull/10324) | 2026-11-11 | 2026-11-11 |
@@ -29,7 +31,6 @@
 | 开放 | [#9768 · fix\(runtimes\): recover empty legacy Builder sessions](https://github.com/multica-ai/multica/pull/9768) | 2026-11-10 | — |
 | 开放 | [#10023 · BOYF-531: feat\(autopilots\): share run-only execution log links](https://github.com/multica-ai/multica/pull/10023) | 2026-11-10 | — |
 | 已合并 | [#10115 · MUL-8758 BOYF-670 fix\(core\): recover pending invitations on focus and reconnect](https://github.com/multica-ai/multica/pull/10115) | 2026-11-09 | 2026-11-09 |
-| 开放 | [#10093 · MUL-8738: fix\(issues\): retain queued description saves after closing peek](https://github.com/multica-ai/multica/pull/10093) | 2026-11-09 | — |
 | 已合并 | [#10114 · MUL-8757 BOYF-666 fix\(issues\): retain duplicate marking feedback after picker closes](https://github.com/multica-ai/multica/pull/10114) | 2026-11-09 | 2026-11-09 |
 | 已合并 | [#10104 · fix\(issues\): recover unread empty state after date filtering \(MUL-8747\)](https://github.com/multica-ai/multica/pull/10104) | 2026-11-09 | 2026-11-09 |
 | 开放 | [#10122 · fix\(invitation\): settle legacy pending invites for existing members](https://github.com/multica-ai/multica/pull/10122) | 2026-11-08 | — |
@@ -50,7 +51,6 @@
 | 开放 | [#9986 · feat\(wakeups\): add opt-in sub-issue report barrier](https://github.com/multica-ai/multica/pull/9986) | 2026-11-05 | — |
 | 已合并 | [#9981 · MUL-8642: fix\(search\): preserve delegation during IME Shift+Enter](https://github.com/multica-ai/multica/pull/9981) | 2026-11-05 | 2026-11-05 |
 | 开放 | [#9781 · feat\(autopilot\): support finite schedule execution counts](https://github.com/multica-ai/multica/pull/9781) | 2026-11-04 | — |
-| 开放 | [#9740 · feat\(chat\): add project-linked chat discovery and filtering](https://github.com/multica-ai/multica/pull/9740) | 2026-11-04 | — |
 | 已合并 | [#9829 · fix\(views\): preserve IME input in filters, title rename and find \(MUL-8509\)](https://github.com/multica-ai/multica/pull/9829) | 2026-11-04 | 2026-11-04 |
 | 已合并 | [#9831 · MUL-8511: fix\(views\): preserve scalar property drafts during live updates \(BOYF-301\)](https://github.com/multica-ai/multica/pull/9831) | 2026-11-04 | 2026-11-04 |
 | 已合并 | [#9811 · fix\(cli\): acknowledge label attachment without returned labels \(BOYF-256\) MUL-8494](https://github.com/multica-ai/multica/pull/9811) | 2026-11-04 | 2026-11-04 |
@@ -153,7 +153,7 @@
 
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
 | :-- | :-- | :-- | :-- |
-| 开放 | [#24081 · fix\(ssr\): preserve in-flight module identity \(fix \#24046\)](https://github.com/vitejs/vite/pull/24081) | 2026-11-12 | — |
+| 开放 | [#24081 · fix\(ssr\): preserve in-flight module identity \(fix \#24046\)](https://github.com/vitejs/vite/pull/24081) | 2026-11-13 | — |
 
 ## [vuejs/pinia](https://github.com/vuejs/pinia)
 
