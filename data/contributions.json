@@ -1,10 +1,43 @@
 {
   "schemaVersion": 1,
   "username": "boyfeiyu",
-  "fetchedAt": "2026-11-14T09:00:55Z",
+  "fetchedAt": "2026-11-15T09:30:26Z",
   "scope": "Authored public PRs in repositories not owned by boyfeiyu; OPEN and MERGED only. Closed unmerged PRs are excluded.",
   "source": "https://api.github.com/graphql",
   "pullRequests": [
+    {
+      "repository": "multica-ai/multica",
+      "number": 9742,
+      "title": "feat(projects): persist lifecycle browse views (BOYF-85)",
+      "url": "https://github.com/multica-ai/multica/pull/9742",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-10-30T23:07:17Z",
+      "updatedAt": "2026-11-15T08:52:58Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10634,
+      "title": "fix(cli): validate metadata mutation keys before building URLs",
+      "url": "https://github.com/multica-ai/multica/pull/10634",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-15T07:41:03Z",
+      "updatedAt": "2026-11-15T08:07:47Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "fsspec/filesystem_spec",
+      "number": 2462,
+      "title": "Read committed SFTP files at their original paths in transactions",
+      "url": "https://github.com/fsspec/filesystem_spec/pull/2462",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-14T16:25:52Z",
+      "updatedAt": "2026-11-15T07:23:10Z",
+      "mergedAt": null
+    },
     {
       "repository": "multica-ai/multica",
       "number": 10033,
@@ -13,7 +46,117 @@
       "state": "OPEN",
       "isDraft": false,
       "createdAt": "2026-11-06T03:21:57Z",
-      "updatedAt": "2026-11-13T16:10:56Z",
+      "updatedAt": "2026-11-15T07:07:04Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "tqdm/tqdm",
+      "number": 1921,
+      "title": "fix: clean up manually refreshed bars during delay",
+      "url": "https://github.com/tqdm/tqdm/pull/1921",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-15T01:07:11Z",
+      "updatedAt": "2026-11-15T02:01:47Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10624,
+      "title": "fix(cli): preserve issue description when stdin is disabled",
+      "url": "https://github.com/multica-ai/multica/pull/10624",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-15T00:31:18Z",
+      "updatedAt": "2026-11-15T01:09:54Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10621,
+      "title": "fix(search): reset command palette when workspace changes",
+      "url": "https://github.com/multica-ai/multica/pull/10621",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-14T23:10:13Z",
+      "updatedAt": "2026-11-15T00:07:24Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "python-attrs/attrs",
+      "number": 1659,
+      "title": "Fix initializer metadata shadowing by valid parameter names",
+      "url": "https://github.com/python-attrs/attrs/pull/1659",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-14T22:10:38Z",
+      "updatedAt": "2026-11-14T22:10:38Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10617,
+      "title": "fix(cli): start webhook rotation timeout after confirmation",
+      "url": "https://github.com/multica-ai/multica/pull/10617",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-14T21:02:13Z",
+      "updatedAt": "2026-11-14T22:04:45Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10613,
+      "title": "fix(chat): keep deleted pending uploads removed after leaving chat",
+      "url": "https://github.com/multica-ai/multica/pull/10613",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-14T18:58:03Z",
+      "updatedAt": "2026-11-14T19:06:26Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10612,
+      "title": "fix(cli): preserve local environment authentication exit code",
+      "url": "https://github.com/multica-ai/multica/pull/10612",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-14T18:26:52Z",
+      "updatedAt": "2026-11-14T19:06:20Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "vuejs/router",
+      "number": 2904,
+      "title": "fix(matcher): remove descendants of grouping records",
+      "url": "https://github.com/vuejs/router/pull/2904",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-14T15:04:09Z",
+      "updatedAt": "2026-11-14T18:00:09Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10601,
+      "title": "fix(publicapi): advertise supported methods in 405 responses",
+      "url": "https://github.com/multica-ai/multica/pull/10601",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-14T14:43:55Z",
+      "updatedAt": "2026-11-14T15:07:04Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10600,
+      "title": "fix(settings): preserve reverted drafts during autosave",
+      "url": "https://github.com/multica-ai/multica/pull/10600",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-14T14:10:34Z",
+      "updatedAt": "2026-11-14T15:06:46Z",
       "mergedAt": null
     },
     {
@@ -180,17 +323,6 @@
       "createdAt": "2026-11-11T12:15:39Z",
       "updatedAt": "2026-11-11T17:38:21Z",
       "mergedAt": "2026-11-11T17:38:20Z"
-    },
-    {
-      "repository": "multica-ai/multica",
-      "number": 9742,
-      "title": "feat(projects): persist lifecycle browse views (BOYF-85)",
-      "url": "https://github.com/multica-ai/multica/pull/9742",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-10-30T23:07:17Z",
-      "updatedAt": "2026-11-11T12:54:42Z",
-      "mergedAt": null
     },
     {
       "repository": "multica-ai/multica",
@@ -443,17 +575,6 @@
       "isDraft": false,
       "createdAt": "2026-11-02T14:42:23Z",
       "updatedAt": "2026-11-05T12:47:08Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
-      "number": 10003,
-      "title": "feat(layout): include Inbox in Work navigation",
-      "url": "https://github.com/multica-ai/multica/pull/10003",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-05T12:14:20Z",
-      "updatedAt": "2026-11-05T12:14:28Z",
       "mergedAt": null
     },
     {

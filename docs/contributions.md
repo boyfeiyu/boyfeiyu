@@ -1,6 +1,6 @@
 # 公开开源贡献 / Public contributions
 
-数据核验时间：**2026-11-14T09:00:55Z**。
+数据核验时间：**2026-11-15T09:30:26Z**。
 
 来源：GitHub GraphQL `user(login: "boyfeiyu").pullRequests`，逐页读取至末页。
 口径：本人发起、公开、仓库所有者不是 boyfeiyu、状态为已合并或开放（含草稿）的 PR。
@@ -12,7 +12,16 @@
 
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
 | :-- | :-- | :-- | :-- |
-| 开放 | [#10033 · feat\(desktop\): reopen closed tabs](https://github.com/multica-ai/multica/pull/10033) | 2026-11-13 | — |
+| 开放 | [#9742 · feat\(projects\): persist lifecycle browse views \(BOYF-85\)](https://github.com/multica-ai/multica/pull/9742) | 2026-11-15 | — |
+| 开放 | [#10634 · fix\(cli\): validate metadata mutation keys before building URLs](https://github.com/multica-ai/multica/pull/10634) | 2026-11-15 | — |
+| 开放 | [#10033 · feat\(desktop\): reopen closed tabs](https://github.com/multica-ai/multica/pull/10033) | 2026-11-15 | — |
+| 开放 | [#10624 · fix\(cli\): preserve issue description when stdin is disabled](https://github.com/multica-ai/multica/pull/10624) | 2026-11-15 | — |
+| 开放 | [#10621 · fix\(search\): reset command palette when workspace changes](https://github.com/multica-ai/multica/pull/10621) | 2026-11-15 | — |
+| 开放 | [#10617 · fix\(cli\): start webhook rotation timeout after confirmation](https://github.com/multica-ai/multica/pull/10617) | 2026-11-14 | — |
+| 开放 | [#10613 · fix\(chat\): keep deleted pending uploads removed after leaving chat](https://github.com/multica-ai/multica/pull/10613) | 2026-11-14 | — |
+| 开放 | [#10612 · fix\(cli\): preserve local environment authentication exit code](https://github.com/multica-ai/multica/pull/10612) | 2026-11-14 | — |
+| 开放 | [#10601 · fix\(publicapi\): advertise supported methods in 405 responses](https://github.com/multica-ai/multica/pull/10601) | 2026-11-14 | — |
+| 开放 | [#10600 · fix\(settings\): preserve reverted drafts during autosave](https://github.com/multica-ai/multica/pull/10600) | 2026-11-14 | — |
 | 开放 | [#9740 · feat\(chat\): add project-linked chat discovery and filtering](https://github.com/multica-ai/multica/pull/9740) | 2026-11-13 | — |
 | 开放 | [#10093 · MUL-8738: fix\(issues\): retain queued description saves after closing peek](https://github.com/multica-ai/multica/pull/10093) | 2026-11-13 | — |
 | 已合并 | [#10089 · fix\(issues\): preserve draft label edits during inline creation](https://github.com/multica-ai/multica/pull/10089) | 2026-11-13 | 2026-11-13 |
@@ -23,7 +32,6 @@
 | 开放 | [#10435 · feat\(runs\): show managed MCP configuration sources at claim](https://github.com/multica-ai/multica/pull/10435) | 2026-11-11 | — |
 | 已合并 | [#10428 · MUL-9113 test\(handler\): fail on explicitly configured database errors](https://github.com/multica-ai/multica/pull/10428) | 2026-11-11 | 2026-11-11 |
 | 已合并 | [#10423 · MUL-9110 docs\(contributing\): document native screenshot uploads from forks](https://github.com/multica-ai/multica/pull/10423) | 2026-11-11 | 2026-11-11 |
-| 开放 | [#9742 · feat\(projects\): persist lifecycle browse views \(BOYF-85\)](https://github.com/multica-ai/multica/pull/9742) | 2026-11-11 | — |
 | 开放 | [#9744 · feat\(chat\): add workspace default chat agent](https://github.com/multica-ai/multica/pull/9744) | 2026-11-11 | — |
 | 开放 | [#9972 · feat\(chat\): remember collapsed execution details preference](https://github.com/multica-ai/multica/pull/9972) | 2026-11-11 | — |
 | 已合并 | [#10324 · MUL-8993: fix\(issues\): respect the closed properties sidebar while loading](https://github.com/multica-ai/multica/pull/10324) | 2026-11-11 | 2026-11-11 |
@@ -47,7 +55,6 @@
 | 开放 | [#10035 · fix\(workflows\): show inherited task bindings in briefs \(BOYF-558\)](https://github.com/multica-ai/multica/pull/10035) | 2026-11-06 | — |
 | 已合并 | [#10010 · MUL-8666 fix\(cli\): classify interrupted attachment downloads as network errors](https://github.com/multica-ai/multica/pull/10010) | 2026-11-05 | 2026-11-05 |
 | 开放 | [#9827 · MUL-8507 BOYF-268 fix\(cli\): preserve quotes and commas in metadata filters](https://github.com/multica-ai/multica/pull/9827) | 2026-11-05 | — |
-| 开放 | [#10003 · feat\(layout\): include Inbox in Work navigation](https://github.com/multica-ai/multica/pull/10003) | 2026-11-05 | — |
 | 开放 | [#9986 · feat\(wakeups\): add opt-in sub-issue report barrier](https://github.com/multica-ai/multica/pull/9986) | 2026-11-05 | — |
 | 已合并 | [#9981 · MUL-8642: fix\(search\): preserve delegation during IME Shift+Enter](https://github.com/multica-ai/multica/pull/9981) | 2026-11-05 | 2026-11-05 |
 | 开放 | [#9781 · feat\(autopilot\): support finite schedule execution counts](https://github.com/multica-ai/multica/pull/9781) | 2026-11-04 | — |
@@ -60,6 +67,15 @@
 | 开放 | [#9743 · feat\(issues\): add project columns to swimlanes](https://github.com/multica-ai/multica/pull/9743) | 2026-11-01 | — |
 | 开放 | [#9782 · fix\(workflows\): clarify Default scope for issues without a project](https://github.com/multica-ai/multica/pull/9782) | 2026-11-01 | — |
 
+## [fsspec/filesystem_spec](https://github.com/fsspec/filesystem_spec)
+
+| 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
+| :-- | :-- | :-- | :-- |
+| 开放 | [#2462 · Read committed SFTP files at their original paths in transactions](https://github.com/fsspec/filesystem_spec/pull/2462) | 2026-11-15 | — |
+| 开放 | [#2434 · Preserve cached prefixes when appending with multiple cache directories](https://github.com/fsspec/filesystem_spec/pull/2434) | 2026-11-12 | — |
+| 开放 | [#2422 · Quote development install extras to prevent shell expansion](https://github.com/fsspec/filesystem_spec/pull/2422) | 2026-11-03 | — |
+| 开放 | [#2412 · Speed up repeated MemoryFileSystem walk listings](https://github.com/fsspec/filesystem_spec/pull/2412) | 2026-11-01 | — |
+
 ## [mahmoud/boltons](https://github.com/mahmoud/boltons)
 
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
@@ -68,14 +84,6 @@
 | 开放 | [#709 · Fix JSONL reverse iteration splitting valid Unicode strings \(BOYF-246\)](https://github.com/mahmoud/boltons/pull/709) | 2026-11-01 | — |
 | 开放 | [#706 · Keep evicted cache values alive until insertion completes](https://github.com/mahmoud/boltons/pull/706) | 2026-11-01 | — |
 | 开放 | [#704 · Preserve integer precision in variance calculations](https://github.com/mahmoud/boltons/pull/704) | 2026-11-01 | — |
-
-## [fsspec/filesystem_spec](https://github.com/fsspec/filesystem_spec)
-
-| 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
-| :-- | :-- | :-- | :-- |
-| 开放 | [#2434 · Preserve cached prefixes when appending with multiple cache directories](https://github.com/fsspec/filesystem_spec/pull/2434) | 2026-11-12 | — |
-| 开放 | [#2422 · Quote development install extras to prevent shell expansion](https://github.com/fsspec/filesystem_spec/pull/2422) | 2026-11-03 | — |
-| 开放 | [#2412 · Speed up repeated MemoryFileSystem walk listings](https://github.com/fsspec/filesystem_spec/pull/2412) | 2026-11-01 | — |
 
 ## [python-injector/injector](https://github.com/python-injector/injector)
 
@@ -125,6 +133,12 @@
 | :-- | :-- | :-- | :-- |
 | 开放 | [#15313 · Expose a public traceback filter for custom test nodes](https://github.com/pytest-dev/pytest/pull/15313) | 2026-11-01 | — |
 
+## [python-attrs/attrs](https://github.com/python-attrs/attrs)
+
+| 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
+| :-- | :-- | :-- | :-- |
+| 开放 | [#1659 · Fix initializer metadata shadowing by valid parameter names](https://github.com/python-attrs/attrs/pull/1659) | 2026-11-14 | — |
+
 ## [simonw/llm](https://github.com/simonw/llm)
 
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
@@ -149,6 +163,12 @@
 | :-- | :-- | :-- | :-- |
 | 已合并 | [#905 · 📝 docs\(descriptor\): clarify native lock protocol compatibility](https://github.com/tox-dev/filelock/pull/905) | 2026-11-03 | 2026-11-03 |
 
+## [tqdm/tqdm](https://github.com/tqdm/tqdm)
+
+| 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
+| :-- | :-- | :-- | :-- |
+| 开放 | [#1921 · fix: clean up manually refreshed bars during delay](https://github.com/tqdm/tqdm/pull/1921) | 2026-11-15 | — |
+
 ## [vitejs/vite](https://github.com/vitejs/vite)
 
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
@@ -160,6 +180,12 @@
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
 | :-- | :-- | :-- | :-- |
 | 已合并 | [#3205 · fix\(types\): exclude once from subscription options \(BOYF-273\)](https://github.com/vuejs/pinia/pull/3205) | 2026-11-04 | 2026-11-04 |
+
+## [vuejs/router](https://github.com/vuejs/router)
+
+| 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
+| :-- | :-- | :-- | :-- |
+| 开放 | [#2904 · fix\(matcher\): remove descendants of grouping records](https://github.com/vuejs/router/pull/2904) | 2026-11-14 | — |
 
 ## [YunYouJun/air-conditioner](https://github.com/YunYouJun/air-conditioner)
 
