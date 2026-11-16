@@ -1,10 +1,76 @@
 {
   "schemaVersion": 1,
   "username": "boyfeiyu",
-  "fetchedAt": "2026-11-15T09:30:26Z",
+  "fetchedAt": "2026-11-16T09:48:48Z",
   "scope": "Authored public PRs in repositories not owned by boyfeiyu; OPEN and MERGED only. Closed unmerged PRs are excluded.",
   "source": "https://api.github.com/graphql",
   "pullRequests": [
+    {
+      "repository": "multica-ai/multica",
+      "number": 10526,
+      "title": "fix(cli): preserve literal inline text",
+      "url": "https://github.com/multica-ai/multica/pull/10526",
+      "state": "MERGED",
+      "isDraft": false,
+      "createdAt": "2026-11-13T03:49:15Z",
+      "updatedAt": "2026-11-16T08:04:47Z",
+      "mergedAt": "2026-11-16T08:04:47Z"
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10601,
+      "title": "fix(publicapi): advertise supported methods in 405 responses",
+      "url": "https://github.com/multica-ai/multica/pull/10601",
+      "state": "MERGED",
+      "isDraft": false,
+      "createdAt": "2026-11-14T14:43:55Z",
+      "updatedAt": "2026-11-16T04:12:57Z",
+      "mergedAt": "2026-11-16T04:12:57Z"
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10617,
+      "title": "fix(cli): start webhook rotation timeout after confirmation",
+      "url": "https://github.com/multica-ai/multica/pull/10617",
+      "state": "MERGED",
+      "isDraft": false,
+      "createdAt": "2026-11-14T21:02:13Z",
+      "updatedAt": "2026-11-16T04:07:15Z",
+      "mergedAt": "2026-11-16T04:07:15Z"
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10621,
+      "title": "fix(search): reset command palette when workspace changes",
+      "url": "https://github.com/multica-ai/multica/pull/10621",
+      "state": "MERGED",
+      "isDraft": false,
+      "createdAt": "2026-11-14T23:10:13Z",
+      "updatedAt": "2026-11-16T04:06:50Z",
+      "mergedAt": "2026-11-16T04:06:49Z"
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10613,
+      "title": "fix(chat): keep deleted pending uploads removed after leaving chat",
+      "url": "https://github.com/multica-ai/multica/pull/10613",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-14T18:58:03Z",
+      "updatedAt": "2026-11-16T04:06:19Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 9989,
+      "title": "feat(issues): suggest recent issues when choosing a parent",
+      "url": "https://github.com/multica-ai/multica/pull/9989",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-05T07:57:46Z",
+      "updatedAt": "2026-11-16T00:16:35Z",
+      "mergedAt": null
+    },
     {
       "repository": "multica-ai/multica",
       "number": 9742,
@@ -13,18 +79,73 @@
       "state": "OPEN",
       "isDraft": false,
       "createdAt": "2026-10-30T23:07:17Z",
-      "updatedAt": "2026-11-15T08:52:58Z",
+      "updatedAt": "2026-11-15T23:08:07Z",
       "mergedAt": null
     },
     {
       "repository": "multica-ai/multica",
+      "number": 10600,
+      "title": "MUL-9272 fix(settings): preserve reverted drafts during autosave",
+      "url": "https://github.com/multica-ai/multica/pull/10600",
+      "state": "MERGED",
+      "isDraft": false,
+      "createdAt": "2026-11-14T14:10:34Z",
+      "updatedAt": "2026-11-15T17:24:43Z",
+      "mergedAt": "2026-11-15T17:24:43Z"
+    },
+    {
+      "repository": "multica-ai/multica",
       "number": 10634,
-      "title": "fix(cli): validate metadata mutation keys before building URLs",
+      "title": "fix(cli): escape metadata mutation keys before building URLs (MUL-9296)",
       "url": "https://github.com/multica-ai/multica/pull/10634",
-      "state": "OPEN",
+      "state": "MERGED",
       "isDraft": false,
       "createdAt": "2026-11-15T07:41:03Z",
-      "updatedAt": "2026-11-15T08:07:47Z",
+      "updatedAt": "2026-11-15T17:12:45Z",
+      "mergedAt": "2026-11-15T17:12:44Z"
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10612,
+      "title": "MUL-9282 fix(cli): preserve local environment authentication exit code",
+      "url": "https://github.com/multica-ai/multica/pull/10612",
+      "state": "MERGED",
+      "isDraft": false,
+      "createdAt": "2026-11-14T18:26:52Z",
+      "updatedAt": "2026-11-15T16:51:04Z",
+      "mergedAt": "2026-11-15T16:51:03Z"
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10624,
+      "title": "fix(cli): preserve issue description when stdin is disabled (MUL-9292)",
+      "url": "https://github.com/multica-ai/multica/pull/10624",
+      "state": "MERGED",
+      "isDraft": false,
+      "createdAt": "2026-11-15T00:31:18Z",
+      "updatedAt": "2026-11-15T16:45:47Z",
+      "mergedAt": "2026-11-15T16:45:47Z"
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 9781,
+      "title": "feat(autopilot): support finite schedule execution counts",
+      "url": "https://github.com/multica-ai/multica/pull/9781",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-01T09:57:57Z",
+      "updatedAt": "2026-11-15T13:11:13Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10023,
+      "title": "BOYF-531: feat(autopilots): share run-only execution log links",
+      "url": "https://github.com/multica-ai/multica/pull/10023",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-06T00:33:52Z",
+      "updatedAt": "2026-11-15T10:45:40Z",
       "mergedAt": null
     },
     {
@@ -61,28 +182,6 @@
       "mergedAt": null
     },
     {
-      "repository": "multica-ai/multica",
-      "number": 10624,
-      "title": "fix(cli): preserve issue description when stdin is disabled",
-      "url": "https://github.com/multica-ai/multica/pull/10624",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-15T00:31:18Z",
-      "updatedAt": "2026-11-15T01:09:54Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
-      "number": 10621,
-      "title": "fix(search): reset command palette when workspace changes",
-      "url": "https://github.com/multica-ai/multica/pull/10621",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-14T23:10:13Z",
-      "updatedAt": "2026-11-15T00:07:24Z",
-      "mergedAt": null
-    },
-    {
       "repository": "python-attrs/attrs",
       "number": 1659,
       "title": "Fix initializer metadata shadowing by valid parameter names",
@@ -94,39 +193,6 @@
       "mergedAt": null
     },
     {
-      "repository": "multica-ai/multica",
-      "number": 10617,
-      "title": "fix(cli): start webhook rotation timeout after confirmation",
-      "url": "https://github.com/multica-ai/multica/pull/10617",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-14T21:02:13Z",
-      "updatedAt": "2026-11-14T22:04:45Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
-      "number": 10613,
-      "title": "fix(chat): keep deleted pending uploads removed after leaving chat",
-      "url": "https://github.com/multica-ai/multica/pull/10613",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-14T18:58:03Z",
-      "updatedAt": "2026-11-14T19:06:26Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
-      "number": 10612,
-      "title": "fix(cli): preserve local environment authentication exit code",
-      "url": "https://github.com/multica-ai/multica/pull/10612",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-14T18:26:52Z",
-      "updatedAt": "2026-11-14T19:06:20Z",
-      "mergedAt": null
-    },
-    {
       "repository": "vuejs/router",
       "number": 2904,
       "title": "fix(matcher): remove descendants of grouping records",
@@ -135,28 +201,6 @@
       "isDraft": false,
       "createdAt": "2026-11-14T15:04:09Z",
       "updatedAt": "2026-11-14T18:00:09Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
-      "number": 10601,
-      "title": "fix(publicapi): advertise supported methods in 405 responses",
-      "url": "https://github.com/multica-ai/multica/pull/10601",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-14T14:43:55Z",
-      "updatedAt": "2026-11-14T15:07:04Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
-      "number": 10600,
-      "title": "fix(settings): preserve reverted drafts during autosave",
-      "url": "https://github.com/multica-ai/multica/pull/10600",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-14T14:10:34Z",
-      "updatedAt": "2026-11-14T15:06:46Z",
       "mergedAt": null
     },
     {
@@ -212,17 +256,6 @@
       "isDraft": false,
       "createdAt": "2026-11-07T09:27:15Z",
       "updatedAt": "2026-11-13T07:58:59Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
-      "number": 10526,
-      "title": "fix(cli): preserve literal inline text",
-      "url": "https://github.com/multica-ai/multica/pull/10526",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-13T03:49:15Z",
-      "updatedAt": "2026-11-13T06:42:16Z",
       "mergedAt": null
     },
     {
@@ -381,17 +414,6 @@
     },
     {
       "repository": "multica-ai/multica",
-      "number": 10023,
-      "title": "BOYF-531: feat(autopilots): share run-only execution log links",
-      "url": "https://github.com/multica-ai/multica/pull/10023",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-06T00:33:52Z",
-      "updatedAt": "2026-11-10T15:36:37Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
       "number": 10115,
       "title": "MUL-8758 BOYF-670 fix(core): recover pending invitations on focus and reconnect",
       "url": "https://github.com/multica-ai/multica/pull/10115",
@@ -432,17 +454,6 @@
       "isDraft": false,
       "createdAt": "2026-11-08T16:04:46Z",
       "updatedAt": "2026-11-08T16:04:51Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
-      "number": 9989,
-      "title": "feat(issues): suggest recent issues when choosing a parent",
-      "url": "https://github.com/multica-ai/multica/pull/9989",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-05T07:57:46Z",
-      "updatedAt": "2026-11-07T23:07:56Z",
       "mergedAt": null
     },
     {
@@ -598,17 +609,6 @@
       "createdAt": "2026-11-05T02:30:47Z",
       "updatedAt": "2026-11-05T04:23:12Z",
       "mergedAt": "2026-11-05T04:23:12Z"
-    },
-    {
-      "repository": "multica-ai/multica",
-      "number": 9781,
-      "title": "feat(autopilot): support finite schedule execution counts",
-      "url": "https://github.com/multica-ai/multica/pull/9781",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-01T09:57:57Z",
-      "updatedAt": "2026-11-04T21:00:23Z",
-      "mergedAt": null
     },
     {
       "repository": "vuejs/pinia",

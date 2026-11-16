@@ -1,6 +1,6 @@
 # 公开开源贡献 / Public contributions
 
-数据核验时间：**2026-11-15T09:30:26Z**。
+数据核验时间：**2026-11-16T09:48:48Z**。
 
 来源：GitHub GraphQL `user(login: "boyfeiyu").pullRequests`，逐页读取至末页。
 口径：本人发起、公开、仓库所有者不是 boyfeiyu、状态为已合并或开放（含草稿）的 PR。
@@ -12,21 +12,24 @@
 
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
 | :-- | :-- | :-- | :-- |
+| 已合并 | [#10526 · fix\(cli\): preserve literal inline text](https://github.com/multica-ai/multica/pull/10526) | 2026-11-16 | 2026-11-16 |
+| 已合并 | [#10601 · fix\(publicapi\): advertise supported methods in 405 responses](https://github.com/multica-ai/multica/pull/10601) | 2026-11-16 | 2026-11-16 |
+| 已合并 | [#10617 · fix\(cli\): start webhook rotation timeout after confirmation](https://github.com/multica-ai/multica/pull/10617) | 2026-11-16 | 2026-11-16 |
+| 已合并 | [#10621 · fix\(search\): reset command palette when workspace changes](https://github.com/multica-ai/multica/pull/10621) | 2026-11-16 | 2026-11-16 |
+| 开放 | [#10613 · fix\(chat\): keep deleted pending uploads removed after leaving chat](https://github.com/multica-ai/multica/pull/10613) | 2026-11-16 | — |
+| 开放 | [#9989 · feat\(issues\): suggest recent issues when choosing a parent](https://github.com/multica-ai/multica/pull/9989) | 2026-11-16 | — |
 | 开放 | [#9742 · feat\(projects\): persist lifecycle browse views \(BOYF-85\)](https://github.com/multica-ai/multica/pull/9742) | 2026-11-15 | — |
-| 开放 | [#10634 · fix\(cli\): validate metadata mutation keys before building URLs](https://github.com/multica-ai/multica/pull/10634) | 2026-11-15 | — |
+| 已合并 | [#10600 · MUL-9272 fix\(settings\): preserve reverted drafts during autosave](https://github.com/multica-ai/multica/pull/10600) | 2026-11-15 | 2026-11-15 |
+| 已合并 | [#10634 · fix\(cli\): escape metadata mutation keys before building URLs \(MUL-9296\)](https://github.com/multica-ai/multica/pull/10634) | 2026-11-15 | 2026-11-15 |
+| 已合并 | [#10612 · MUL-9282 fix\(cli\): preserve local environment authentication exit code](https://github.com/multica-ai/multica/pull/10612) | 2026-11-15 | 2026-11-15 |
+| 已合并 | [#10624 · fix\(cli\): preserve issue description when stdin is disabled \(MUL-9292\)](https://github.com/multica-ai/multica/pull/10624) | 2026-11-15 | 2026-11-15 |
+| 开放 | [#9781 · feat\(autopilot\): support finite schedule execution counts](https://github.com/multica-ai/multica/pull/9781) | 2026-11-15 | — |
+| 开放 | [#10023 · BOYF-531: feat\(autopilots\): share run-only execution log links](https://github.com/multica-ai/multica/pull/10023) | 2026-11-15 | — |
 | 开放 | [#10033 · feat\(desktop\): reopen closed tabs](https://github.com/multica-ai/multica/pull/10033) | 2026-11-15 | — |
-| 开放 | [#10624 · fix\(cli\): preserve issue description when stdin is disabled](https://github.com/multica-ai/multica/pull/10624) | 2026-11-15 | — |
-| 开放 | [#10621 · fix\(search\): reset command palette when workspace changes](https://github.com/multica-ai/multica/pull/10621) | 2026-11-15 | — |
-| 开放 | [#10617 · fix\(cli\): start webhook rotation timeout after confirmation](https://github.com/multica-ai/multica/pull/10617) | 2026-11-14 | — |
-| 开放 | [#10613 · fix\(chat\): keep deleted pending uploads removed after leaving chat](https://github.com/multica-ai/multica/pull/10613) | 2026-11-14 | — |
-| 开放 | [#10612 · fix\(cli\): preserve local environment authentication exit code](https://github.com/multica-ai/multica/pull/10612) | 2026-11-14 | — |
-| 开放 | [#10601 · fix\(publicapi\): advertise supported methods in 405 responses](https://github.com/multica-ai/multica/pull/10601) | 2026-11-14 | — |
-| 开放 | [#10600 · fix\(settings\): preserve reverted drafts during autosave](https://github.com/multica-ai/multica/pull/10600) | 2026-11-14 | — |
 | 开放 | [#9740 · feat\(chat\): add project-linked chat discovery and filtering](https://github.com/multica-ai/multica/pull/9740) | 2026-11-13 | — |
 | 开放 | [#10093 · MUL-8738: fix\(issues\): retain queued description saves after closing peek](https://github.com/multica-ai/multica/pull/10093) | 2026-11-13 | — |
 | 已合并 | [#10089 · fix\(issues\): preserve draft label edits during inline creation](https://github.com/multica-ai/multica/pull/10089) | 2026-11-13 | 2026-11-13 |
 | 开放 | [#10087 · fix\(issues\): track the title actually adopted by the editor](https://github.com/multica-ai/multica/pull/10087) | 2026-11-13 | — |
-| 开放 | [#10526 · fix\(cli\): preserve literal inline text](https://github.com/multica-ai/multica/pull/10526) | 2026-11-13 | — |
 | 开放 | [#10502 · feat\(desktop\): export bounded redacted diagnostics archives](https://github.com/multica-ai/multica/pull/10502) | 2026-11-12 | — |
 | 已合并 | [#10469 · feat\(chat\): persist optional submission acceptance receipts](https://github.com/multica-ai/multica/pull/10469) | 2026-11-12 | 2026-11-12 |
 | 开放 | [#10435 · feat\(runs\): show managed MCP configuration sources at claim](https://github.com/multica-ai/multica/pull/10435) | 2026-11-11 | — |
@@ -37,12 +40,10 @@
 | 已合并 | [#10324 · MUL-8993: fix\(issues\): respect the closed properties sidebar while loading](https://github.com/multica-ai/multica/pull/10324) | 2026-11-11 | 2026-11-11 |
 | 开放 | [#9774 · fix\(workflows\): explain handoff enqueue decisions \(BOYF-166\)](https://github.com/multica-ai/multica/pull/9774) | 2026-11-10 | — |
 | 开放 | [#9768 · fix\(runtimes\): recover empty legacy Builder sessions](https://github.com/multica-ai/multica/pull/9768) | 2026-11-10 | — |
-| 开放 | [#10023 · BOYF-531: feat\(autopilots\): share run-only execution log links](https://github.com/multica-ai/multica/pull/10023) | 2026-11-10 | — |
 | 已合并 | [#10115 · MUL-8758 BOYF-670 fix\(core\): recover pending invitations on focus and reconnect](https://github.com/multica-ai/multica/pull/10115) | 2026-11-09 | 2026-11-09 |
 | 已合并 | [#10114 · MUL-8757 BOYF-666 fix\(issues\): retain duplicate marking feedback after picker closes](https://github.com/multica-ai/multica/pull/10114) | 2026-11-09 | 2026-11-09 |
 | 已合并 | [#10104 · fix\(issues\): recover unread empty state after date filtering \(MUL-8747\)](https://github.com/multica-ai/multica/pull/10104) | 2026-11-09 | 2026-11-09 |
 | 开放 | [#10122 · fix\(invitation\): settle legacy pending invites for existing members](https://github.com/multica-ai/multica/pull/10122) | 2026-11-08 | — |
-| 开放 | [#9989 · feat\(issues\): suggest recent issues when choosing a parent](https://github.com/multica-ai/multica/pull/9989) | 2026-11-07 | — |
 | 已合并 | [#9776 · MUL-8457: test\(lark\): isolate legacy receipt backfill databases](https://github.com/multica-ai/multica/pull/9776) | 2026-11-06 | 2026-11-02 |
 | 开放 | [#9971 · feat\(agents\): add optional notes to environment variables](https://github.com/multica-ai/multica/pull/9971) | 2026-11-06 | — |
 | 已合并 | [#10044 · fix\(issues\): offer retry for failed first list pages \(BOYF-568, MUL-8697\)](https://github.com/multica-ai/multica/pull/10044) | 2026-11-06 | 2026-11-06 |
@@ -57,7 +58,6 @@
 | 开放 | [#9827 · MUL-8507 BOYF-268 fix\(cli\): preserve quotes and commas in metadata filters](https://github.com/multica-ai/multica/pull/9827) | 2026-11-05 | — |
 | 开放 | [#9986 · feat\(wakeups\): add opt-in sub-issue report barrier](https://github.com/multica-ai/multica/pull/9986) | 2026-11-05 | — |
 | 已合并 | [#9981 · MUL-8642: fix\(search\): preserve delegation during IME Shift+Enter](https://github.com/multica-ai/multica/pull/9981) | 2026-11-05 | 2026-11-05 |
-| 开放 | [#9781 · feat\(autopilot\): support finite schedule execution counts](https://github.com/multica-ai/multica/pull/9781) | 2026-11-04 | — |
 | 已合并 | [#9829 · fix\(views\): preserve IME input in filters, title rename and find \(MUL-8509\)](https://github.com/multica-ai/multica/pull/9829) | 2026-11-04 | 2026-11-04 |
 | 已合并 | [#9831 · MUL-8511: fix\(views\): preserve scalar property drafts during live updates \(BOYF-301\)](https://github.com/multica-ai/multica/pull/9831) | 2026-11-04 | 2026-11-04 |
 | 已合并 | [#9811 · fix\(cli\): acknowledge label attachment without returned labels \(BOYF-256\) MUL-8494](https://github.com/multica-ai/multica/pull/9811) | 2026-11-04 | 2026-11-04 |
