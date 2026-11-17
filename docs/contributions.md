@@ -1,6 +1,6 @@
 # 公开开源贡献 / Public contributions
 
-数据核验时间：**2026-11-16T09:48:48Z**。
+数据核验时间：**2026-11-17T10:47:12Z**。
 
 来源：GitHub GraphQL `user(login: "boyfeiyu").pullRequests`，逐页读取至末页。
 口径：本人发起、公开、仓库所有者不是 boyfeiyu、状态为已合并或开放（含草稿）的 PR。
@@ -12,6 +12,7 @@
 
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
 | :-- | :-- | :-- | :-- |
+| 已合并 | [#10786 · feat\(issues\): add sub-issues to the issue sidebar](https://github.com/multica-ai/multica/pull/10786) | 2026-11-17 | 2026-11-17 |
 | 已合并 | [#10526 · fix\(cli\): preserve literal inline text](https://github.com/multica-ai/multica/pull/10526) | 2026-11-16 | 2026-11-16 |
 | 已合并 | [#10601 · fix\(publicapi\): advertise supported methods in 405 responses](https://github.com/multica-ai/multica/pull/10601) | 2026-11-16 | 2026-11-16 |
 | 已合并 | [#10617 · fix\(cli\): start webhook rotation timeout after confirmation](https://github.com/multica-ai/multica/pull/10617) | 2026-11-16 | 2026-11-16 |
@@ -71,9 +72,9 @@
 
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
 | :-- | :-- | :-- | :-- |
-| 开放 | [#2462 · Read committed SFTP files at their original paths in transactions](https://github.com/fsspec/filesystem_spec/pull/2462) | 2026-11-15 | — |
+| 开放 | [#2462 · Read committed SFTP files at their original paths in transactions](https://github.com/fsspec/filesystem_spec/pull/2462) | 2026-11-17 | — |
+| 开放 | [#2422 · Quote development install extras to prevent shell expansion](https://github.com/fsspec/filesystem_spec/pull/2422) | 2026-11-16 | — |
 | 开放 | [#2434 · Preserve cached prefixes when appending with multiple cache directories](https://github.com/fsspec/filesystem_spec/pull/2434) | 2026-11-12 | — |
-| 开放 | [#2422 · Quote development install extras to prevent shell expansion](https://github.com/fsspec/filesystem_spec/pull/2422) | 2026-11-03 | — |
 | 开放 | [#2412 · Speed up repeated MemoryFileSystem walk listings](https://github.com/fsspec/filesystem_spec/pull/2412) | 2026-11-01 | — |
 
 ## [mahmoud/boltons](https://github.com/mahmoud/boltons)
@@ -185,7 +186,7 @@
 
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
 | :-- | :-- | :-- | :-- |
-| 开放 | [#2904 · fix\(matcher\): remove descendants of grouping records](https://github.com/vuejs/router/pull/2904) | 2026-11-14 | — |
+| 已合并 | [#2904 · fix\(matcher\): remove descendants of grouping records](https://github.com/vuejs/router/pull/2904) | 2026-11-16 | 2026-11-16 |
 
 ## [YunYouJun/air-conditioner](https://github.com/YunYouJun/air-conditioner)
 
