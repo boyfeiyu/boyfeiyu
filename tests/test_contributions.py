@@ -142,6 +142,47 @@ class ContributionTests(unittest.TestCase):
         self.assertIn('0 merged PRs, 0 open PRs', profile.summary_svg(snapshot))
         ET.fromstring(profile.summary_svg(snapshot))
 
+    def test_chart_ranks_all_merged_projects_without_open_only_projects(self):
+        nodes = [node(n, repo='org/open-only', draft=True) for n in range(1, 31)]
+        nodes += [node(n, repo='org/leader', state='MERGED') for n in range(1, 4)]
+        nodes += [node(n, repo='org/leader') for n in range(4, 9)]
+        tied = ['org/zeta', 'org/beta', 'org/alpha', 'Org/upper', 'org/delta', 'org/gamma']
+        nodes += [node(repo=repo, state='MERGED') for repo in tied]
+        snapshot = self.snapshot(nodes)
+        svg = ET.fromstring(profile.summary_svg(snapshot))
+        rows = svg.findall('.//{*}g[@aria-label]')
+        expected = [('org/leader', 3)] + [(repo, 1) for repo in sorted(tied)]
+        self.assertEqual([r.attrib['aria-label'] for r in rows],
+                         [f'{repo}: {count} merged PRs' for repo, count in expected])
+        for row, (repo, count) in zip(rows, expected):
+            self.assertEqual([t.text for t in row.findall('{*}text')], [repo, str(count)])
+            self.assertEqual(float(row.findall('{*}rect')[1].attrib['width']),
+                             round(count * 826 / 3, 1))
+        self.assertIn('9 merged PRs, 35 open PRs, 8 projects', profile.summary_svg(snapshot))
+        self.assertGreater(int(svg.attrib['height']), 390)
+        self.assertIn('ALL PROJECTS BY MERGED PR COUNT', profile.summary_svg(snapshot))
+        self.assertEqual(len(snapshot['pullRequests']), len(nodes))
+        for pr in snapshot['pullRequests']:
+            self.assertIn(pr['url'], profile.archive(snapshot))
+
+    def test_chart_keeps_small_bars_and_full_long_repository_names_visible(self):
+        long_repo = 'o' * 39 + '/' + 'r' * 100
+        nodes = [node(n, repo='org/leader', state='MERGED') for n in range(1, 130)]
+        nodes.append(node(repo=long_repo, state='MERGED'))
+        svg = ET.fromstring(profile.summary_svg(self.snapshot(nodes)))
+        rows = svg.findall('.//{*}g[@aria-label]')
+        labels = rows[1].findall('{*}text')[:-1]
+        self.assertEqual(''.join(t.text for t in labels), long_repo)
+        self.assertTrue(all(len(t.text) <= 78 for t in labels))
+        self.assertEqual(float(rows[1].findall('{*}rect')[1].attrib['width']), 8)
+        footer_y = int(svg.findall('.//{*}text')[-1].attrib['y'])
+        self.assertLess(int(rows[1].findall('{*}text')[-1].attrib['y']), footer_y)
+
+    def test_chart_with_only_open_prs_has_explicit_empty_merged_state(self):
+        svg = ET.fromstring(profile.summary_svg(self.snapshot([node(draft=True)])))
+        self.assertEqual(svg.findall('.//{*}g[@aria-label]'), [])
+        self.assertIn('No merged public external PRs yet.', ''.join(svg.itertext()))
+
     def test_readme_keeps_summary_image_and_archive_keeps_every_pr(self):
         snapshot = self.snapshot([node(n, repo=f'org/project{n % 6}') for n in range(1, 31)])
         section = profile.readme_section(snapshot)
