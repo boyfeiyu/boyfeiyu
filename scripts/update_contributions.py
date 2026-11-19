@@ -13,7 +13,6 @@ from pathlib import Path
 import re
 import subprocess
 import sys
-import textwrap
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -149,8 +148,10 @@ def groups(snapshot):
     result = {}
     for pr in snapshot["pullRequests"]:
         result.setdefault(pr["repository"], []).append(pr)
-    # A stable project order: most contributions, then repository name.
-    return sorted(result.items(), key=lambda pair: (-len(pair[1]), pair[0].lower()))
+    # Rank every project before selecting the card's five displayed rows.
+    return sorted(result.items(), key=lambda pair: (
+        -sum(p["state"] == "MERGED" for p in pair[1]), -len(pair[1]), pair[0]
+    ))
 
 
 def summary_svg(snapshot):
@@ -159,33 +160,30 @@ def summary_svg(snapshot):
     opened = len(prs) - merged
     grouped = groups(snapshot)
     projects = len(grouped)
-    merged_projects = sorted(
-        ((repo, sum(p["state"] == "MERGED" for p in items)) for repo, items in grouped),
-        key=lambda pair: (-pair[1], pair[0]),
-    )
-    merged_projects = [(repo, count) for repo, count in merged_projects if count]
+    displayed = grouped[:5]
     stamp = snapshot["fetchedAt"].replace("T", " ").replace("Z", " UTC")
     bars = []
-    y = 205
-    scale = 826 / max(1, merged_projects[0][1] if merged_projects else 0)
-    for repo, count in merged_projects:
-        bars.append(f'<g aria-label="{escape(repo)}: {count} merged PRs">')
-        # Full-width labels wrap only for unusually long repository names.
-        for line in textwrap.wrap(repo, width=78, break_on_hyphens=False):
-            bars.append(f'<text x="44" y="{y}" fill="#b5c6dd" font-size="18">{escape(line)}</text>')
-            y += 22
-        bars.append(f'<rect x="44" y="{y-6}" width="826" height="10" rx="5" fill="#1e2d42"/>')
-        bars.append(f'<rect x="44" y="{y-6}" width="{max(8, count*scale):.1f}" height="10" rx="5" fill="#b69cff"/>')
-        bars.append(f'<text x="916" y="{y+5}" text-anchor="end" fill="#edf5ff" font-size="18">{count}</text>')
+    # The merged-count leader need not have the largest total PR count.
+    scale = 270 / max((len(items) for _, items in displayed), default=1)
+    for i, (repo, items) in enumerate(displayed):
+        y = 205 + i * 29
+        m = sum(p["state"] == "MERGED" for p in items)
+        o = len(items) - m
+        bars.append(f'<g aria-label="{escape(repo)}: {m} merged PRs, {o} open PRs, {len(items)} total PRs">')
+        bars.append(f'<text x="44" y="{y}" fill="#b5c6dd" font-size="14">{escape(repo)}</text>')
+        bars.append(f'<rect x="475" y="{y-11}" width="270" height="9" rx="4" fill="#1e2d42"/>')
+        if m:
+            bars.append(f'<rect x="475" y="{y-11}" width="{m*scale:.1f}" height="9" fill="#b69cff"/>')
+        if o:
+            bars.append(f'<rect x="{475+m*scale:.1f}" y="{y-11}" width="{o*scale:.1f}" height="9" fill="#58ead5"/>')
+        bars.append(f'<text x="770" y="{y}" fill="#edf5ff" font-size="14">{len(items)}</text>')
         bars.append('</g>')
-        y += 36
-    if not merged_projects:
-        bars.append('<text x="44" y="205" fill="#b5c6dd" font-size="18">No merged public external PRs yet.</text>')
-    height = max(280, y + 24)
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="960" height="{height}" viewBox="0 0 960 {height}" role="img" aria-labelledby="title desc">
+    if not displayed:
+        bars.append('<text x="44" y="205" fill="#b5c6dd" font-size="14">No public external PRs yet.</text>')
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="960" height="390" viewBox="0 0 960 390" role="img" aria-labelledby="title desc">
   <title id="title">Open source: {merged} merged PRs, {opened} open PRs, {projects} projects</title>
-  <desc id="desc">Public external pull requests by boyfeiyu. All projects with merged PRs, ordered by merged count descending, then full repository name. Purple bars and row counts show merged PRs only; minimum bar width is 8 units. Open PRs, including drafts, appear only in the summary. Snapshot: {stamp}.</desc>
-  <rect x=".5" y=".5" width="959" height="{height-1}" rx="18" fill="#0d1726" stroke="#2a3c54"/>
+  <desc id="desc">Public external pull requests by boyfeiyu. Top five projects ordered by merged PR count descending, then total PR count descending, then full repository name. Purple means merged; mint means open, including drafts. Row counts show total merged and open PRs. Snapshot: {stamp}.</desc>
+  <rect x=".5" y=".5" width="959" height="389" rx="18" fill="#0d1726" stroke="#2a3c54"/>
   <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
     <text x="44" y="40" fill="#8fa7c2" font-size="12" letter-spacing="2">PUBLIC CONTRIBUTIONS / VERIFIED AT SOURCE</text>
     <text x="44" y="111" fill="#b69cff" font-size="48" font-weight="700">{merged:02}</text>
@@ -195,10 +193,11 @@ def summary_svg(snapshot):
     <text x="597" y="111" fill="#edf5ff" font-size="48" font-weight="700">{projects:02}</text>
     <text x="688" y="108" fill="#c9d6e7" font-size="15">PROJECTS</text>
     <path d="M44 143H916" stroke="#2a3c54"/>
-    <text x="44" y="174" fill="#8fa7c2" font-size="11" letter-spacing="1">ALL PROJECTS BY MERGED PR COUNT</text>
-    <text x="916" y="174" text-anchor="end" fill="#b69cff" font-size="11">MERGED</text>
+    <text x="44" y="174" fill="#8fa7c2" font-size="11" letter-spacing="1">TOP PROJECTS BY MERGED / TOTAL PR COUNT</text>
+    <text x="475" y="174" fill="#b69cff" font-size="11">MERGED</text>
+    <text x="548" y="174" fill="#58ead5" font-size="11">OPEN</text>
     {''.join(bars)}
-    <text x="44" y="{height-24}" fill="#8fa7c2" font-size="12">UPDATED {stamp} · github.com/boyfeiyu</text>
+    <text x="44" y="366" fill="#8fa7c2" font-size="12">UPDATED {stamp} · github.com/boyfeiyu</text>
   </g>
 </svg>
 '''

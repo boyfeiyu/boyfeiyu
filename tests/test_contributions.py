@@ -142,46 +142,60 @@ class ContributionTests(unittest.TestCase):
         self.assertIn('0 merged PRs, 0 open PRs', profile.summary_svg(snapshot))
         ET.fromstring(profile.summary_svg(snapshot))
 
-    def test_chart_ranks_all_merged_projects_without_open_only_projects(self):
+    def test_chart_ranks_by_merged_then_total_then_name_before_taking_five(self):
         nodes = [node(n, repo='org/open-only', draft=True) for n in range(1, 31)]
         nodes += [node(n, repo='org/leader', state='MERGED') for n in range(1, 4)]
-        nodes += [node(n, repo='org/leader') for n in range(4, 9)]
-        tied = ['org/zeta', 'org/beta', 'org/alpha', 'Org/upper', 'org/delta', 'org/gamma']
-        nodes += [node(repo=repo, state='MERGED') for repo in tied]
+        nodes += [node(n, repo='org/runner-up', state='MERGED') for n in range(1, 3)]
+        nodes += [node(n, repo='org/runner-up') for n in range(3, 13)]
+        for repo, total in [('org/tied-b', 5), ('org/tied-a', 5), ('org/tied-small', 2)]:
+            nodes.append(node(repo=repo, state='MERGED'))
+            nodes += [node(n, repo=repo) for n in range(2, total + 1)]
         snapshot = self.snapshot(nodes)
         svg = ET.fromstring(profile.summary_svg(snapshot))
         rows = svg.findall('.//{*}g[@aria-label]')
-        expected = [('org/leader', 3)] + [(repo, 1) for repo in sorted(tied)]
-        self.assertEqual([r.attrib['aria-label'] for r in rows],
-                         [f'{repo}: {count} merged PRs' for repo, count in expected])
-        for row, (repo, count) in zip(rows, expected):
-            self.assertEqual([t.text for t in row.findall('{*}text')], [repo, str(count)])
-            self.assertEqual(float(row.findall('{*}rect')[1].attrib['width']),
-                             round(count * 826 / 3, 1))
-        self.assertIn('9 merged PRs, 35 open PRs, 8 projects', profile.summary_svg(snapshot))
-        self.assertGreater(int(svg.attrib['height']), 390)
-        self.assertIn('ALL PROJECTS BY MERGED PR COUNT', profile.summary_svg(snapshot))
+        expected = [('org/leader', 3, 3), ('org/runner-up', 2, 12),
+                    ('org/tied-a', 1, 5), ('org/tied-b', 1, 5), ('org/tied-small', 1, 2)]
+        self.assertEqual([r.findall('{*}text')[0].text for r in rows],
+                         [repo for repo, _, _ in expected])
+        self.assertEqual([repo for repo, _ in profile.groups(snapshot)],
+                         [repo for repo, _, _ in expected] + ['org/open-only'])
+        for row, (repo, merged, total) in zip(rows, expected):
+            self.assertEqual([t.text for t in row.findall('{*}text')], [repo, str(total)])
+            self.assertEqual(row.attrib['aria-label'],
+                             f'{repo}: {merged} merged PRs, {total-merged} open PRs, {total} total PRs')
+            rects = {r.attrib['fill']: r for r in row.findall('{*}rect')}
+            self.assertEqual(float(rects['#b69cff'].attrib['width']), merged * 270 / 12)
+            if total > merged:
+                self.assertEqual(float(rects['#58ead5'].attrib['width']), (total-merged) * 270 / 12)
+                self.assertEqual(float(rects['#58ead5'].attrib['x']), 475 + merged * 270 / 12)
+            for rect in rects.values():
+                self.assertLessEqual(float(rect.attrib['x']) + float(rect.attrib['width']), 745)
+        self.assertEqual(svg.attrib['height'], '390')
         self.assertEqual(len(snapshot['pullRequests']), len(nodes))
         for pr in snapshot['pullRequests']:
             self.assertIn(pr['url'], profile.archive(snapshot))
 
-    def test_chart_keeps_small_bars_and_full_long_repository_names_visible(self):
-        long_repo = 'o' * 39 + '/' + 'r' * 100
-        nodes = [node(n, repo='org/leader', state='MERGED') for n in range(1, 130)]
-        nodes.append(node(repo=long_repo, state='MERGED'))
-        svg = ET.fromstring(profile.summary_svg(self.snapshot(nodes)))
+    def test_chart_keeps_open_only_projects_and_drafts_in_top_five(self):
+        nodes = [node(n, repo=f'org/project{total}', draft=True)
+                 for total in (2, 10, 4, 7, 3, 1, 6) for n in range(1, total + 1)]
+        snapshot = self.snapshot(nodes)
+        svg = ET.fromstring(profile.summary_svg(snapshot))
         rows = svg.findall('.//{*}g[@aria-label]')
-        labels = rows[1].findall('{*}text')[:-1]
-        self.assertEqual(''.join(t.text for t in labels), long_repo)
-        self.assertTrue(all(len(t.text) <= 78 for t in labels))
-        self.assertEqual(float(rows[1].findall('{*}rect')[1].attrib['width']), 8)
-        footer_y = int(svg.findall('.//{*}text')[-1].attrib['y'])
-        self.assertLess(int(rows[1].findall('{*}text')[-1].attrib['y']), footer_y)
+        self.assertEqual([r.findall('{*}text')[0].text for r in rows],
+                         [f'org/project{total}' for total in (10, 7, 6, 4, 3)])
+        for row, total in zip(rows, (10, 7, 6, 4, 3)):
+            self.assertEqual(row.findall('{*}text')[-1].text, str(total))
+            rects = {r.attrib['fill']: r for r in row.findall('{*}rect')}
+            self.assertNotIn('#b69cff', rects)
+            self.assertEqual(float(rects['#58ead5'].attrib['width']), total * 27)
+        self.assertIn('0 merged PRs, 33 open PRs, 7 projects', profile.summary_svg(snapshot))
+        self.assertIn('草稿 / 开放', profile.archive(snapshot))
 
-    def test_chart_with_only_open_prs_has_explicit_empty_merged_state(self):
-        svg = ET.fromstring(profile.summary_svg(self.snapshot([node(draft=True)])))
+    def test_chart_with_no_prs_has_explicit_empty_state(self):
+        snapshot = profile.fetch_snapshot(lambda _: page([]), now=NOW)
+        svg = ET.fromstring(profile.summary_svg(snapshot))
         self.assertEqual(svg.findall('.//{*}g[@aria-label]'), [])
-        self.assertIn('No merged public external PRs yet.', ''.join(svg.itertext()))
+        self.assertIn('No public external PRs yet.', ''.join(svg.itertext()))
 
     def test_readme_keeps_summary_image_and_archive_keeps_every_pr(self):
         snapshot = self.snapshot([node(n, repo=f'org/project{n % 6}') for n in range(1, 31)])

@@ -68,6 +68,30 @@
 | 开放 | [#9743 · feat\(issues\): add project columns to swimlanes](https://github.com/multica-ai/multica/pull/9743) | 2026-11-01 | — |
 | 开放 | [#9782 · fix\(workflows\): clarify Default scope for issues without a project](https://github.com/multica-ai/multica/pull/9782) | 2026-11-01 | — |
 
+## [YunYouJun/air-conditioner](https://github.com/YunYouJun/air-conditioner)
+
+| 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
+| :-- | :-- | :-- | :-- |
+| 已合并 | [#161 · 升级到React 18](https://github.com/YunYouJun/air-conditioner/pull/161) | 2022-11-24 | 2022-11-24 |
+
+## [tox-dev/filelock](https://github.com/tox-dev/filelock)
+
+| 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
+| :-- | :-- | :-- | :-- |
+| 已合并 | [#905 · 📝 docs\(descriptor\): clarify native lock protocol compatibility](https://github.com/tox-dev/filelock/pull/905) | 2026-11-03 | 2026-11-03 |
+
+## [vuejs/pinia](https://github.com/vuejs/pinia)
+
+| 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
+| :-- | :-- | :-- | :-- |
+| 已合并 | [#3205 · fix\(types\): exclude once from subscription options \(BOYF-273\)](https://github.com/vuejs/pinia/pull/3205) | 2026-11-04 | 2026-11-04 |
+
+## [vuejs/router](https://github.com/vuejs/router)
+
+| 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
+| :-- | :-- | :-- | :-- |
+| 已合并 | [#2904 · fix\(matcher\): remove descendants of grouping records](https://github.com/vuejs/router/pull/2904) | 2026-11-16 | 2026-11-16 |
+
 ## [fsspec/filesystem_spec](https://github.com/fsspec/filesystem_spec)
 
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
@@ -158,12 +182,6 @@
 | :-- | :-- | :-- | :-- |
 | 开放 | [#20 · Avoid deep copying immutable codec candidate names](https://github.com/thombashi/mbstrdecoder/pull/20) | 2026-11-01 | — |
 
-## [tox-dev/filelock](https://github.com/tox-dev/filelock)
-
-| 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
-| :-- | :-- | :-- | :-- |
-| 已合并 | [#905 · 📝 docs\(descriptor\): clarify native lock protocol compatibility](https://github.com/tox-dev/filelock/pull/905) | 2026-11-03 | 2026-11-03 |
-
 ## [tqdm/tqdm](https://github.com/tqdm/tqdm)
 
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
@@ -175,21 +193,3 @@
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
 | :-- | :-- | :-- | :-- |
 | 开放 | [#24081 · fix\(ssr\): preserve in-flight module identity \(fix \#24046\)](https://github.com/vitejs/vite/pull/24081) | 2026-11-13 | — |
-
-## [vuejs/pinia](https://github.com/vuejs/pinia)
-
-| 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
-| :-- | :-- | :-- | :-- |
-| 已合并 | [#3205 · fix\(types\): exclude once from subscription options \(BOYF-273\)](https://github.com/vuejs/pinia/pull/3205) | 2026-11-04 | 2026-11-04 |
-
-## [vuejs/router](https://github.com/vuejs/router)
-
-| 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
-| :-- | :-- | :-- | :-- |
-| 已合并 | [#2904 · fix\(matcher\): remove descendants of grouping records](https://github.com/vuejs/router/pull/2904) | 2026-11-16 | 2026-11-16 |
-
-## [YunYouJun/air-conditioner](https://github.com/YunYouJun/air-conditioner)
-
-| 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
-| :-- | :-- | :-- | :-- |
-| 已合并 | [#161 · 升级到React 18](https://github.com/YunYouJun/air-conditioner/pull/161) | 2022-11-24 | 2022-11-24 |
