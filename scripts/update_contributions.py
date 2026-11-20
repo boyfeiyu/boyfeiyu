@@ -148,7 +148,7 @@ def groups(snapshot):
     result = {}
     for pr in snapshot["pullRequests"]:
         result.setdefault(pr["repository"], []).append(pr)
-    # Rank every project before selecting the card's five displayed rows.
+    # Keep all projects, including repositories with only open PRs.
     return sorted(result.items(), key=lambda pair: (
         -sum(p["state"] == "MERGED" for p in pair[1]), -len(pair[1]), pair[0]
     ))
@@ -160,7 +160,7 @@ def summary_svg(snapshot):
     opened = len(prs) - merged
     grouped = groups(snapshot)
     projects = len(grouped)
-    displayed = grouped[:5]
+    displayed = grouped
     stamp = snapshot["fetchedAt"].replace("T", " ").replace("Z", " UTC")
     bars = []
     # The merged-count leader need not have the largest total PR count.
@@ -177,13 +177,16 @@ def summary_svg(snapshot):
         if o:
             bars.append(f'<rect x="{475+m*scale:.1f}" y="{y-11}" width="{o*scale:.1f}" height="9" fill="#58ead5"/>')
         bars.append(f'<text x="770" y="{y}" fill="#edf5ff" font-size="14">{len(items)}</text>')
+        bars.append(f'<text x="846" y="{y}" text-anchor="end" fill="#b69cff" font-size="14">{m}</text>')
+        bars.append(f'<text x="916" y="{y}" text-anchor="end" fill="#58ead5" font-size="14">{o}</text>')
         bars.append('</g>')
     if not displayed:
         bars.append('<text x="44" y="205" fill="#b5c6dd" font-size="14">No public external PRs yet.</text>')
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="960" height="390" viewBox="0 0 960 390" role="img" aria-labelledby="title desc">
+    height = max(280, 229 + len(displayed) * 29)
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="960" height="{height}" viewBox="0 0 960 {height}" role="img" aria-labelledby="title desc">
   <title id="title">Open source: {merged} merged PRs, {opened} open PRs, {projects} projects</title>
-  <desc id="desc">Public external pull requests by boyfeiyu. Top five projects ordered by merged PR count descending, then total PR count descending, then full repository name. Purple means merged; mint means open, including drafts. Row counts show total merged and open PRs. Snapshot: {stamp}.</desc>
-  <rect x=".5" y=".5" width="959" height="389" rx="18" fill="#0d1726" stroke="#2a3c54"/>
+  <desc id="desc">Public external pull requests by boyfeiyu. All projects ordered by merged PR count descending, then total PR count descending, then full repository name. Purple means merged; mint means open, including drafts. Row counts show total, merged and open PRs. Snapshot: {stamp}.</desc>
+  <rect x=".5" y=".5" width="959" height="{height-1}" rx="18" fill="#0d1726" stroke="#2a3c54"/>
   <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
     <text x="44" y="40" fill="#8fa7c2" font-size="12" letter-spacing="2">PUBLIC CONTRIBUTIONS / VERIFIED AT SOURCE</text>
     <text x="44" y="111" fill="#b69cff" font-size="48" font-weight="700">{merged:02}</text>
@@ -193,11 +196,14 @@ def summary_svg(snapshot):
     <text x="597" y="111" fill="#edf5ff" font-size="48" font-weight="700">{projects:02}</text>
     <text x="688" y="108" fill="#c9d6e7" font-size="15">PROJECTS</text>
     <path d="M44 143H916" stroke="#2a3c54"/>
-    <text x="44" y="174" fill="#8fa7c2" font-size="11" letter-spacing="1">TOP PROJECTS BY MERGED / TOTAL PR COUNT</text>
+    <text x="44" y="174" fill="#8fa7c2" font-size="11" letter-spacing="1">ALL PROJECTS BY MERGED / TOTAL PR COUNT</text>
     <text x="475" y="174" fill="#b69cff" font-size="11">MERGED</text>
     <text x="548" y="174" fill="#58ead5" font-size="11">OPEN</text>
+    <text x="770" y="174" fill="#edf5ff" font-size="10">TOTAL</text>
+    <text x="846" y="174" text-anchor="end" fill="#b69cff" font-size="10">MERGED</text>
+    <text x="916" y="174" text-anchor="end" fill="#58ead5" font-size="10">OPEN</text>
     {''.join(bars)}
-    <text x="44" y="366" fill="#8fa7c2" font-size="12">UPDATED {stamp} · github.com/boyfeiyu</text>
+    <text x="44" y="{height-24}" fill="#8fa7c2" font-size="12">UPDATED {stamp} · github.com/boyfeiyu</text>
   </g>
 </svg>
 '''

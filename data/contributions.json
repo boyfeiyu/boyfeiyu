@@ -1,10 +1,21 @@
 {
   "schemaVersion": 1,
   "username": "boyfeiyu",
-  "fetchedAt": "2026-11-20T10:04:59Z",
+  "fetchedAt": "2026-11-20T11:20:36Z",
   "scope": "Authored public PRs in repositories not owned by boyfeiyu; OPEN and MERGED only. Closed unmerged PRs are excluded.",
   "source": "https://api.github.com/graphql",
   "pullRequests": [
+    {
+      "repository": "multica-ai/multica",
+      "number": 10093,
+      "title": "MUL-8738: fix(issues): retain queued description saves after closing peek",
+      "url": "https://github.com/multica-ai/multica/pull/10093",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-07T15:11:16Z",
+      "updatedAt": "2026-11-20T11:08:48Z",
+      "mergedAt": null
+    },
     {
       "repository": "multica-ai/multica",
       "number": 10087,
@@ -267,17 +278,6 @@
       "isDraft": false,
       "createdAt": "2026-11-12T09:31:00Z",
       "updatedAt": "2026-11-13T09:42:12Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
-      "number": 10093,
-      "title": "MUL-8738: fix(issues): retain queued description saves after closing peek",
-      "url": "https://github.com/multica-ai/multica/pull/10093",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-07T15:11:16Z",
-      "updatedAt": "2026-11-13T09:40:28Z",
       "mergedAt": null
     },
     {

@@ -142,7 +142,7 @@ class ContributionTests(unittest.TestCase):
         self.assertIn('0 merged PRs, 0 open PRs', profile.summary_svg(snapshot))
         ET.fromstring(profile.summary_svg(snapshot))
 
-    def test_chart_ranks_by_merged_then_total_then_name_before_taking_five(self):
+    def test_chart_ranks_all_projects_by_merged_then_total_then_name(self):
         nodes = [node(n, repo='org/open-only', draft=True) for n in range(1, 31)]
         nodes += [node(n, repo='org/leader', state='MERGED') for n in range(1, 4)]
         nodes += [node(n, repo='org/runner-up', state='MERGED') for n in range(1, 3)]
@@ -154,37 +154,43 @@ class ContributionTests(unittest.TestCase):
         svg = ET.fromstring(profile.summary_svg(snapshot))
         rows = svg.findall('.//{*}g[@aria-label]')
         expected = [('org/leader', 3, 3), ('org/runner-up', 2, 12),
-                    ('org/tied-a', 1, 5), ('org/tied-b', 1, 5), ('org/tied-small', 1, 2)]
+                    ('org/tied-a', 1, 5), ('org/tied-b', 1, 5), ('org/tied-small', 1, 2),
+                    ('org/open-only', 0, 30)]
         self.assertEqual([r.findall('{*}text')[0].text for r in rows],
                          [repo for repo, _, _ in expected])
         self.assertEqual([repo for repo, _ in profile.groups(snapshot)],
-                         [repo for repo, _, _ in expected] + ['org/open-only'])
+                         [repo for repo, _, _ in expected])
         for row, (repo, merged, total) in zip(rows, expected):
-            self.assertEqual([t.text for t in row.findall('{*}text')], [repo, str(total)])
+            self.assertEqual([t.text for t in row.findall('{*}text')],
+                             [repo, str(total), str(merged), str(total-merged)])
             self.assertEqual(row.attrib['aria-label'],
                              f'{repo}: {merged} merged PRs, {total-merged} open PRs, {total} total PRs')
             rects = {r.attrib['fill']: r for r in row.findall('{*}rect')}
-            self.assertEqual(float(rects['#b69cff'].attrib['width']), merged * 270 / 12)
+            if merged:
+                self.assertEqual(float(rects['#b69cff'].attrib['width']), merged * 270 / 30)
+            else:
+                self.assertNotIn('#b69cff', rects)
             if total > merged:
-                self.assertEqual(float(rects['#58ead5'].attrib['width']), (total-merged) * 270 / 12)
-                self.assertEqual(float(rects['#58ead5'].attrib['x']), 475 + merged * 270 / 12)
+                self.assertEqual(float(rects['#58ead5'].attrib['width']), (total-merged) * 270 / 30)
+                self.assertEqual(float(rects['#58ead5'].attrib['x']), 475 + merged * 270 / 30)
             for rect in rects.values():
                 self.assertLessEqual(float(rect.attrib['x']) + float(rect.attrib['width']), 745)
-        self.assertEqual(svg.attrib['height'], '390')
+        self.assertGreater(int(svg.attrib['height']), 390)
         self.assertEqual(len(snapshot['pullRequests']), len(nodes))
         for pr in snapshot['pullRequests']:
             self.assertIn(pr['url'], profile.archive(snapshot))
 
-    def test_chart_keeps_open_only_projects_and_drafts_in_top_five(self):
+    def test_chart_keeps_all_open_only_projects_and_drafts(self):
         nodes = [node(n, repo=f'org/project{total}', draft=True)
                  for total in (2, 10, 4, 7, 3, 1, 6) for n in range(1, total + 1)]
         snapshot = self.snapshot(nodes)
         svg = ET.fromstring(profile.summary_svg(snapshot))
         rows = svg.findall('.//{*}g[@aria-label]')
         self.assertEqual([r.findall('{*}text')[0].text for r in rows],
-                         [f'org/project{total}' for total in (10, 7, 6, 4, 3)])
-        for row, total in zip(rows, (10, 7, 6, 4, 3)):
-            self.assertEqual(row.findall('{*}text')[-1].text, str(total))
+                         [f'org/project{total}' for total in (10, 7, 6, 4, 3, 2, 1)])
+        for row, total in zip(rows, (10, 7, 6, 4, 3, 2, 1)):
+            self.assertEqual([t.text for t in row.findall('{*}text')][1:],
+                             [str(total), '0', str(total)])
             rects = {r.attrib['fill']: r for r in row.findall('{*}rect')}
             self.assertNotIn('#b69cff', rects)
             self.assertEqual(float(rects['#58ead5'].attrib['width']), total * 27)
