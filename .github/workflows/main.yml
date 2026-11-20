@@ -70,20 +70,22 @@ jobs:
 
   snake:
     # Independent of contributions: an API/README failure must not stop the snake.
+    needs: test
     if: github.repository == 'boyfeiyu/boyfeiyu' && github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
     permissions:
       contents: write
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: Generate light and dark contribution snakes
-        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3.5.0, Node 24
+      - name: Check out the growing snake generator
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
         with:
-          github_user_name: boyfeiyu
-          github_token: ${{ github.token }}
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+          ref: main
+          persist-credentials: false
+      - name: Generate growing light and dark contribution snakes
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/generate_snake.py --output-dir dist
       - name: Validate both SVGs before publishing
         run: |
           python3 - <<'PY'

@@ -18,6 +18,23 @@ API 错误、分页重复/不完整、字段不一致时退出失败，保留上
 不会把未知状态当成零贡献。`fetchedAt` 表示实际成功读取数据的时间，不是 PR 合并时间。
 刷新会重新生成贡献卡、主页标记区和完整清单，标记区外的个人介绍保留。
 
+贡献卡展示全部符合口径的项目，按已合并数降序、总 PR 数降序、仓库全名排序，
+不再限制前五行。每行保留紫色已合并、薄荷色开放的堆叠条形，并列出总数及分项数；
+图高随项目数变化，条形按全部项目中的最大总数缩放。只有开放 PR 的仓库同样入图。
+
+## 逐格成长的贪吃蛇
+
+`scripts/generate_snake.py` 用 GitHub GraphQL 读取最近一年的贡献日历，检查日期连续、
+周位置、计数及总数后生成双主题 SVG，无第三方依赖。它沿日历逐列上下折返，
+每次只移动到相邻格。初始身体为 3 节；首次吃到一个非零贡献日时，格子变空，
+保留原尾巴并增加一节（按绿色格数增长，不按该日贡献次数增长）。空格及已吃格不增长。
+身体始终沿头部走过的路径移动，带眼睛的深色头部和金色尾点用于辨认方向。
+吃完整张日历后短暂停留，才一起重置身体及贡献格，进入下一轮。
+
+SVG 使用同一循环时钟的 SMIL 动画，无 JavaScript；内嵌 `snake-model` 元数据记录
+每一步的头部位置、实际长度、吃格数和每个食物的消失步数，便于复核真实增长。
+原 snk 生成器的 `nextSnake` 保持固定数组长度，不提供这项逐格增长行为，故改用本仓库脚本。
+
 ## GitHub Actions
 
 [Refresh profile](https://github.com/boyfeiyu/boyfeiyu/actions/workflows/main.yml)
@@ -32,7 +49,7 @@ GitHub 的定时任务可能延迟；准确更新时间请看快照及 Actions �
 
 自动写入仅在 `boyfeiyu/boyfeiyu` 的 `main` 运行，只有两个发布任务授予 `contents: write`。
 不需要 PAT、不添加 Multica 定时任务。机器人生成提交与本人开发提交分别署名。
-使用 SHA 固定 checkout v6.1.0 与 snk v3.5.0（Node 24）；升级时重新核对来源。
+使用 SHA 固定 checkout v6.1.0；蛇由本仓库经过测试的 Python 脚本生成。
 
 成功的数据刷新会提交新的真实核验时间，保持仓库有实际更新活动。连续失败可能再次触发
 GitHub 的闲置停用规则，应留意 Actions 失败通知。分支保护如果禁止机器人直接写入，
@@ -72,4 +89,9 @@ python3 scripts/update_contributions.py --check
 python3 scripts/update_contributions.py
 # 离线重新渲染已有规范化快照：
 python3 scripts/update_contributions.py --snapshot data/contributions.json
+# 读取真实贡献日历并生成双主题成长蛇：
+python3 scripts/generate_snake.py --output-dir dist
+# 可选：保存日历后离线复现相同动画：
+python3 scripts/generate_snake.py --output-dir dist --save-calendar calendar.json
+python3 scripts/generate_snake.py --output-dir dist --calendar calendar.json
 ```
