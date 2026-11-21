@@ -1,6 +1,6 @@
 # 公开开源贡献 / Public contributions
 
-数据核验时间：**2026-11-20T11:27:24Z**。
+数据核验时间：**2026-11-21T05:12:30Z**。
 
 来源：GitHub GraphQL `user(login: "boyfeiyu").pullRequests`，逐页读取至末页。
 口径：本人发起、公开、仓库所有者不是 boyfeiyu、状态为已合并或开放（含草稿）的 PR。
@@ -12,15 +12,16 @@
 
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
 | :-- | :-- | :-- | :-- |
-| 开放 | [#10093 · MUL-8738: fix\(issues\): retain queued description saves after closing peek](https://github.com/multica-ai/multica/pull/10093) | 2026-11-20 | — |
+| 开放 | [#11077 · feat\(cli\): persist daemon log rotation policy per profile \(BOYF-1051\)](https://github.com/multica-ai/multica/pull/11077) | 2026-11-20 | — |
+| 开放 | [#10613 · fix\(chat\): keep deleted pending uploads removed after leaving chat](https://github.com/multica-ai/multica/pull/10613) | 2026-11-20 | — |
 | 开放 | [#10087 · fix\(issues\): track the title actually adopted by the editor](https://github.com/multica-ai/multica/pull/10087) | 2026-11-20 | — |
+| 开放 | [#10093 · MUL-8738: fix\(issues\): retain queued description saves after closing peek](https://github.com/multica-ai/multica/pull/10093) | 2026-11-20 | — |
 | 已合并 | [#10949 · BOYF-1019 fix\(cli\): honor caller deadlines for attachment downloads \(MUL-9637\)](https://github.com/multica-ai/multica/pull/10949) | 2026-11-20 | 2026-11-20 |
 | 已合并 | [#10786 · feat\(issues\): add sub-issues to the issue sidebar](https://github.com/multica-ai/multica/pull/10786) | 2026-11-17 | 2026-11-17 |
 | 已合并 | [#10526 · fix\(cli\): preserve literal inline text](https://github.com/multica-ai/multica/pull/10526) | 2026-11-16 | 2026-11-16 |
 | 已合并 | [#10601 · fix\(publicapi\): advertise supported methods in 405 responses](https://github.com/multica-ai/multica/pull/10601) | 2026-11-16 | 2026-11-16 |
 | 已合并 | [#10617 · fix\(cli\): start webhook rotation timeout after confirmation](https://github.com/multica-ai/multica/pull/10617) | 2026-11-16 | 2026-11-16 |
 | 已合并 | [#10621 · fix\(search\): reset command palette when workspace changes](https://github.com/multica-ai/multica/pull/10621) | 2026-11-16 | 2026-11-16 |
-| 开放 | [#10613 · fix\(chat\): keep deleted pending uploads removed after leaving chat](https://github.com/multica-ai/multica/pull/10613) | 2026-11-16 | — |
 | 开放 | [#9989 · feat\(issues\): suggest recent issues when choosing a parent](https://github.com/multica-ai/multica/pull/9989) | 2026-11-16 | — |
 | 开放 | [#9742 · feat\(projects\): persist lifecycle browse views \(BOYF-85\)](https://github.com/multica-ai/multica/pull/9742) | 2026-11-15 | — |
 | 已合并 | [#10600 · MUL-9272 fix\(settings\): preserve reverted drafts during autosave](https://github.com/multica-ai/multica/pull/10600) | 2026-11-15 | 2026-11-15 |
