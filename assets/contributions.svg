@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="254" viewBox="0 0 960 254" role="img" aria-labelledby="title desc">
   <title id="title">Open source: 37 merged PRs, 51 open PRs, 20 projects</title>
-  <desc id="desc">Public external pull requests by boyfeiyu. Showing 5 of 20 projects, ranked by merged PR count descending, then total PR count descending, then full repository name. Purple means merged; mint means open, including drafts. Snapshot: 2026-11-21 05:12:30 UTC.</desc>
+  <desc id="desc">Public external pull requests by boyfeiyu. Showing 5 of 20 projects, ranked by merged PR count descending, then total PR count descending, then full repository name. Purple means merged; mint means open, including drafts. Snapshot: 2026-11-21 05:21:02 UTC.</desc>
   <rect x=".5" y=".5" width="959" height="253" rx="18" fill="#0d1726" stroke="#2a3c54"/>
   <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
     <text x="44" y="44" fill="#c9d6e7" font-size="16"><tspan fill="#b69cff" font-size="28" font-weight="700">37</tspan> merged PRs</text>
