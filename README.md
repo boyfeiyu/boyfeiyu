@@ -25,5 +25,5 @@ Hi，我是 **沙雕的小飞鱼儿 / Liu Feiyu** 👋
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/boyfeiyu/boyfeiyu/output/github-contribution-grid-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/boyfeiyu/boyfeiyu/output/github-contribution-grid-snake.svg" />
-  <img alt="贪吃蛇遍历 boyfeiyu 的 GitHub 贡献日历，每日由 GitHub Actions 更新" src="https://raw.githubusercontent.com/boyfeiyu/boyfeiyu/output/github-contribution-grid-snake.svg" width="100%" />
+  <img alt="贪吃蛇沿短路线吃掉 boyfeiyu 的 GitHub 贡献日历中的绿格，每日由 GitHub Actions 更新" src="https://raw.githubusercontent.com/boyfeiyu/boyfeiyu/output/github-contribution-grid-snake.svg" width="100%" />
 </picture>

@@ -32,7 +32,8 @@ def calendar(active=True):
 class SnakeTests(unittest.TestCase):
     def test_grows_once_per_eaten_cell_and_preserves_tail_on_growth(self):
         food = {(0, 0), (0, 2), (1, 6), (1, 5)}
-        route = snake.route_for_columns(2)
+        route = snake.route_for_food(food, 2)
+        self.assertEqual(route[0], (0, 0))
         frames = snake.simulate(food, route)
         self.assertEqual(len(frames[0].body), 3)
         self.assertEqual(frames[0].eaten, frozenset())
@@ -55,16 +56,25 @@ class SnakeTests(unittest.TestCase):
         self.assertEqual(len(frames[-1].eaten), 1)
         self.assertTrue(all(len(f.body) == 3 for f in snake.simulate(set(), route)))
 
-    def test_route_covers_whole_calendar_with_only_neighbor_moves(self):
-        route = snake.route_for_columns(53)
+    def test_dense_route_covers_all_food_with_only_neighbor_moves(self):
+        food = {(x, y) for x in range(53) for y in range(7)}
+        route = snake.route_for_food(food, 53)
         self.assertEqual(len(route), 53 * 7)
         self.assertEqual(len(set(route)), len(route))
-        frames = snake.simulate(set(route), route)
+        x, y = route[0]
+        frames = snake.simulate(food, route, start=(x - 1, y))
         self.assertEqual(len(frames[-1].body), 3 + len(route))
         with self.assertRaisesRegex(ValueError, 'adjacent'):
             snake.simulate(set(), [(5, 5)])
         with self.assertRaisesRegex(ValueError, 'collide'):
             snake.simulate(set(), [(-2, 0)])
+
+    def test_sparse_route_chooses_column_directions_and_skips_empty_detours(self):
+        food = {(4, 2), (4, 5), (5, 1), (5, 4), (8, 1)}
+        route = snake.route_for_food(food, 53)
+        self.assertEqual(route, [(4, y) for y in range(2, 6)] +
+                                [(5, y) for y in range(5, 0, -1)] +
+                                [(6, 1), (7, 1), (8, 1)])
 
     def test_calendar_accepts_padded_week_and_rejects_partial_data(self):
         original = calendar()
@@ -101,6 +111,8 @@ class SnakeTests(unittest.TestCase):
             self.assertEqual(model['frames'][0]['length'], 3)
             self.assertEqual(model['frames'][-1]['length'], 77)
             self.assertEqual(model['frames'][-1]['eaten'], 74)
+            self.assertLess(len(model['frames']) - 1, 53 * 7)
+            self.assertLessEqual(model['durationSeconds'], 12)
             meals = {p['eatStep'] for p in model['food']}
             for i, (a, b) in enumerate(zip(model['frames'], model['frames'][1:]), 1):
                 self.assertEqual(b['length'] - a['length'], int(i in meals))
@@ -110,6 +122,8 @@ class SnakeTests(unittest.TestCase):
             self.assertEqual(len(day_animations), 74)
             for animation in root.findall('.//{*}animate') + root.findall('.//{*}animateTransform'):
                 self.assertEqual(animation.attrib['repeatCount'], 'indefinite')
+                self.assertEqual(float(animation.attrib['dur'].removesuffix('s')),
+                                 model['durationSeconds'])
                 times = [float(k) for k in animation.attrib['keyTimes'].split(';')]
                 self.assertEqual(times[0], 0)
                 self.assertEqual(times[-1], 1)
@@ -121,6 +135,9 @@ class SnakeTests(unittest.TestCase):
                 self.assertEqual(values[1], values[-1])
             for identity in ('head', 'tail'):
                 motion = root.find(f'.//{{*}}g[@id="{identity}"]/{{*}}animateTransform')
+                last_move = float(motion.attrib['keyTimes'].split(';')[-2])
+                self.assertAlmostEqual((1 - last_move) * model['durationSeconds'],
+                                       model['holdSeconds'], places=6)
                 expected = [snake.pixel(f['head']) for f in model['frames']] if identity == 'head' else None
                 if expected:
                     actual = [tuple(map(int, v.split())) for v in motion.attrib['values'].split(';')]
@@ -131,6 +148,7 @@ class SnakeTests(unittest.TestCase):
     def test_empty_calendar_has_no_growth_and_still_animates(self):
         root = ET.fromstring(snake.render_svg(calendar(active=False)))
         model = json.loads(root.find('{*}metadata').text)
+        self.assertEqual(len(model['frames']) - 1, 6)
         self.assertTrue(all(f['length'] == 3 and f['eaten'] == 0 for f in model['frames']))
         self.assertEqual(root.findall('.//{*}rect[@class="day"]/{*}animate'), [])
 

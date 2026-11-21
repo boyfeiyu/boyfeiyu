@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Render a growing contribution snake using only Python's standard library.
 
-The column-wise serpentine route visits each calendar cell once. The full body
-follows its head's history: eating keeps the old tail, empty moves remove it.
+The route covers the active days with a shortest path among routes that cross
+each column once. Eating keeps the old tail; empty moves remove it.
 SVG animations share one clock and reset only at the end of the whole cycle.
 """
 
@@ -19,8 +19,9 @@ import xml.etree.ElementTree as ET
 
 USER = 'boyfeiyu'
 INITIAL_LENGTH = 3
-STEP_SECONDS = 0.12
-HOLD_STEPS = 18
+MAX_STEP_SECONDS = 0.10
+HOLD_SECONDS = 0.8
+MAX_DURATION_SECONDS = 12
 PITCH = 16
 LEVELS = ('NONE', 'FIRST_QUARTILE', 'SECOND_QUARTILE', 'THIRD_QUARTILE', 'FOURTH_QUARTILE')
 QUERY = '''query($login: String!) {
@@ -99,15 +100,44 @@ class Frame:
     eaten: frozenset
 
 
-def route_for_columns(columns):
-    return [(x, y) for x in range(columns)
-            for y in (range(7) if x % 2 == 0 else range(6, -1, -1))]
+def route_for_food(food, columns):
+    if not food:
+        return [(x, 3) for x in range(min(columns, 6))]
+
+    food_rows = {}
+    for x, y in food:
+        food_rows.setdefault(x, []).append(y)
+
+    first, last = min(food_rows), max(food_rows)
+    # A column's exit is the next column's entry. Horizontal travel is fixed,
+    # so minimize vertical travel while covering the food between entry and exit.
+    costs = {row: (0, ()) for row in range(7)}
+    for x in range(first, last + 1):
+        rows = food_rows.get(x)
+        low, high = (min(rows), max(rows)) if rows else (None, None)
+        next_costs = {}
+        for exit_row in range(7):
+            choices = [
+                (cost + abs(entry - exit_row), entries + (entry,))
+                for entry, (cost, entries) in costs.items()
+                if low is None or min(entry, exit_row) <= low <= high <= max(entry, exit_row)
+            ]
+            if choices:
+                next_costs[exit_row] = min(choices)
+        costs = next_costs
+    _, rows = min((cost, entries + (exit_row,))
+                  for exit_row, (cost, entries) in costs.items())
+    route = []
+    for x, (entry, exit_row) in enumerate(zip(rows, rows[1:]), start=first):
+        direction = 1 if entry <= exit_row else -1
+        route.extend((x, y) for y in range(entry, exit_row + direction, direction))
+    return route
 
 
-def simulate(food, route, initial_length=INITIAL_LENGTH):
+def simulate(food, route, initial_length=INITIAL_LENGTH, start=(-1, 0)):
     if type(initial_length) is not int or initial_length < 1:
         raise ValueError('Initial snake length must be positive.')
-    frames = [Frame(tuple((-i - 1, 0) for i in range(initial_length)), frozenset())]
+    frames = [Frame(tuple((start[0] - i, start[1]) for i in range(initial_length)), frozenset())]
     for point in route:
         previous = frames[-1]
         if sum(abs(a - b) for a, b in zip(point, previous.body[0])) != 1:
@@ -127,14 +157,14 @@ def pixel(point):
     return 64 + point[0] * PITCH, 48 + point[1] * PITCH
 
 
-def opacity_animation(first, last, total_steps, duration):
+def opacity_animation(first, end, step_fraction, duration):
     """One occupied interval; repeat restores each cell's initial occupancy."""
     keys, values = [0.0], ['1' if first == 0 else '0']
     if first:
-        keys.append(first / total_steps)
+        keys.append(first * step_fraction)
         values.append('1')
-    if last + 1 < total_steps:
-        keys.append((last + 1) / total_steps)
+    if end is not None:
+        keys.append(end * step_fraction)
         values.append('0')
     keys.append(1.0)
     values.append(values[-1])
@@ -147,16 +177,18 @@ def render_svg(calendar, dark=False):
     validate_calendar(calendar)
     food = {(x, day['weekday']): day for x, week in enumerate(calendar['weeks'])
             for day in week['contributionDays'] if day['contributionCount'] > 0}
-    route = route_for_columns(len(calendar['weeks']))
-    frames = simulate(food, route)
-    total_steps = len(route) + HOLD_STEPS
-    duration = round(total_steps * STEP_SECONDS, 2)
-    times = ';'.join([f'{i/total_steps:.8f}' for i in range(len(frames))] + ['1'])
+    route = route_for_food(food, len(calendar['weeks']))
+    start_x, start_y = route[0]
+    frames = simulate(food, route, start=(start_x - 1, start_y))
+    duration = round(min(len(route) * MAX_STEP_SECONDS + HOLD_SECONDS, MAX_DURATION_SECONDS), 2)
+    step_seconds = (duration - HOLD_SECONDS) / len(route)
+    step_fraction = step_seconds / duration
+    times = ';'.join([f'{i * step_fraction:.8f}' for i in range(len(frames))] + ['1'])
     meal_steps = {point: i for i, point in enumerate(route, 1) if point in food}
     model = {
-        'schemaVersion': 1, 'username': USER, 'fetchedAt': calendar['fetchedAt'],
+        'schemaVersion': 2, 'username': USER, 'fetchedAt': calendar['fetchedAt'],
         'initialLength': INITIAL_LENGTH, 'initialBody': frames[0].body,
-        'stepSeconds': STEP_SECONDS, 'holdSteps': HOLD_STEPS, 'totalSteps': total_steps,
+        'stepSeconds': step_seconds, 'holdSeconds': HOLD_SECONDS, 'durationSeconds': duration,
         'food': [{'point': p, 'date': d['date'], 'count': d['contributionCount'],
                   'eatStep': meal_steps[p]} for p, d in food.items()],
         'frames': [{'head': f.body[0], 'length': len(f.body), 'eaten': len(f.eaten)} for f in frames],
@@ -188,7 +220,7 @@ def render_svg(calendar, dark=False):
                        f'x="{px-6}" y="{py-6}" width="12" height="12" rx="2" fill="{fill}">'
                        f'<title>{day["date"]}: {day["contributionCount"]} contributions</title>')
             if point in food:
-                t = meal_steps[point] / total_steps
+                t = meal_steps[point] * step_fraction
                 out.append(f'<animate attributeName="fill" dur="{duration}s" repeatCount="indefinite" '
                            f'calcMode="discrete" keyTimes="0;{t:.8f};1" '
                            f'values="{fill};{colors[0]};{colors[0]}"/>')
@@ -203,11 +235,11 @@ def render_svg(calendar, dark=False):
     for point, (first, last) in intervals.items():
         px, py = pixel(point)
         # Final body remains visible throughout the hold before the loop reset.
-        last = total_steps - 1 if last == len(route) else last
+        end = None if last == len(route) else last + 1
         out.append(f'<rect class="segment" data-point="{point[0]},{point[1]}" '
                    f'x="{px-5}" y="{py-5}" width="10" height="10" rx="2" '
                    f'fill="{body_color}" opacity="{1 if first == 0 else 0}">'
-                   f'{opacity_animation(first, last, total_steps, duration)}</rect>')
+                   f'{opacity_animation(first, end, step_fraction, duration)}</rect>')
 
     def moving_transform(points):
         values = ';'.join(f'{x} {y}' for x, y in [pixel(p) for p in points] + [pixel(points[-1])])
