@@ -14,9 +14,9 @@ Hi，我是 **沙雕的小飞鱼儿 / Liu Feiyu** 👋
 
 <!-- CONTRIBUTIONS:START -->
 
-[![公开外部 PR 概览：已合并与开放状态分别统计](assets/contributions.svg)](docs/contributions.md)
+[![公开外部 PR 概览及主要贡献项目](assets/contributions.svg)](docs/contributions.md)
 
-[我提过的 PR →](docs/contributions.md)
+[查看全部 PR →](docs/contributions.md)
 
 <!-- CONTRIBUTIONS:END -->
 

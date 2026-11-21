@@ -19,6 +19,7 @@ ROOT = Path(__file__).resolve().parents[1]
 USER = "boyfeiyu"
 START = "<!-- CONTRIBUTIONS:START -->"
 END = "<!-- CONTRIBUTIONS:END -->"
+SUMMARY_PROJECT_LIMIT = 5
 QUERY = """query($login: String!, $cursor: String) {
   user(login: $login) {
     pullRequests(first: 100, after: $cursor, states: [OPEN, MERGED],
@@ -160,50 +161,46 @@ def summary_svg(snapshot):
     opened = len(prs) - merged
     grouped = groups(snapshot)
     projects = len(grouped)
-    displayed = grouped
+    displayed = grouped[:SUMMARY_PROJECT_LIMIT]
     stamp = snapshot["fetchedAt"].replace("T", " ").replace("Z", " UTC")
     bars = []
+    if displayed:
+        heading = f"Top {len(displayed)} by merged PRs" if projects > len(displayed) else "Projects by merged PRs"
+        bars.append(f'''<text x="44" y="89" fill="#b5c6dd" font-size="14">{heading}</text>
+    <text x="792" y="89" text-anchor="end" fill="#edf5ff" font-size="13">Total</text>
+    <text x="846" y="89" text-anchor="end" fill="#b69cff" font-size="13">Merged</text>
+    <text x="916" y="89" text-anchor="end" fill="#58ead5" font-size="13">Open</text>
+    ''')
+    else:
+        bars.append('<text x="44" y="89" fill="#b5c6dd" font-size="16">No public external PRs yet.</text>')
     # The merged-count leader need not have the largest total PR count.
     scale = 270 / max((len(items) for _, items in displayed), default=1)
     for i, (repo, items) in enumerate(displayed):
-        y = 205 + i * 29
+        y = 117 + i * 29
         m = sum(p["state"] == "MERGED" for p in items)
         o = len(items) - m
         bars.append(f'<g aria-label="{escape(repo)}: {m} merged PRs, {o} open PRs, {len(items)} total PRs">')
-        bars.append(f'<text x="44" y="{y}" fill="#b5c6dd" font-size="14">{escape(repo)}</text>')
+        bars.append(f'<text x="44" y="{y}" fill="#b5c6dd" font-size="16">{escape(repo)}</text>')
         bars.append(f'<rect x="475" y="{y-11}" width="270" height="9" rx="4" fill="#1e2d42"/>')
         if m:
             bars.append(f'<rect x="475" y="{y-11}" width="{m*scale:.1f}" height="9" fill="#b69cff"/>')
         if o:
             bars.append(f'<rect x="{475+m*scale:.1f}" y="{y-11}" width="{o*scale:.1f}" height="9" fill="#58ead5"/>')
-        bars.append(f'<text x="770" y="{y}" fill="#edf5ff" font-size="14">{len(items)}</text>')
+        bars.append(f'<text x="792" y="{y}" text-anchor="end" fill="#edf5ff" font-size="14">{len(items)}</text>')
         bars.append(f'<text x="846" y="{y}" text-anchor="end" fill="#b69cff" font-size="14">{m}</text>')
         bars.append(f'<text x="916" y="{y}" text-anchor="end" fill="#58ead5" font-size="14">{o}</text>')
         bars.append('</g>')
-    if not displayed:
-        bars.append('<text x="44" y="205" fill="#b5c6dd" font-size="14">No public external PRs yet.</text>')
-    height = max(280, 229 + len(displayed) * 29)
+    height = 109 + len(displayed) * 29
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="960" height="{height}" viewBox="0 0 960 {height}" role="img" aria-labelledby="title desc">
   <title id="title">Open source: {merged} merged PRs, {opened} open PRs, {projects} projects</title>
-  <desc id="desc">Public external pull requests by boyfeiyu. All projects ordered by merged PR count descending, then total PR count descending, then full repository name. Purple means merged; mint means open, including drafts. Row counts show total, merged and open PRs. Snapshot: {stamp}.</desc>
+  <desc id="desc">Public external pull requests by boyfeiyu. Showing {len(displayed)} of {projects} projects, ranked by merged PR count descending, then total PR count descending, then full repository name. Purple means merged; mint means open, including drafts. Snapshot: {stamp}.</desc>
   <rect x=".5" y=".5" width="959" height="{height-1}" rx="18" fill="#0d1726" stroke="#2a3c54"/>
   <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
-    <text x="44" y="40" fill="#8fa7c2" font-size="12" letter-spacing="2">PUBLIC CONTRIBUTIONS / VERIFIED AT SOURCE</text>
-    <text x="44" y="111" fill="#b69cff" font-size="48" font-weight="700">{merged:02}</text>
-    <text x="135" y="108" fill="#c9d6e7" font-size="15">MERGED</text>
-    <text x="320" y="111" fill="#58ead5" font-size="48" font-weight="700">{opened:02}</text>
-    <text x="411" y="108" fill="#c9d6e7" font-size="15">OPEN</text>
-    <text x="597" y="111" fill="#edf5ff" font-size="48" font-weight="700">{projects:02}</text>
-    <text x="688" y="108" fill="#c9d6e7" font-size="15">PROJECTS</text>
-    <path d="M44 143H916" stroke="#2a3c54"/>
-    <text x="44" y="174" fill="#8fa7c2" font-size="11" letter-spacing="1">ALL PROJECTS BY MERGED / TOTAL PR COUNT</text>
-    <text x="475" y="174" fill="#b69cff" font-size="11">MERGED</text>
-    <text x="548" y="174" fill="#58ead5" font-size="11">OPEN</text>
-    <text x="770" y="174" fill="#edf5ff" font-size="10">TOTAL</text>
-    <text x="846" y="174" text-anchor="end" fill="#b69cff" font-size="10">MERGED</text>
-    <text x="916" y="174" text-anchor="end" fill="#58ead5" font-size="10">OPEN</text>
+    <text x="44" y="44" fill="#c9d6e7" font-size="16"><tspan fill="#b69cff" font-size="28" font-weight="700">{merged}</tspan> merged PRs</text>
+    <text x="320" y="44" fill="#c9d6e7" font-size="16"><tspan fill="#58ead5" font-size="28" font-weight="700">{opened}</tspan> open PRs</text>
+    <text x="597" y="44" fill="#c9d6e7" font-size="16"><tspan fill="#edf5ff" font-size="28" font-weight="700">{projects}</tspan> projects</text>
+    <path d="M44 65H916" stroke="#2a3c54"/>
     {''.join(bars)}
-    <text x="44" y="{height-24}" fill="#8fa7c2" font-size="12">UPDATED {stamp} · github.com/boyfeiyu</text>
   </g>
 </svg>
 '''
@@ -211,9 +208,9 @@ def summary_svg(snapshot):
 
 def readme_section(snapshot):
     return '\n'.join([
-        '[![公开外部 PR 概览：已合并与开放状态分别统计](assets/contributions.svg)](docs/contributions.md)',
+        '[![公开外部 PR 概览及主要贡献项目](assets/contributions.svg)](docs/contributions.md)',
         '',
-        '[我提过的 PR →](docs/contributions.md)',
+        '[查看全部 PR →](docs/contributions.md)',
     ])
 
 
