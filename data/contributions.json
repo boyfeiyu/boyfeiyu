@@ -1,10 +1,54 @@
 {
   "schemaVersion": 1,
   "username": "boyfeiyu",
-  "fetchedAt": "2026-11-21T09:53:13Z",
+  "fetchedAt": "2026-11-22T09:49:51Z",
   "scope": "Authored public PRs in repositories not owned by boyfeiyu; OPEN and MERGED only. Closed unmerged PRs are excluded.",
   "source": "https://api.github.com/graphql",
   "pullRequests": [
+    {
+      "repository": "multica-ai/multica",
+      "number": 11179,
+      "title": "feat(issues): advance review queue after completion with undo",
+      "url": "https://github.com/multica-ai/multica/pull/11179",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-22T07:41:22Z",
+      "updatedAt": "2026-11-22T08:06:06Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "vuejs/router",
+      "number": 2937,
+      "title": "docs: use non-capturing groups in nested regex (fix #2558)",
+      "url": "https://github.com/vuejs/router/pull/2937",
+      "state": "MERGED",
+      "isDraft": false,
+      "createdAt": "2026-11-21T19:54:30Z",
+      "updatedAt": "2026-11-22T07:44:11Z",
+      "mergedAt": "2026-11-22T07:44:10Z"
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 11171,
+      "title": "fix(daemon): retain worktrees used by declared environments",
+      "url": "https://github.com/multica-ai/multica/pull/11171",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-22T03:12:08Z",
+      "updatedAt": "2026-11-22T04:06:01Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 11167,
+      "title": "fix: preserve idle filters when listing saved views",
+      "url": "https://github.com/multica-ai/multica/pull/11167",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-21T23:10:18Z",
+      "updatedAt": "2026-11-22T00:04:31Z",
+      "mergedAt": null
+    },
     {
       "repository": "multica-ai/multica",
       "number": 11077,

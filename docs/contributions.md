@@ -1,6 +1,6 @@
 # 公开开源贡献 / Public contributions
 
-数据核验时间：**2026-11-21T09:53:13Z**。
+数据核验时间：**2026-11-22T09:49:51Z**。
 
 来源：GitHub GraphQL `user(login: "boyfeiyu").pullRequests`，逐页读取至末页。
 口径：本人发起、公开、仓库所有者不是 boyfeiyu、状态为已合并或开放（含草稿）的 PR。
@@ -12,6 +12,9 @@
 
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
 | :-- | :-- | :-- | :-- |
+| 开放 | [#11179 · feat\(issues\): advance review queue after completion with undo](https://github.com/multica-ai/multica/pull/11179) | 2026-11-22 | — |
+| 开放 | [#11171 · fix\(daemon\): retain worktrees used by declared environments](https://github.com/multica-ai/multica/pull/11171) | 2026-11-22 | — |
+| 开放 | [#11167 · fix: preserve idle filters when listing saved views](https://github.com/multica-ai/multica/pull/11167) | 2026-11-22 | — |
 | 开放 | [#11077 · feat\(cli\): persist daemon log rotation policy per profile \(BOYF-1051\)](https://github.com/multica-ai/multica/pull/11077) | 2026-11-20 | — |
 | 开放 | [#10613 · fix\(chat\): keep deleted pending uploads removed after leaving chat](https://github.com/multica-ai/multica/pull/10613) | 2026-11-20 | — |
 | 开放 | [#10087 · fix\(issues\): track the title actually adopted by the editor](https://github.com/multica-ai/multica/pull/10087) | 2026-11-20 | — |
@@ -70,6 +73,13 @@
 | 开放 | [#9743 · feat\(issues\): add project columns to swimlanes](https://github.com/multica-ai/multica/pull/9743) | 2026-11-01 | — |
 | 开放 | [#9782 · fix\(workflows\): clarify Default scope for issues without a project](https://github.com/multica-ai/multica/pull/9782) | 2026-11-01 | — |
 
+## [vuejs/router](https://github.com/vuejs/router)
+
+| 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
+| :-- | :-- | :-- | :-- |
+| 已合并 | [#2937 · docs: use non-capturing groups in nested regex \(fix \#2558\)](https://github.com/vuejs/router/pull/2937) | 2026-11-22 | 2026-11-22 |
+| 已合并 | [#2904 · fix\(matcher\): remove descendants of grouping records](https://github.com/vuejs/router/pull/2904) | 2026-11-16 | 2026-11-16 |
+
 ## [YunYouJun/air-conditioner](https://github.com/YunYouJun/air-conditioner)
 
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
@@ -87,12 +97,6 @@
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
 | :-- | :-- | :-- | :-- |
 | 已合并 | [#3205 · fix\(types\): exclude once from subscription options \(BOYF-273\)](https://github.com/vuejs/pinia/pull/3205) | 2026-11-04 | 2026-11-04 |
-
-## [vuejs/router](https://github.com/vuejs/router)
-
-| 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
-| :-- | :-- | :-- | :-- |
-| 已合并 | [#2904 · fix\(matcher\): remove descendants of grouping records](https://github.com/vuejs/router/pull/2904) | 2026-11-16 | 2026-11-16 |
 
 ## [fsspec/filesystem_spec](https://github.com/fsspec/filesystem_spec)
 
