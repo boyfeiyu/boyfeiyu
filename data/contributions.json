@@ -1,10 +1,43 @@
 {
   "schemaVersion": 1,
   "username": "boyfeiyu",
-  "fetchedAt": "2026-11-23T10:50:10Z",
+  "fetchedAt": "2026-11-24T12:33:35Z",
   "scope": "Authored public PRs in repositories not owned by boyfeiyu; OPEN and MERGED only. Closed unmerged PRs are excluded.",
   "source": "https://api.github.com/graphql",
   "pullRequests": [
+    {
+      "repository": "multica-ai/multica",
+      "number": 11171,
+      "title": "fix(daemon): retain worktrees used by declared environments",
+      "url": "https://github.com/multica-ai/multica/pull/11171",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-22T03:12:08Z",
+      "updatedAt": "2026-11-24T08:40:11Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 10613,
+      "title": "fix(chat): keep deleted pending uploads removed after leaving chat",
+      "url": "https://github.com/multica-ai/multica/pull/10613",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-14T18:58:03Z",
+      "updatedAt": "2026-11-24T04:34:07Z",
+      "mergedAt": null
+    },
+    {
+      "repository": "multica-ai/multica",
+      "number": 11179,
+      "title": "feat(issues): advance review queue after completion with undo",
+      "url": "https://github.com/multica-ai/multica/pull/11179",
+      "state": "OPEN",
+      "isDraft": false,
+      "createdAt": "2026-11-22T07:41:22Z",
+      "updatedAt": "2026-11-24T03:46:10Z",
+      "mergedAt": null
+    },
     {
       "repository": "multica-ai/multica",
       "number": 11077,
@@ -15,17 +48,6 @@
       "createdAt": "2026-11-20T15:12:14Z",
       "updatedAt": "2026-11-23T04:33:33Z",
       "mergedAt": "2026-11-23T04:33:33Z"
-    },
-    {
-      "repository": "multica-ai/multica",
-      "number": 10613,
-      "title": "fix(chat): keep deleted pending uploads removed after leaving chat",
-      "url": "https://github.com/multica-ai/multica/pull/10613",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-14T18:58:03Z",
-      "updatedAt": "2026-11-23T04:19:44Z",
-      "mergedAt": null
     },
     {
       "repository": "multica-ai/multica",
@@ -62,17 +84,6 @@
     },
     {
       "repository": "multica-ai/multica",
-      "number": 11179,
-      "title": "feat(issues): advance review queue after completion with undo",
-      "url": "https://github.com/multica-ai/multica/pull/11179",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-22T07:41:22Z",
-      "updatedAt": "2026-11-22T19:13:42Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "multica-ai/multica",
       "number": 11186,
       "title": "feat(issues): persist published description selections",
       "url": "https://github.com/multica-ai/multica/pull/11186",
@@ -92,17 +103,6 @@
       "createdAt": "2026-11-21T19:54:30Z",
       "updatedAt": "2026-11-22T07:44:11Z",
       "mergedAt": "2026-11-22T07:44:10Z"
-    },
-    {
-      "repository": "multica-ai/multica",
-      "number": 11171,
-      "title": "fix(daemon): retain worktrees used by declared environments",
-      "url": "https://github.com/multica-ai/multica/pull/11171",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-22T03:12:08Z",
-      "updatedAt": "2026-11-22T04:06:01Z",
-      "mergedAt": null
     },
     {
       "repository": "multica-ai/multica",

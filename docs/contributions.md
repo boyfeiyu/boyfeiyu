@@ -1,6 +1,6 @@
 # 公开开源贡献 / Public contributions
 
-数据核验时间：**2026-11-23T10:50:10Z**。
+数据核验时间：**2026-11-24T12:33:35Z**。
 
 来源：GitHub GraphQL `user(login: "boyfeiyu").pullRequests`，逐页读取至末页。
 口径：本人发起、公开、仓库所有者不是 boyfeiyu、状态为已合并或开放（含草稿）的 PR。
@@ -12,14 +12,14 @@
 
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
 | :-- | :-- | :-- | :-- |
+| 开放 | [#11171 · fix\(daemon\): retain worktrees used by declared environments](https://github.com/multica-ai/multica/pull/11171) | 2026-11-24 | — |
+| 开放 | [#10613 · fix\(chat\): keep deleted pending uploads removed after leaving chat](https://github.com/multica-ai/multica/pull/10613) | 2026-11-24 | — |
+| 开放 | [#11179 · feat\(issues\): advance review queue after completion with undo](https://github.com/multica-ai/multica/pull/11179) | 2026-11-24 | — |
 | 已合并 | [#11077 · feat\(cli\): persist daemon log rotation policy per profile \(BOYF-1051, MUL-9728\)](https://github.com/multica-ai/multica/pull/11077) | 2026-11-23 | 2026-11-23 |
-| 开放 | [#10613 · fix\(chat\): keep deleted pending uploads removed after leaving chat](https://github.com/multica-ai/multica/pull/10613) | 2026-11-23 | — |
 | 已合并 | [#11167 · fix: preserve idle filters when listing saved views](https://github.com/multica-ai/multica/pull/11167) | 2026-11-23 | 2026-11-23 |
 | 开放 | [#10093 · MUL-8738: fix\(issues\): retain queued description saves after closing peek](https://github.com/multica-ai/multica/pull/10093) | 2026-11-23 | — |
 | 开放 | [#11222 · feat\(projects\): make execution source intent explicit](https://github.com/multica-ai/multica/pull/11222) | 2026-11-22 | — |
-| 开放 | [#11179 · feat\(issues\): advance review queue after completion with undo](https://github.com/multica-ai/multica/pull/11179) | 2026-11-22 | — |
 | 开放 | [#11186 · feat\(issues\): persist published description selections](https://github.com/multica-ai/multica/pull/11186) | 2026-11-22 | — |
-| 开放 | [#11171 · fix\(daemon\): retain worktrees used by declared environments](https://github.com/multica-ai/multica/pull/11171) | 2026-11-22 | — |
 | 开放 | [#10087 · fix\(issues\): track the title actually adopted by the editor](https://github.com/multica-ai/multica/pull/10087) | 2026-11-20 | — |
 | 已合并 | [#10949 · BOYF-1019 fix\(cli\): honor caller deadlines for attachment downloads \(MUL-9637\)](https://github.com/multica-ai/multica/pull/10949) | 2026-11-20 | 2026-11-20 |
 | 已合并 | [#10786 · feat\(issues\): add sub-issues to the issue sidebar](https://github.com/multica-ai/multica/pull/10786) | 2026-11-17 | 2026-11-17 |
