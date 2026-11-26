@@ -1,6 +1,6 @@
 # 公开开源贡献 / Public contributions
 
-数据核验时间：**2026-11-25T11:22:18Z**。
+数据核验时间：**2026-11-26T10:58:01Z**。
 
 来源：GitHub GraphQL `user(login: "boyfeiyu").pullRequests`，逐页读取至末页。
 口径：本人发起、公开、仓库所有者不是 boyfeiyu、状态为已合并或开放（含草稿）的 PR。
@@ -79,6 +79,7 @@
 
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
 | :-- | :-- | :-- | :-- |
+| 开放 | [#2956 · feat\(experimental\): add scroll restoration context](https://github.com/vuejs/router/pull/2956) | 2026-11-26 | — |
 | 已合并 | [#2937 · docs: use non-capturing groups in nested regex \(fix \#2558\)](https://github.com/vuejs/router/pull/2937) | 2026-11-22 | 2026-11-22 |
 | 已合并 | [#2904 · fix\(matcher\): remove descendants of grouping records](https://github.com/vuejs/router/pull/2904) | 2026-11-16 | 2026-11-16 |
 
@@ -86,6 +87,7 @@
 
 | 状态 | 具体贡献 / PR 原始标题 | 最近更新（UTC） | 合并日期（UTC） |
 | :-- | :-- | :-- | :-- |
+| 开放 | [#191 · fix\(widget\): preserve state across DOM reconnections](https://github.com/YunYouJun/air-conditioner/pull/191) | 2026-11-25 | — |
 | 已合并 | [#161 · 升级到React 18](https://github.com/YunYouJun/air-conditioner/pull/161) | 2022-11-24 | 2022-11-24 |
 
 ## [tox-dev/filelock](https://github.com/tox-dev/filelock)
