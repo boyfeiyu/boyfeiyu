@@ -1,10 +1,21 @@
 {
   "schemaVersion": 1,
   "username": "boyfeiyu",
-  "fetchedAt": "2026-11-26T10:58:01Z",
+  "fetchedAt": "2026-11-27T10:55:31Z",
   "scope": "Authored public PRs in repositories not owned by boyfeiyu; OPEN and MERGED only. Closed unmerged PRs are excluded.",
   "source": "https://api.github.com/graphql",
   "pullRequests": [
+    {
+      "repository": "YunYouJun/air-conditioner",
+      "number": 191,
+      "title": "fix(widget): preserve state across DOM reconnections",
+      "url": "https://github.com/YunYouJun/air-conditioner/pull/191",
+      "state": "MERGED",
+      "isDraft": false,
+      "createdAt": "2026-11-25T17:25:45Z",
+      "updatedAt": "2026-11-26T11:27:01Z",
+      "mergedAt": "2026-11-26T11:27:01Z"
+    },
     {
       "repository": "vuejs/router",
       "number": 2956,
@@ -14,17 +25,6 @@
       "isDraft": false,
       "createdAt": "2026-11-25T21:25:05Z",
       "updatedAt": "2026-11-26T07:24:19Z",
-      "mergedAt": null
-    },
-    {
-      "repository": "YunYouJun/air-conditioner",
-      "number": 191,
-      "title": "fix(widget): preserve state across DOM reconnections",
-      "url": "https://github.com/YunYouJun/air-conditioner/pull/191",
-      "state": "OPEN",
-      "isDraft": false,
-      "createdAt": "2026-11-25T17:25:45Z",
-      "updatedAt": "2026-11-25T17:25:51Z",
       "mergedAt": null
     },
     {
